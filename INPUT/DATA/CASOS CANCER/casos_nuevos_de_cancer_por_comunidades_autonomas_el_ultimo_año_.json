@@ -1,0 +1,177 @@
+﻿{
+    "Url": "www.epdata.es/casos-nuevos-cancer-comunidades-autonomas/7f8a45e5-2356-4edc-9708-fd96168be99a",
+    "Respuesta": {
+        "Id": "7f8a45e5-2356-4edc-9708-fd96168be99a",
+        "Url": "www.epdata.es/casos-nuevos-cancer-comunidades-autonomas/7f8a45e5-2356-4edc-9708-fd96168be99a",
+        "Titulo": "Casos nuevos de cáncer por comunidades autónomas el último año ",
+        "Subtitulo": "",
+        "Datos": {
+            "Metricas": [
+                {
+                    "Id": 0,
+                    "Nombre": "Cáncer a nivel anual - Casos clínicos de cáncer diagnosticado para total como tipo de cáncer, total como sexo del paciente y Andalucía, Aragón, Asturias, Canarias, Cantabria, Castilla León, Castilla-La Mancha, Cataluña, Ceuta, Comunidad Valenciana, Extremadura, Galicia, Islas Baleares, La Rioja, Madrid, Melilla, Murcia, Navarra, País Vasco como comunidad autónoma",
+                    "SonDatosNumericos": true,
+                    "Fuente": "Asociación Española Contra el Cáncer",
+                    "Clasificacion": null,
+                    "Unidad": "Casos clínicos de cáncer diagnosticado",
+                    "Escala": "Unidades",
+                    "EscalaFactorPotencia10": 0,
+                    "Datos": [
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Andalucía",
+                            "Valor": 49387,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Aragón",
+                            "Valor": 8889,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Asturias",
+                            "Valor": 7762,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Canarias",
+                            "Valor": 12739,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Cantabria",
+                            "Valor": 4041,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Castilla y León",
+                            "Valor": 18188,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Castilla-La Mancha",
+                            "Valor": 12767,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Cataluña",
+                            "Valor": 46630,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Ceuta",
+                            "Valor": 380,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Comunidad Valenciana",
+                            "Valor": 31928,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Extremadura",
+                            "Valor": 7032,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Galicia",
+                            "Valor": 20135,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Islas Baleares",
+                            "Valor": 6511,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "La Rioja",
+                            "Valor": 2115,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Madrid",
+                            "Valor": 39203,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Melilla",
+                            "Valor": 363,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Murcia",
+                            "Valor": 8259,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "Navarra",
+                            "Valor": 4175,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2023,
+                            "Periodo": "Año",
+                            "Parametro": "País Vasco",
+                            "Valor": 15170,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
