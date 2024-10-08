@@ -1,0 +1,35 @@
+AXIS-VERSION="2006";
+CREATION-DATE="20241008";
+CHARSET="ANSI";
+SUBJECT-AREA="CONSUMO DE BEBIDAS ALCOHÓLICAS";
+SUBJECT-CODE="null";
+MATRIX="03004";
+TITLE="Consumo de bebidas alcohólicas en los últimos 12 meses según sexo y comunidad autónoma. Población de 15 y más años.";
+CONTENTS="Consumo de bebidas alcohólicas en los últimos 12 meses";
+CODEPAGE="iso-8859-15";
+DESCRIPTION="";
+COPYRIGHT=YES;
+NOTE="1) El símbolo '.' debe interpretarse como dato que no se proporciona por mues"
+"tra insuficiente# El símbolo '..' debe interpretarse como dato que no se reco"
+"ge para esa clasificación de la tabla# Los datos correspondientes a celdas co"
+"n menos de 35 mil personas han de ser tomados con precaución, ya que pueden e"
+"star afectados de elevados errores de muestreo";
+DECIMALS=1;
+SHOWDECIMALS=1;
+STUB="Sexo","Comunidad autónoma";
+HEADING="Consumo de bebidas alcohólicas";
+VALUES("Sexo")="Ambos sexos";
+VALUES("Comunidad autónoma")="Total Nacional","01 Andalucía","02 Aragón","03 Asturias, Principado de",
+"04 Balears, Illes","05 Canarias","06 Cantabria","07 Castilla y León",
+"08 Castilla - La Mancha","09 Cataluña","10 Comunitat Valenciana","11 Extremadura",
+"12 Galicia","13 Madrid, Comunidad de","14 Murcia, Región de",
+"15 Navarra, Comunidad Foral de","16 País Vasco","17 Rioja, La","18 Ceuta",
+"19 Melilla";
+VALUES("Consumo de bebidas alcohólicas")="TOTAL","Sí ha consumido","No ha consumido","No consta";
+CODES("Comunidad autónoma")="CA00","CA01","CA02","CA03","CA04","CA05","CA06","CA07","CA08","CA09","CA10","CA11","CA12",
+"CA13","CA14","CA15","CA16","CA17","CA18","CA19";
+MAP("Comunidad autónoma")="spain_regions_img_ind";
+SOURCE="Instituto Nacional de Estadística";
+UNITS="miles de personas";
+DATA=39974.1 26139.8 13774.4 59.9 7096.4 3775.2 3305.9 15.3 1121.4 667.3 454.1 0.0 896.9 654.1 240.0 2.7 1030.2 632.2 390.5 7.5 1936.1 1079.1 857.0 0.0 500.1 364.4 132.8 2.9 2063.7 1473.9 581.2 8.6 1709.7 1048.5 661.1 0.0 6397.6 4458.7 1933.1 5.8 4255.3 3058.5 1196.8 0.0 904.8 574.1 330.7 0.0 2360.6 1477.1
+ 874.6 8.9 5649.9 3964.9 1681.9 3.2 1242.4 796.0 446.4 0.0 547.4 424.0 121.8 1.6 1863.3 1451.0 410.8 1.4 267.4 192.7 72.7 2.0 66.8 27.0 39.8 0.0 64.3 21.1 43.2 0.0;
