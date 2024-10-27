@@ -1,0 +1,2017 @@
+[{"Nombre":"Total, Total, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Total, Total, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":72.24}
+]
+}
+,{"Nombre":"Total, Total, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":10.05}
+]
+}
+,{"Nombre":"Total, Total, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":6.43}
+]
+}
+,{"Nombre":"Total, Total, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":21.06}
+]
+}
+,{"Nombre":"Total, Total, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":33.34}
+]
+}
+,{"Nombre":"Total, Total, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":22.58}
+]
+}
+,{"Nombre":"Total, Total, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":2.04}
+]
+}
+,{"Nombre":"Total, Total, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":21.16}
+]
+}
+,{"Nombre":"Total, Total, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.59}
+]
+}
+,{"Nombre":"Total, Total, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":1.7}
+]
+}
+,{"Nombre":"Total, Total, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":3.65}
+]
+}
+,{"Nombre":"Total, Total, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.46}
+]
+}
+,{"Nombre":"Total, Total, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":18.79}
+]
+}
+,{"Nombre":"Total, Total, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":2.68}
+]
+}
+,{"Nombre":"Total, Total, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.07}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":68.91}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":12.07}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":7.83}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":20.82}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":43.3}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":26.85}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":2.03}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":24.02}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":2.26}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":2.49}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":3.52}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.5}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":21.14}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":0.46}
+]
+}
+,{"Nombre":"Total, Sólo una discapacidad, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":0.67}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":73.7}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":12.23}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":7.26}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":22.44}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":31.8}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":25.65}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":2.78}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":19.96}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.38}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":1.68}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":3.57}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.46}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":20.04}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":1.42}
+]
+}
+,{"Nombre":"Total, Dos discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":0.67}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":79.99}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":9.85}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":6.22}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":22.74}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":23.67}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":22.63}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":2.19}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":19.3}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.02}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.62}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":3.89}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.47}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":16.96}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":1.36}
+]
+}
+,{"Nombre":"Total, Tres discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.18}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":79.31}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":5.97}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":5.34}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":18.23}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":22.26}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":17.13}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":1.8}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":19.09}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":0.9}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.94}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":4.3}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.64}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":16.58}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":2.53}
+]
+}
+,{"Nombre":"Total, Cuatro discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.61}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":69.28}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":3.11}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":1.62}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":19.92}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":19.2}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":7.71}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":1.02}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":16.6}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":0.65}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.66}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":3.56}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.25}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":12.56}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":12.95}
+]
+}
+,{"Nombre":"Total, De cinco a ocho discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":2.53}
+]
+}
+,{"Nombre":"Hombre, Total, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombre, Total, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":70.03}
+]
+}
+,{"Nombre":"Hombre, Total, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":13.43}
+]
+}
+,{"Nombre":"Hombre, Total, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":6.6}
+]
+}
+,{"Nombre":"Hombre, Total, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":21.42}
+]
+}
+,{"Nombre":"Hombre, Total, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":39.0}
+]
+}
+,{"Nombre":"Hombre, Total, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":19.79}
+]
+}
+,{"Nombre":"Hombre, Total, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":3.73}
+]
+}
+,{"Nombre":"Hombre, Total, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":21.81}
+]
+}
+,{"Nombre":"Hombre, Total, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.83}
+]
+}
+,{"Nombre":"Hombre, Total, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":1.69}
+]
+}
+,{"Nombre":"Hombre, Total, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":4.6}
+]
+}
+,{"Nombre":"Hombre, Total, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.51}
+]
+}
+,{"Nombre":"Hombre, Total, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":17.13}
+]
+}
+,{"Nombre":"Hombre, Total, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":2.14}
+]
+}
+,{"Nombre":"Hombre, Total, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":0.9}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":68.15}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":15.57}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":8.17}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":20.07}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":47.24}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":22.22}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":3.39}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":24.18}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":2.51}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":2.43}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":4.35}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.47}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":19.36}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":0.51}
+]
+}
+,{"Nombre":"Hombre, Sólo una discapacidad, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":0.3}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":69.6}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":15.11}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":6.69}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":23.17}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":39.72}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":23.97}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":5.39}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":20.89}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":0.98}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":1.12}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":4.08}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.54}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":18.55}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":0.71}
+]
+}
+,{"Nombre":"Hombre, Dos discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.09}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":77.04}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":14.32}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":7.0}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":24.18}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":29.35}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":19.08}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":4.75}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":20.62}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.17}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.81}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":4.96}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.62}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":12.17}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":0.52}
+]
+}
+,{"Nombre":"Hombre, Tres discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.38}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":77.95}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":8.31}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":4.18}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":20.92}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":25.75}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":14.42}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":2.41}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":19.51}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.79}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":1.65}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":6.74}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.83}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":15.17}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":2.78}
+]
+}
+,{"Nombre":"Hombre, Cuatro discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.32}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":66.51}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":4.39}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":1.2}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":21.75}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":22.09}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":7.5}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":2.34}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":16.17}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.01}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.5}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":4.78}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.3}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":12.03}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":12.25}
+]
+}
+,{"Nombre":"Hombre, De cinco a ocho discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Hombre", "Codigo":"hombre"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":2.36}
+]
+}
+,{"Nombre":"Mujer, Total, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujer, Total, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":73.77}
+]
+}
+,{"Nombre":"Mujer, Total, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":7.71}
+]
+}
+,{"Nombre":"Mujer, Total, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":6.31}
+]
+}
+,{"Nombre":"Mujer, Total, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":20.81}
+]
+}
+,{"Nombre":"Mujer, Total, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":29.41}
+]
+}
+,{"Nombre":"Mujer, Total, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":24.52}
+]
+}
+,{"Nombre":"Mujer, Total, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":0.87}
+]
+}
+,{"Nombre":"Mujer, Total, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":20.71}
+]
+}
+,{"Nombre":"Mujer, Total, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.42}
+]
+}
+,{"Nombre":"Mujer, Total, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":1.7}
+]
+}
+,{"Nombre":"Mujer, Total, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":2.98}
+]
+}
+,{"Nombre":"Mujer, Total, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.44}
+]
+}
+,{"Nombre":"Mujer, Total, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":19.94}
+]
+}
+,{"Nombre":"Mujer, Total, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":3.05}
+]
+}
+,{"Nombre":"Mujer, Total, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Total", "Codigo":"total"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.19}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":69.54}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":9.2}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":7.56}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":21.43}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":40.06}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":30.66}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":0.92}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":23.89}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":2.05}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":2.54}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":2.83}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.53}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":22.6}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":0.42}
+]
+}
+,{"Nombre":"Mujer, Sólo una discapacidad, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Sólo una discapacidad", "Codigo":"solounadiscapacidad"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":0.97}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":76.37}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":10.36}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":7.63}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":21.96}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":26.65}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":26.74}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":1.09}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":19.37}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":1.64}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":2.04}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":3.24}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.41}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":21.01}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":1.88}
+]
+}
+,{"Nombre":"Mujer, Dos discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Dos discapacidades", "Codigo":"dosdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":0.39}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":81.72}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":7.24}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":5.76}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":21.9}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":20.36}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":24.7}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":0.69}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":18.54}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":0.94}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.51}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":3.27}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.38}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":19.76}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":1.84}
+]
+}
+,{"Nombre":"Mujer, Tres discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Tres discapacidades", "Codigo":"tresdiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.06}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":80.12}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":4.57}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":6.04}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":16.63}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":20.17}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":18.76}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":1.44}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":18.84}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":0.37}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.5}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":2.84}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.52}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":17.41}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":2.39}
+]
+}
+,{"Nombre":"Mujer, Cuatro discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"Cuatro discapacidades", "Codigo":"cuatrodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":1.78}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Total", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Total", "Codigo":"total"}
+]
+, "Data":[{"Valor":100.0}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Ver la televisión (u otras pantallas o dispositivos)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ver la televisión (u otras pantallas o dispositivos)", "Codigo":"verlatelevisionuotraspantallasodispositivos"}
+]
+, "Data":[{"Valor":70.82}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Navegar por internet", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Navegar por internet", "Codigo":"navegarporinternet"}
+]
+, "Data":[{"Valor":2.4}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Uso de redes sociales (Facebook, Twitter, Instagram, etc.)", "Codigo":"usoderedessocialesfacebooktwitterinstagrametc"}
+]
+, "Data":[{"Valor":1.85}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Escuchar música, radio, etc.", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Escuchar música, radio, etc.", "Codigo":"escucharmusicaradioetc"}
+]
+, "Data":[{"Valor":18.9}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Ejercicio físico (pasear, deportes, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Ejercicio físico (pasear, deportes, etc.)", "Codigo":"ejerciciofisicopaseardeportesetc"}
+]
+, "Data":[{"Valor":17.59}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Leer (periódicos, revistas, libros, etc.)", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Leer (periódicos, revistas, libros, etc.)", "Codigo":"leerperiodicosrevistaslibrosetc"}
+]
+, "Data":[{"Valor":7.82}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Videojuegos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Videojuegos", "Codigo":"videojuegos"}
+]
+, "Data":[{"Valor":0.28}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Reunirse con amigos, familiares", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Reunirse con amigos, familiares", "Codigo":"reunirseconamigosfamiliares"}
+]
+, "Data":[{"Valor":16.84}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Asistir a eventos culturales y/o deportivos", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Asistir a eventos culturales y/o deportivos", "Codigo":"asistiraeventosculturalesyodeportivos"}
+]
+, "Data":[{"Valor":0.45}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Viajar, turismo", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Viajar, turismo", "Codigo":"viajarturismo"}
+]
+, "Data":[{"Valor":0.74}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Jugar", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Jugar", "Codigo":"jugar"}
+]
+, "Data":[{"Valor":2.88}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Voluntariado", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Voluntariado", "Codigo":"voluntariado"}
+]
+, "Data":[{"Valor":0.22}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, Otra actividad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"Otra actividad", "Codigo":"otraactividad"}
+]
+, "Data":[{"Valor":12.85}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, No realiza ninguna actividad debido a la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad debido a la discapacidad", "Codigo":"norealizaningunaactividaddebidoaladiscapacidad"}
+]
+, "Data":[{"Valor":13.33}
+]
+}
+,{"Nombre":"Mujer, De cinco a ocho discapacidades, No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "MetaData":[{"T3_Variable":"Sexo", "Nombre":"Mujer", "Codigo":"mujer"}
+,{"T3_Variable":"Número de discapacidades", "Nombre":"De cinco a ocho discapacidades", "Codigo":"decincoaochodiscapacidades"}
+,{"T3_Variable":"Actividades en tiempo libre", "Nombre":"No realiza ninguna actividad por un motivo no relacionado con la discapacidad", "Codigo":"norealizaningunaactividadporunmotivonorelacionadoconladiscapacidad"}
+]
+, "Data":[{"Valor":2.63}
+]
+}
+]
