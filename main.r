@@ -2,7 +2,12 @@
 
 ###  CARGA DE PAQUETES:
 install.packages("pxR")
+install.packages("tidyverse")
+install.packages("rjson")
 library(pxR)
+library(tidyverse)
+library(rjson)
+
 
 #CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
