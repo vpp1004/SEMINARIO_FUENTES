@@ -1,0 +1,28 @@
+AXIS-VERSION="2006";
+CREATION-DATE="20241029";
+CHARSET="ANSI";
+SUBJECT-AREA="3.3. Determinantes de salud";
+SUBJECT-CODE="33";
+MATRIX="333G1";
+TITLE="Personas que practican ejercicio físico regular por CCAA y  periodo. 2022";
+CONTENTS="Personas que practican ejercicio físico regular";
+CODEPAGE="iso-8859-15";
+DESCRIPTION="";
+COPYRIGHT=YES;
+DECIMALS=1;
+SHOWDECIMALS=1;
+STUB="Comunidades y Ciudades Autónomas";
+HEADING="periodo";
+VALUES("Comunidades y Ciudades Autónomas")="Total Nacional","01 Andalucía","02 Aragón","03 Asturias, Principado de",
+"04 Balears, Illes","05 Canarias","06 Cantabria","07 Castilla y León",
+"08 Castilla - La Mancha","09 Cataluña","10 Comunitat Valenciana","11 Extremadura",
+"12 Galicia","13 Madrid, Comunidad de","14 Murcia, Región de",
+"15 Navarra, Comunidad Foral de","16 País Vasco","17 Rioja, La","18 Ceuta",
+"19 Melilla";
+VALUES("periodo")="2022";
+CODES("Comunidades y Ciudades Autónomas")="CA00","CA01","CA02","CA03","CA04","CA05","CA06","CA07","CA08","CA09","CA10","CA11","CA12",
+"CA13","CA14","CA15","CA16","CA17","CA18","CA19";
+MAP("Comunidades y Ciudades Autónomas")="spain_regions_img_ind";
+SOURCE="Módulo de Salud. Encuesta de Condiciones de Vida 2022, INE";
+UNITS="porcentaje de población de 16 y más años";
+DATA=37.7 35.3 42.2 43.7 36.2 35.7 42.2 43.7 40.0 35.3 34.2 44.1 35.0 41.5 28.6 42.3 42.3 41.2 41.9 45.7;
