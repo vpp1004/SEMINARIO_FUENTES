@@ -9,3 +9,4 @@ dtmarbella<-as.data.frame(indice_verde_marbella)
 marbella<-summarise(.data=dtmarbella,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
 View(marbella)
 str(marbella)
+
