@@ -26,14 +26,9 @@ if ("Sí ha consumido" %in% dtalcohol$Consumo.de.bebidas.alcohólicas) {
 
 dataalcohol
 
-#if (presion_sistolica > 140) {
-#print("El paciente tiene presión arterial alta.")
-#}
-
-
-#select(.data = starwars, hair_color, skin_color, eye_color)
 str(dtalcohol)
 view(dtalcohol)
+
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
 library(tidyverse)
 library(jsonlite)
@@ -70,6 +65,19 @@ head(casos_cancer)
 #str(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
 #view(cancer)
 
+archivo <- "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json"
+
+# Intenta leer el archivo primero
+if (file.exists(archivo)) {
+  contenido <- readLines(archivo)
+  print(contenido)  # Muestra el contenido del archivo
+  
+  # Si el contenido se muestra, procede a usar fromJSON
+  casos_cancer <- fromJSON(paste(contenido, collapse = ""))
+  print(casos_cancer)
+} else {
+  cat("El archivo no se encuentra en la ruta especificada:", archivo)
+}
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
 load("Objetos.RData")
