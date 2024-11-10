@@ -65,7 +65,22 @@ head(casos_cancer)
 #str(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
 #view(cancer)
 
-archivo <- "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json"
+archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
+archivo
+typeof(archivo)
+dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas[[1]]$Datos)
+dtcancer
+str(dtcancer)
+dtcancer_largo<-dtcancer%>%
+  pivot_longer(
+    cols=everything(),
+    names_to= c(".value","id"),
+    names_pattern = "(.*?)(\\.\\d+)?$"
+  )%>%
+  select(Parametro,Valor)
+dtcancer_largo
+
+    
 
 # Intenta leer el archivo primero
 if (file.exists(archivo)) {
@@ -96,3 +111,46 @@ actividad
 
 save.image("Objetos.RData")
 load("Objetos.RData")
+
+
+
+#Inserccion de datos cancer 
+library(tidyverse)
+library(jsonlite)
+library(json)
+library(dplyr)
+library(RJSONIO)
+casos_cancer<-fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer_por_comunidad.json")
+
+
+
+
+#CASOS DE CANCER INFLUIDOS POR ALCOHHOL
+dataalcohol
+dtcancer_largo
+alcohol <- dataalcohol %>%
+  mutate(Comunidad.autónoma = str_remove(Comunidad.autónoma, "^\\d+\\s+")) %>%
+  mutate(Comunidad.autónoma = str_replace(Comunidad.autónoma, ",.*", "")) %>% 
+  mutate(Comunidad.autónoma = str_trim(Comunidad.autónoma))
+alcohol_cancer<-left_join(x=alcohol,y=dtcancer_largo,by=c("Comunidad.autónoma"="Parametro"))
+alcohol_cancer
+cancer_alcohol<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,casos_alcohol=value)
+colnames(cancer_alcohol)  
+cancer_alcohol
+
+
+#CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
+actividad
+dtcancer_largo
+cancer_actividad<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,porcentaje_actividad=value)
+
+
+#CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
+espana
+dtcancer_largo
+
+zonasverdes <-dplyr::rename(.data=espana,Comunidad.autonoma=Pueblo)
+  
+zonasverdes
+cancer_zonasverdes<-left_join(x=zonasverdes,y=dtcancer_largo,by=c("Comunidad.autonoma"="Parametro"))
+cancer_zonasverdes
