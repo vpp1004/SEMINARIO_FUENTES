@@ -3,6 +3,7 @@ library(greenR)
 library(dplyr)
 load("Objetos.RData")
 
+
 listespana=list(
   Andalucia=andalucia,
   Aragon=aragon,
@@ -20,14 +21,15 @@ listespana=list(
   Navarra=navarra,
   Pais_Vasco=paisvasco,
   La_Rioja=rioja,
-  Comunidad_valenciana=valencia
+  Comunidad_valenciana=valencia,
+  Ceuta= ceuta,
+  Melilla=melilla
 )
 
 listaespana<-bind_rows(listespana, .id="Pueblo")
 
 espana=as.data.frame(listaespana)
 dtespana
-
 save.image(file="Objetos.RData")
 load("Objetos.RData")
 espana
