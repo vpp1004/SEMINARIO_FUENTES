@@ -359,9 +359,17 @@ display: none;
 </div>
 
 
-<p>```{r</p>
+<div id="introducción" class="section level3">
+<h3>Introducción</h3>
+<p>En este seminario vamos a estudiar la enfermedad del cancer y su
+relación con distintas variables que pueden influir en ella positiva o
+negativamente en las distintas comunidades de España. En específico, las
+variables que estudiaremos son los casos de personas que realizan
+actividad física habitualmente, los casos de consumidores habituales de
+alcohol y el número de zonas verdes de cada lugar.</p>
 <p>#CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE
-POR COMUNIDADES:
+POR COMUNIDADES:</p>
+<p>```{r
 casos_alcohol&lt;-read.px(“INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px”)
 View(casos_alcohol) dtalcohol&lt;-as.data.frame(casos_alcohol) dtalcohol
 alcohol&lt;-select(.data =
@@ -451,6 +459,7 @@ zonasverdes_cancer&lt;-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
 zonasverdes_cancer</code></pre>
 <p>```{r save.image(“Objetos.RData”)</p>
 <p>```</p>
+</div>
 
 
 
