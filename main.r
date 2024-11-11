@@ -38,32 +38,7 @@ library(RJSONIO)
 casos_cancer <- fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
 casos_cancer
 head(casos_cancer)
-#str(casos_cancer)
-#listacancer<-as_tibble(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)%>%
-  #spread_all()
-#cancer<-listacancer[,c("Parametro","Valor")]
 
-#colnames(listacancer)
-#resultadoscancer<-list()
-#for (i in 1:length(listacancer)){
-  #resultados[[i]]<-listacancer[[i]][,c("Parametro","Valor")]
-#}
-#dtcancer
-#listacancer
-#view(dtcancer)
-#cancer<-as.data.frame(listacancer)
-#cancer
-#str(cancer)
-#colnames(cancer)<-c("Año","Periodo","Comunidad","Nº casos","Estado","Notas")
-#cancer
-#cancer<-as.data.frame(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
-#colnames(casos_cancer)<-c("Año","Periodo","Comunidad","Nº casos","Estado","Notas")
-#cancer
-#view(cancer)
-
-#casos_cancer
-#str(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
-#view(cancer)
 
 archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
 archivo

@@ -7,20 +7,23 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
+```{r setup, include=FALSE}
 
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
 
-
-```{r}
 ###  CARGA DE PAQUETES:
-install.packages("pxR")
-install.packages("tidyverse")
-install.packages("rjson")
-install.packages("tidyjson")
+#install.packages("pxR")
+#install.packages("tidyverse")
+#install.packages("rjson")
+#install.packages("tidyjson")
+install.packages("json")
 library(pxR)
 library(tidyverse)
 library(rjson)
 library(tidyjson)
+```
 
+```{r
 
 #CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
@@ -39,7 +42,9 @@ dataalcohol
 
 str(dtalcohol)
 view(dtalcohol)
+```
 
+```{r
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
 library(tidyverse)
 library(jsonlite)
@@ -49,32 +54,6 @@ library(RJSONIO)
 casos_cancer <- fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
 casos_cancer
 head(casos_cancer)
-#str(casos_cancer)
-#listacancer<-as_tibble(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)%>%
-  #spread_all()
-#cancer<-listacancer[,c("Parametro","Valor")]
-
-#colnames(listacancer)
-#resultadoscancer<-list()
-#for (i in 1:length(listacancer)){
-  #resultados[[i]]<-listacancer[[i]][,c("Parametro","Valor")]
-#}
-#dtcancer
-#listacancer
-#view(dtcancer)
-#cancer<-as.data.frame(listacancer)
-#cancer
-#str(cancer)
-#colnames(cancer)<-c("Año","Periodo","Comunidad","Nº casos","Estado","Notas")
-#cancer
-#cancer<-as.data.frame(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
-#colnames(casos_cancer)<-c("Año","Periodo","Comunidad","Nº casos","Estado","Notas")
-#cancer
-#view(cancer)
-
-#casos_cancer
-#str(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
-#view(cancer)
 
 archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
 archivo
@@ -90,14 +69,15 @@ dtcancer_largo<-dtcancer%>%
   )%>%
   select(Parametro,Valor)
 dtcancer_largo
+```
 
-
-
+```{r
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
 load("Objetos.RData")
 espana
+```
 
-
+```{r
 #CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
 actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
 datosactividad<-read.px(actividadfisica)
@@ -107,12 +87,13 @@ view(dtactividad)
 dtactividad
 actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
 actividad
-
+```
+```{r
 save.image("Objetos.RData")
 load("Objetos.RData")
+```
 
-
-
+```{r
 #Inserccion de datos cancer 
 library(tidyverse)
 library(jsonlite)
@@ -120,10 +101,10 @@ library(json)
 library(dplyr)
 library(RJSONIO)
 casos_cancer<-fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer_por_comunidad.json")
+```
 
 
-
-
+```{r
 #CASOS DE CANCER INFLUIDOS POR ALCOHHOL
 dataalcohol
 dtcancer_largo
@@ -136,8 +117,9 @@ alcohol_cancer
 cancer_alcohol<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,casos_alcohol=value)
 colnames(cancer_alcohol)  
 cancer_alcohol
+```
 
-
+```{r
 #CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
 actividad
 dtcancer_largo
@@ -171,7 +153,9 @@ cancer_actividad<-left_join(x=actividad,y=dtcancer_largo,by=c("Comunidades.y.Ciu
 cancer_actividad
 actividad_cancer<-dplyr::rename(cancer,actividad_fisica=valor.x,casos_cancer=Valor.y)
 zonasverdes_cancer
+```
 
+```{r
 #CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
 espana
 dtcancer_largo
@@ -198,8 +182,8 @@ cancer_zonasverdes<-left_join(x=zonasverdes,y=dtcancer_largo,by=c("Comunidad.aut
 cancer_zonasverdes
 zonasverdes_cancer<-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
 zonasverdes_cancer
-
-
+```
+```{r
 save.image("Objetos.RData")
 
 
