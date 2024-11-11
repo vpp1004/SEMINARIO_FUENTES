@@ -1,52 +1,141 @@
 ---
-title: "Seminario: Casos de cancer relacionados con alcohol, actividad deportiva y zonas verdes"
-subtitle: "Repositorio: [GitHub](https://github.com/vpp1004/SEMINARIO_FUENTES)"
+title: "SeminarioCancer"
 author: 
-- name: "Carmen Gómez Peña"
-- name: "Vanessa Pérez Paredes"
-
+- "Vanessa Pérez"
+- "Carmen Gómez Peña"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
 ```
 
-
-```{r cars}
-summary(cars)
-```
-
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-## **INTRODUCCIÓN:**
-A rellenar
-## **OBJETIVO GENERAL:**
-A rellenar
-- **Objetivo principal:**
-A rellenar
-## **METODOLOGíA :**
-A rellenar
-### Metodologías del Objetivo General:
-A rellenar
+```{r}
 
 
 ###  CARGA DE PAQUETES:
+install.packages("pxR")
+install.packages("tidyverse")
+install.packages("rjson")
+install.packages("tidyjson")
+install.packages("jsonlite")
+library(pxR)
 library(tidyverse)
 library(rjson)
+library(tidyjson)
+library(jsonlite)
+library(dplyr)
+library(RJSONIO)
 
 #CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
+casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
+View(casos_alcohol)
+dtalcohol<-as.data.frame(casos_alcohol)
+dtalcohol
+alcohol<-select(.data = dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma)
+if ("Sí ha consumido" %in% dtalcohol$Consumo.de.bebidas.alcohólicas) {
+    dataalcohol <- dtalcohol %>%
+    filter(Consumo.de.bebidas.alcohólicas == "Sí ha consumido") %>%
+    select(value, Comunidad.autónoma)
+}
+
+
+dataalcohol
+
+str(dtalcohol)
+view(dtalcohol)
 
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
 casos_cancer <- fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
+casos_cancer
+head(casos_cancer)
+
+
+archivo_cancer <- "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json"
+
+if (file.exists(archivo_cancer)) {
+  casos_cancer <- jsonlite::fromJSON(archivo_cancer)
+  print(casos_cancer)
+} else {
+  stop("El archivo JSON no se encuentra en la ruta   especificada:", archivo_cancer)
+}
+
+typeof(archivo_cancer)
+dtcancer<-as.data.frame(archivo_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
+dtcancer
+str(dtcancer)
+dtcancer_largo<-dtcancer%>%
+  pivot_longer(
+    cols=everything(),
+    names_to= c(".value","id"),
+    names_pattern = "(.*?)(\\.\\d+)?$"
+  )%>%
+  select(Parametro,Valor)
+dtcancer_largo
+
+    
+
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
+load("Objetos.RData")
+espana
+
 
 #CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
+actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
+datosactividad<-read.px(actividadfisica)
+datosactividad
+dtactividad<-as.data.frame(datosactividad)
+view(dtactividad)
+dtactividad
+actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
+actividad
 
+save.image("Objetos.RData")
+load("Objetos.RData")
+
+
+
+#Inserccion de datos cancer 
+library(tidyverse)
+library(jsonlite)
+library(dplyr)
+library(RJSONIO)
+casos_cancer<-fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer_por_comunidad.json")
+
+
+
+
+#CASOS DE CANCER INFLUIDOS POR ALCOHHOL
+dataalcohol
+dtcancer_largo
+alcohol <- dataalcohol %>%
+  mutate(Comunidad.autónoma = str_remove(Comunidad.autónoma, "^\\d+\\s+")) %>%
+  mutate(Comunidad.autónoma = str_replace(Comunidad.autónoma, ",.*", "")) %>% 
+  mutate(Comunidad.autónoma = str_trim(Comunidad.autónoma))
+alcohol_cancer<-left_join(x=alcohol,y=dtcancer_largo,by=c("Comunidad.autónoma"="Parametro"))
+alcohol_cancer
+cancer_alcohol<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,casos_alcohol=value)
+colnames(cancer_alcohol)  
+cancer_alcohol
+
+
+#CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
+actividad
+dtcancer_largo
+cancer_actividad<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,porcentaje_actividad=value)
+
+
+#CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
+espana
+dtcancer_largo
+
+zonasverdes <-dplyr::rename(.data=espana,Comunidad.autonoma=Pueblo)
+  
+zonasverdes
+cancer_zonasverdes<-left_join(x=zonasverdes,y=dtcancer_largo,by=c("Comunidad.autonoma"="Parametro"))
+cancer_zonasverdes
+
+```
