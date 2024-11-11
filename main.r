@@ -143,14 +143,59 @@ cancer_alcohol
 actividad
 dtcancer_largo
 cancer_actividad<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,porcentaje_actividad=value)
+comunidad<-c(
+  "01 Andalucía"="Andalucía",
+  "02 Aragón" ="Aragón",
+  "03 Asturias, Principado de"="Asturias",
+  "04 Balears, Illes"="Islas Baleares",
+  "05 Canarias"="Canarias",
+  "06 Cantabria"="Cantabria",
+  "07 Castilla y León"="Castilla y León",
+  "08 Castilla - La Mancha"="Castilla_La Mancha",
+  "09 Cataluña"="Cataluña",
+  "10 Comunitat Valenciana"="Comunidad Valenciana",
+  "11 Extremadura"="Extremadura",
+  "12 Galicia"="Galicia",
+  "13 Madrid, Comunidad de"="Madrid",
+  "14 Murcia, Región de"="Murcia",
+  "15 Navarra, Comunidad Foral de"="Navarra",
+  "16 País Vasco"="País Vasco",
+  "17 Rioja, La"="La Rioja",
+  "18 Ceuta"="Ceuta",
+  "19 Melilla"="Melilla"
+  
+  
+)
 
+actividad$Comunidades.y.Ciudades.Autónomas<-recode(actividad$Comunidades.y.Ciudades.Autónomas,!!!comunidad)
+cancer_actividad<-left_join(x=actividad,y=dtcancer_largo,by=c("Comunidades.y.Ciudades.Autónomas"="Parametro"))
+cancer_actividad
+actividad_cancer<-dplyr::rename(cancer,actividad_fisica=valor.x,casos_cancer=Valor.y)
+zonasverdes_cancer
 
 #CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
 espana
 dtcancer_largo
 
 zonasverdes <-dplyr::rename(.data=espana,Comunidad.autonoma=Pueblo)
-  
+ 
 zonasverdes
+
+
+comunidades<-c(
+  Islas_baleares="Islas Baleares",
+  Islas_canarias="Canarias",
+  Castilla_y_Leon="Castilla y León",
+  Castilla_LaMancha="Castilla-La Mancha",
+  Cataluna="Cataluña",
+  Comunidad_de_Madrid="Madrid",
+  Comunidad_valenciana="Comunidad Valenciana",
+  Pais_Vasco="País Vasco",
+  La_Rioja="La Rioja"
+)
+
+zonasverdes$Comunidad.autonoma<-recode(zonasverdes$Comunidad.autonoma,!!!comunidades)
 cancer_zonasverdes<-left_join(x=zonasverdes,y=dtcancer_largo,by=c("Comunidad.autonoma"="Parametro"))
 cancer_zonasverdes
+zonasverdes_cancer<-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
+zonasverdes_cancer
