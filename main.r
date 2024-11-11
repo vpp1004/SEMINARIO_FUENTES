@@ -81,13 +81,9 @@ dtcancer_largo<-dtcancer%>%
 dtcancer_largo
 
     
-
-# Intenta leer el archivo primero
 if (file.exists(archivo)) {
   contenido <- readLines(archivo)
-  print(contenido)  # Muestra el contenido del archivo
-  
-  # Si el contenido se muestra, procede a usar fromJSON
+  print(contenido)
   casos_cancer <- fromJSON(paste(contenido, collapse = ""))
   print(casos_cancer)
 } else {
