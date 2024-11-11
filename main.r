@@ -187,3 +187,6 @@ cancer_zonasverdes<-left_join(x=zonasverdes,y=dtcancer_largo,by=c("Comunidad.aut
 cancer_zonasverdes
 zonasverdes_cancer<-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
 zonasverdes_cancer
+
+
+save.image("Objetos.RData")
