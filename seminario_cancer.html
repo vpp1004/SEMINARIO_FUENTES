@@ -376,178 +376,13 @@ library(RJSONIO)
 
 #CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
 casos_alcohol&lt;-read.px(&quot;INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px&quot;)</code></pre>
-<pre><code>## Warning in grepl(&quot;CHARSET.*ANSI&quot;, charset,
-## ignore.case = T): unable to translate
-## &#39;SUBJECT-AREA=&quot;CONSUMO DE BEBIDAS ALCOH&lt;d3&gt;LICAS&quot;;&#39;
-## to a wide string</code></pre>
-<pre><code>## Warning in grepl(&quot;CHARSET.*ANSI&quot;, charset,
-## ignore.case = T): input string 4 is invalid</code></pre>
+<pre><code>## Warning in grepl(&quot;CHARSET.*ANSI&quot;, charset, ignore.case = T): unable to translate
+## &#39;SUBJECT-AREA=&quot;CONSUMO DE BEBIDAS ALCOH&lt;d3&gt;LICAS&quot;;&#39; to a wide string</code></pre>
+<pre><code>## Warning in grepl(&quot;CHARSET.*ANSI&quot;, charset, ignore.case = T): input string 4 is invalid</code></pre>
 <pre class="r"><code>View(casos_alcohol)
 dtalcohol&lt;-as.data.frame(casos_alcohol)
-dtalcohol</code></pre>
-<pre><code>##    Consumo.de.bebidas.alcohólicas
-## 1                           TOTAL
-## 2                 Sí ha consumido
-## 3                 No ha consumido
-## 4                       No consta
-## 5                           TOTAL
-## 6                 Sí ha consumido
-## 7                 No ha consumido
-## 8                       No consta
-## 9                           TOTAL
-## 10                Sí ha consumido
-## 11                No ha consumido
-## 12                      No consta
-## 13                          TOTAL
-## 14                Sí ha consumido
-## 15                No ha consumido
-## 16                      No consta
-## 17                          TOTAL
-## 18                Sí ha consumido
-## 19                No ha consumido
-## 20                      No consta
-## 21                          TOTAL
-## 22                Sí ha consumido
-## 23                No ha consumido
-## 24                      No consta
-## 25                          TOTAL
-## 26                Sí ha consumido
-## 27                No ha consumido
-## 28                      No consta
-## 29                          TOTAL
-## 30                Sí ha consumido
-## 31                No ha consumido
-## 32                      No consta
-## 33                          TOTAL
-## 34                Sí ha consumido
-## 35                No ha consumido
-## 36                      No consta
-## 37                          TOTAL
-## 38                Sí ha consumido
-## 39                No ha consumido
-## 40                      No consta
-## 41                          TOTAL
-## 42                Sí ha consumido
-## 43                No ha consumido
-## 44                      No consta
-## 45                          TOTAL
-## 46                Sí ha consumido
-## 47                No ha consumido
-## 48                      No consta
-## 49                          TOTAL
-## 50                Sí ha consumido
-## 51                No ha consumido
-## 52                      No consta
-## 53                          TOTAL
-## 54                Sí ha consumido
-## 55                No ha consumido
-## 56                      No consta
-## 57                          TOTAL
-## 58                Sí ha consumido
-## 59                No ha consumido
-## 60                      No consta
-## 61                          TOTAL
-## 62                Sí ha consumido
-## 63                No ha consumido
-## 64                      No consta
-## 65                          TOTAL
-## 66                Sí ha consumido
-## 67                No ha consumido
-## 68                      No consta
-## 69                          TOTAL
-## 70                Sí ha consumido
-## 71                No ha consumido
-## 72                      No consta
-## 73                          TOTAL
-## 74                Sí ha consumido
-## 75                No ha consumido
-## 76                      No consta
-## 77                          TOTAL
-## 78                Sí ha consumido
-## 79                No ha consumido
-## 80                      No consta
-##                Comunidad.autónoma        Sexo   value
-## 1                  Total Nacional Ambos sexos 39974.1
-## 2                  Total Nacional Ambos sexos 26139.8
-## 3                  Total Nacional Ambos sexos 13774.4
-## 4                  Total Nacional Ambos sexos    59.9
-## 5                    01 Andalucía Ambos sexos  7096.4
-## 6                    01 Andalucía Ambos sexos  3775.2
-## 7                    01 Andalucía Ambos sexos  3305.9
-## 8                    01 Andalucía Ambos sexos    15.3
-## 9                       02 Aragón Ambos sexos  1121.4
-## 10                      02 Aragón Ambos sexos   667.3
-## 11                      02 Aragón Ambos sexos   454.1
-## 12                      02 Aragón Ambos sexos     0.0
-## 13     03 Asturias, Principado de Ambos sexos   896.9
-## 14     03 Asturias, Principado de Ambos sexos   654.1
-## 15     03 Asturias, Principado de Ambos sexos   240.0
-## 16     03 Asturias, Principado de Ambos sexos     2.7
-## 17              04 Balears, Illes Ambos sexos  1030.2
-## 18              04 Balears, Illes Ambos sexos   632.2
-## 19              04 Balears, Illes Ambos sexos   390.5
-## 20              04 Balears, Illes Ambos sexos     7.5
-## 21                    05 Canarias Ambos sexos  1936.1
-## 22                    05 Canarias Ambos sexos  1079.1
-## 23                    05 Canarias Ambos sexos   857.0
-## 24                    05 Canarias Ambos sexos     0.0
-## 25                   06 Cantabria Ambos sexos   500.1
-## 26                   06 Cantabria Ambos sexos   364.4
-## 27                   06 Cantabria Ambos sexos   132.8
-## 28                   06 Cantabria Ambos sexos     2.9
-## 29             07 Castilla y León Ambos sexos  2063.7
-## 30             07 Castilla y León Ambos sexos  1473.9
-## 31             07 Castilla y León Ambos sexos   581.2
-## 32             07 Castilla y León Ambos sexos     8.6
-## 33        08 Castilla - La Mancha Ambos sexos  1709.7
-## 34        08 Castilla - La Mancha Ambos sexos  1048.5
-## 35        08 Castilla - La Mancha Ambos sexos   661.1
-## 36        08 Castilla - La Mancha Ambos sexos     0.0
-## 37                    09 Cataluña Ambos sexos  6397.6
-## 38                    09 Cataluña Ambos sexos  4458.7
-## 39                    09 Cataluña Ambos sexos  1933.1
-## 40                    09 Cataluña Ambos sexos     5.8
-## 41        10 Comunitat Valenciana Ambos sexos  4255.3
-## 42        10 Comunitat Valenciana Ambos sexos  3058.5
-## 43        10 Comunitat Valenciana Ambos sexos  1196.8
-## 44        10 Comunitat Valenciana Ambos sexos     0.0
-## 45                 11 Extremadura Ambos sexos   904.8
-## 46                 11 Extremadura Ambos sexos   574.1
-## 47                 11 Extremadura Ambos sexos   330.7
-## 48                 11 Extremadura Ambos sexos     0.0
-## 49                     12 Galicia Ambos sexos  2360.6
-## 50                     12 Galicia Ambos sexos  1477.1
-## 51                     12 Galicia Ambos sexos   874.6
-## 52                     12 Galicia Ambos sexos     8.9
-## 53        13 Madrid, Comunidad de Ambos sexos  5649.9
-## 54        13 Madrid, Comunidad de Ambos sexos  3964.9
-## 55        13 Madrid, Comunidad de Ambos sexos  1681.9
-## 56        13 Madrid, Comunidad de Ambos sexos     3.2
-## 57           14 Murcia, Región de Ambos sexos  1242.4
-## 58           14 Murcia, Región de Ambos sexos   796.0
-## 59           14 Murcia, Región de Ambos sexos   446.4
-## 60           14 Murcia, Región de Ambos sexos     0.0
-## 61 15 Navarra, Comunidad Foral de Ambos sexos   547.4
-## 62 15 Navarra, Comunidad Foral de Ambos sexos   424.0
-## 63 15 Navarra, Comunidad Foral de Ambos sexos   121.8
-## 64 15 Navarra, Comunidad Foral de Ambos sexos     1.6
-## 65                  16 País Vasco Ambos sexos  1863.3
-## 66                  16 País Vasco Ambos sexos  1451.0
-## 67                  16 País Vasco Ambos sexos   410.8
-## 68                  16 País Vasco Ambos sexos     1.4
-## 69                   17 Rioja, La Ambos sexos   267.4
-## 70                   17 Rioja, La Ambos sexos   192.7
-## 71                   17 Rioja, La Ambos sexos    72.7
-## 72                   17 Rioja, La Ambos sexos     2.0
-## 73                       18 Ceuta Ambos sexos    66.8
-## 74                       18 Ceuta Ambos sexos    27.0
-## 75                       18 Ceuta Ambos sexos    39.8
-## 76                       18 Ceuta Ambos sexos     0.0
-## 77                     19 Melilla Ambos sexos    64.3
-## 78                     19 Melilla Ambos sexos    21.1
-## 79                     19 Melilla Ambos sexos    43.2
-## 80                     19 Melilla Ambos sexos     0.0</code></pre>
-<pre class="r"><code>alcohol&lt;-select(.data = dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma)
+dtalcohol
+alcohol&lt;-select(.data = dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma)
 if (&quot;Sí ha consumido&quot; %in% dtalcohol$Consumo.de.bebidas.alcohólicas) {
     dataalcohol &lt;- dtalcohol %&gt;%
     filter(Consumo.de.bebidas.alcohólicas == &quot;Sí ha consumido&quot;) %&gt;%
@@ -555,29 +390,9 @@ if (&quot;Sí ha consumido&quot; %in% dtalcohol$Consumo.de.bebidas.alcohólicas)
 }
 
 
-dataalcohol</code></pre>
-<pre><code>##      value             Comunidad.autónoma
-## 1  26139.8                 Total Nacional
-## 2   3775.2                   01 Andalucía
-## 3    667.3                      02 Aragón
-## 4    654.1     03 Asturias, Principado de
-## 5    632.2              04 Balears, Illes
-## 6   1079.1                    05 Canarias
-## 7    364.4                   06 Cantabria
-## 8   1473.9             07 Castilla y León
-## 9   1048.5        08 Castilla - La Mancha
-## 10  4458.7                    09 Cataluña
-## 11  3058.5        10 Comunitat Valenciana
-## 12   574.1                 11 Extremadura
-## 13  1477.1                     12 Galicia
-## 14  3964.9        13 Madrid, Comunidad de
-## 15   796.0           14 Murcia, Región de
-## 16   424.0 15 Navarra, Comunidad Foral de
-## 17  1451.0                  16 País Vasco
-## 18   192.7                   17 Rioja, La
-## 19    27.0                       18 Ceuta
-## 20    21.1                     19 Melilla</code></pre>
-<pre class="r"><code>str(dtalcohol)</code></pre>
+dataalcohol
+
+str(dtalcohol)</code></pre>
 <pre><code>## &#39;data.frame&#39;:    80 obs. of  4 variables:
 ##  $ Consumo.de.bebidas.alcohólicas: Factor w/ 4 levels &quot;TOTAL&quot;,&quot;Sí ha consumido&quot;,..: 1 2 3 4 1 2 3 4 1 2 ...
 ##  $ Comunidad.autónoma            : Factor w/ 20 levels &quot;Total Nacional&quot;,..: 1 1 1 1 2 2 2 2 3 3 ...
@@ -1865,56 +1680,8 @@ archivo</code></pre>
 <pre class="r"><code>typeof(archivo)</code></pre>
 <pre><code>## [1] &quot;list&quot;</code></pre>
 <pre class="r"><code>dtcancer&lt;-as.data.frame(archivo$Respuesta$Datos$Metricas[[1]]$Datos)
-dtcancer</code></pre>
-<pre><code>##   Agno Periodo Parametro Valor     Estado Notas
-## 1 2023     Año Andalucía 49387 Definitivo      
-##   Agno.1 Periodo.1 Parametro.1 Valor.1   Estado.1
-## 1   2023       Año      Aragón    8889 Definitivo
-##   Notas.1 Agno.2 Periodo.2 Parametro.2 Valor.2
-## 1           2023       Año    Asturias    7762
-##     Estado.2 Notas.2 Agno.3 Periodo.3 Parametro.3
-## 1 Definitivo           2023       Año    Canarias
-##   Valor.3   Estado.3 Notas.3 Agno.4 Periodo.4
-## 1   12739 Definitivo           2023       Año
-##   Parametro.4 Valor.4   Estado.4 Notas.4 Agno.5
-## 1   Cantabria    4041 Definitivo           2023
-##   Periodo.5     Parametro.5 Valor.5   Estado.5
-## 1       Año Castilla y León   18188 Definitivo
-##   Notas.5 Agno.6 Periodo.6        Parametro.6 Valor.6
-## 1           2023       Año Castilla-La Mancha   12767
-##     Estado.6 Notas.6 Agno.7 Periodo.7 Parametro.7
-## 1 Definitivo           2023       Año    Cataluña
-##   Valor.7   Estado.7 Notas.7 Agno.8 Periodo.8
-## 1   46630 Definitivo           2023       Año
-##   Parametro.8 Valor.8   Estado.8 Notas.8 Agno.9
-## 1       Ceuta     380 Definitivo           2023
-##   Periodo.9          Parametro.9 Valor.9   Estado.9
-## 1       Año Comunidad Valenciana   31928 Definitivo
-##   Notas.9 Agno.10 Periodo.10 Parametro.10 Valor.10
-## 1            2023        Año  Extremadura     7032
-##    Estado.10 Notas.10 Agno.11 Periodo.11 Parametro.11
-## 1 Definitivo             2023        Año      Galicia
-##   Valor.11  Estado.11 Notas.11 Agno.12 Periodo.12
-## 1    20135 Definitivo             2023        Año
-##     Parametro.12 Valor.12  Estado.12 Notas.12 Agno.13
-## 1 Islas Baleares     6511 Definitivo             2023
-##   Periodo.13 Parametro.13 Valor.13  Estado.13
-## 1        Año     La Rioja     2115 Definitivo
-##   Notas.13 Agno.14 Periodo.14 Parametro.14 Valor.14
-## 1             2023        Año       Madrid    39203
-##    Estado.14 Notas.14 Agno.15 Periodo.15 Parametro.15
-## 1 Definitivo             2023        Año      Melilla
-##   Valor.15  Estado.15 Notas.15 Agno.16 Periodo.16
-## 1      363 Definitivo             2023        Año
-##   Parametro.16 Valor.16  Estado.16 Notas.16 Agno.17
-## 1       Murcia     8259 Definitivo             2023
-##   Periodo.17 Parametro.17 Valor.17  Estado.17
-## 1        Año      Navarra     4175 Definitivo
-##   Notas.17 Agno.18 Periodo.18 Parametro.18 Valor.18
-## 1             2023        Año   País Vasco    15170
-##    Estado.18 Notas.18
-## 1 Definitivo</code></pre>
-<pre class="r"><code>str(dtcancer)</code></pre>
+dtcancer
+str(dtcancer)</code></pre>
 <pre><code>## &#39;data.frame&#39;:    1 obs. of  114 variables:
 ##  $ Agno        : num 2023
 ##  $ Periodo     : chr &quot;Año&quot;
@@ -2023,73 +1790,16 @@ dtcancer</code></pre>
     names_pattern = &quot;(.*?)(\\.\\d+)?$&quot;
   )%&gt;%
   select(Parametro,Valor)
-dtcancer_largo</code></pre>
-<pre><code>## # A tibble: 19 × 2
-##    Parametro            Valor
-##    &lt;chr&gt;                &lt;dbl&gt;
-##  1 Andalucía            49387
-##  2 Aragón                8889
-##  3 Asturias              7762
-##  4 Canarias             12739
-##  5 Cantabria             4041
-##  6 Castilla y León      18188
-##  7 Castilla-La Mancha   12767
-##  8 Cataluña             46630
-##  9 Ceuta                  380
-## 10 Comunidad Valenciana 31928
-## 11 Extremadura           7032
-## 12 Galicia              20135
-## 13 Islas Baleares        6511
-## 14 La Rioja              2115
-## 15 Madrid               39203
-## 16 Melilla                363
-## 17 Murcia                8259
-## 18 Navarra               4175
-## 19 País Vasco           15170</code></pre>
-<pre class="r"><code>#CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
+dtcancer_largo
+
+
+
+#CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
 load(&quot;Objetos.RData&quot;)
-espana</code></pre>
-<pre><code>##                  Pueblo areasverdes   arboles
-## 1             Andalucia   0.9999539 0.9998028
-## 2                Aragon   0.9999421 0.9996804
-## 3              Asturias   0.9999855 0.9998787
-## 4        Islas_baleares   0.9999831 0.9998385
-## 5        Islas_canarias   0.9999455 0.9998262
-## 6             Cantabria   0.9999890 0.9998868
-## 7       Castilla_y_Leon   0.9999738 0.9372393
-## 8     Castilla_LaMancha   0.9999657 0.8886729
-## 9              Cataluna   0.9999537 0.8332107
-## 10          Extremadura   0.9999383 0.9998161
-## 11              Galicia   0.9999730 0.9997962
-## 12  Comunidad_de_Madrid   0.9999890 0.9999270
-## 13               Murcia   0.9999936 0.9998647
-## 14              Navarra   0.9999689 0.9997483
-## 15           Pais_Vasco   0.9999926 0.9998350
-## 16             La_Rioja   0.9999684 0.9996526
-## 17 Comunidad_valenciana   0.9999855 0.9998640
-## 18                Ceuta   0.9999817 0.9998547
-## 19              Melilla   0.9999817 0.9998547
-##    porcentajeverde
-## 1        0.8320185
-## 2        0.7636759
-## 3        0.8087230
-## 4        0.8078401
-## 5        0.8521385
-## 6        0.8445879
-## 7        0.7810239
-## 8        0.7934108
-## 9        0.8137199
-## 10       0.8558643
-## 11       0.7800792
-## 12       0.8381101
-## 13       0.8127904
-## 14       0.7445773
-## 15       0.7783241
-## 16       0.7494397
-## 17       0.8034498
-## 18       0.9473913
-## 19       0.9473913</code></pre>
-<pre class="r"><code>#CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
+espana
+
+
+#CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
 actividadfisica&lt;-&quot;INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px&quot;
 datosactividad&lt;-read.px(actividadfisica)
 datosactividad</code></pre>
@@ -2110,9 +1820,8 @@ datosactividad</code></pre>
 ## 
 ## $CODES
 ## $CODES$Comunidades.y.Ciudades.Autónomas
-##  [1] &quot;CA00&quot; &quot;CA01&quot; &quot;CA02&quot; &quot;CA03&quot; &quot;CA04&quot; &quot;CA05&quot; &quot;CA06&quot;
-##  [8] &quot;CA07&quot; &quot;CA08&quot; &quot;CA09&quot; &quot;CA10&quot; &quot;CA11&quot; &quot;CA12&quot; &quot;CA13&quot;
-## [15] &quot;CA14&quot; &quot;CA15&quot; &quot;CA16&quot; &quot;CA17&quot; &quot;CA18&quot; &quot;CA19&quot;
+##  [1] &quot;CA00&quot; &quot;CA01&quot; &quot;CA02&quot; &quot;CA03&quot; &quot;CA04&quot; &quot;CA05&quot; &quot;CA06&quot; &quot;CA07&quot; &quot;CA08&quot; &quot;CA09&quot; &quot;CA10&quot; &quot;CA11&quot; &quot;CA12&quot;
+## [14] &quot;CA13&quot; &quot;CA14&quot; &quot;CA15&quot; &quot;CA16&quot; &quot;CA17&quot; &quot;CA18&quot; &quot;CA19&quot;
 ## 
 ## 
 ## $CONTENTS
@@ -2217,26 +1926,16 @@ datosactividad</code></pre>
 ## 
 ## $VALUES
 ## $VALUES$Comunidades.y.Ciudades.Autónomas
-##  [1] &quot;Total Nacional&quot;                
-##  [2] &quot;01 Andalucía&quot;                  
-##  [3] &quot;02 Aragón&quot;                     
-##  [4] &quot;03 Asturias, Principado de&quot;    
-##  [5] &quot;04 Balears, Illes&quot;             
-##  [6] &quot;05 Canarias&quot;                   
-##  [7] &quot;06 Cantabria&quot;                  
-##  [8] &quot;07 Castilla y León&quot;            
-##  [9] &quot;08 Castilla - La Mancha&quot;       
-## [10] &quot;09 Cataluña&quot;                   
-## [11] &quot;10 Comunitat Valenciana&quot;       
-## [12] &quot;11 Extremadura&quot;                
-## [13] &quot;12 Galicia&quot;                    
-## [14] &quot;13 Madrid, Comunidad de&quot;       
-## [15] &quot;14 Murcia, Región de&quot;          
-## [16] &quot;15 Navarra, Comunidad Foral de&quot;
-## [17] &quot;16 País Vasco&quot;                 
-## [18] &quot;17 Rioja, La&quot;                  
-## [19] &quot;18 Ceuta&quot;                      
-## [20] &quot;19 Melilla&quot;                    
+##  [1] &quot;Total Nacional&quot;                 &quot;01 Andalucía&quot;                  
+##  [3] &quot;02 Aragón&quot;                      &quot;03 Asturias, Principado de&quot;    
+##  [5] &quot;04 Balears, Illes&quot;              &quot;05 Canarias&quot;                   
+##  [7] &quot;06 Cantabria&quot;                   &quot;07 Castilla y León&quot;            
+##  [9] &quot;08 Castilla - La Mancha&quot;        &quot;09 Cataluña&quot;                   
+## [11] &quot;10 Comunitat Valenciana&quot;        &quot;11 Extremadura&quot;                
+## [13] &quot;12 Galicia&quot;                     &quot;13 Madrid, Comunidad de&quot;       
+## [15] &quot;14 Murcia, Región de&quot;           &quot;15 Navarra, Comunidad Foral de&quot;
+## [17] &quot;16 País Vasco&quot;                  &quot;17 Rioja, La&quot;                  
+## [19] &quot;18 Ceuta&quot;                       &quot;19 Melilla&quot;                    
 ## 
 ## $VALUES$periodo
 ## [1] &quot;2022&quot;
@@ -2246,202 +1945,34 @@ datosactividad</code></pre>
 ## [1] &quot;px&quot;</code></pre>
 <pre class="r"><code>dtactividad&lt;-as.data.frame(datosactividad)
 view(dtactividad)
-dtactividad</code></pre>
-<pre><code>##    periodo Comunidades.y.Ciudades.Autónomas value
-## 1     2022                   Total Nacional  37.7
-## 2     2022                     01 Andalucía  35.3
-## 3     2022                        02 Aragón  42.2
-## 4     2022       03 Asturias, Principado de  43.7
-## 5     2022                04 Balears, Illes  36.2
-## 6     2022                      05 Canarias  35.7
-## 7     2022                     06 Cantabria  42.2
-## 8     2022               07 Castilla y León  43.7
-## 9     2022          08 Castilla - La Mancha  40.0
-## 10    2022                      09 Cataluña  35.3
-## 11    2022          10 Comunitat Valenciana  34.2
-## 12    2022                   11 Extremadura  44.1
-## 13    2022                       12 Galicia  35.0
-## 14    2022          13 Madrid, Comunidad de  41.5
-## 15    2022             14 Murcia, Región de  28.6
-## 16    2022   15 Navarra, Comunidad Foral de  42.3
-## 17    2022                    16 País Vasco  42.3
-## 18    2022                     17 Rioja, La  41.2
-## 19    2022                         18 Ceuta  41.9
-## 20    2022                       19 Melilla  45.7</code></pre>
-<pre class="r"><code>actividad&lt;-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
-actividad</code></pre>
-<pre><code>##    Comunidades.y.Ciudades.Autónomas value
-## 1                    Total Nacional  37.7
-## 2                      01 Andalucía  35.3
-## 3                         02 Aragón  42.2
-## 4        03 Asturias, Principado de  43.7
-## 5                 04 Balears, Illes  36.2
-## 6                       05 Canarias  35.7
-## 7                      06 Cantabria  42.2
-## 8                07 Castilla y León  43.7
-## 9           08 Castilla - La Mancha  40.0
-## 10                      09 Cataluña  35.3
-## 11          10 Comunitat Valenciana  34.2
-## 12                   11 Extremadura  44.1
-## 13                       12 Galicia  35.0
-## 14          13 Madrid, Comunidad de  41.5
-## 15             14 Murcia, Región de  28.6
-## 16   15 Navarra, Comunidad Foral de  42.3
-## 17                    16 País Vasco  42.3
-## 18                     17 Rioja, La  41.2
-## 19                         18 Ceuta  41.9
-## 20                       19 Melilla  45.7</code></pre>
-<pre class="r"><code>save.image(&quot;Objetos.RData&quot;)
+dtactividad
+actividad&lt;-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
+actividad
+
+save.image(&quot;Objetos.RData&quot;)
 load(&quot;Objetos.RData&quot;)
 
 
 
 #CASOS DE CANCER INFLUIDOS POR ALCOHHOL
-dataalcohol</code></pre>
-<pre><code>##      value             Comunidad.autónoma
-## 1  26139.8                 Total Nacional
-## 2   3775.2                   01 Andalucía
-## 3    667.3                      02 Aragón
-## 4    654.1     03 Asturias, Principado de
-## 5    632.2              04 Balears, Illes
-## 6   1079.1                    05 Canarias
-## 7    364.4                   06 Cantabria
-## 8   1473.9             07 Castilla y León
-## 9   1048.5        08 Castilla - La Mancha
-## 10  4458.7                    09 Cataluña
-## 11  3058.5        10 Comunitat Valenciana
-## 12   574.1                 11 Extremadura
-## 13  1477.1                     12 Galicia
-## 14  3964.9        13 Madrid, Comunidad de
-## 15   796.0           14 Murcia, Región de
-## 16   424.0 15 Navarra, Comunidad Foral de
-## 17  1451.0                  16 País Vasco
-## 18   192.7                   17 Rioja, La
-## 19    27.0                       18 Ceuta
-## 20    21.1                     19 Melilla</code></pre>
-<pre class="r"><code>dtcancer_largo</code></pre>
-<pre><code>## # A tibble: 19 × 2
-##    Parametro            Valor
-##    &lt;chr&gt;                &lt;dbl&gt;
-##  1 Andalucía            49387
-##  2 Aragón                8889
-##  3 Asturias              7762
-##  4 Canarias             12739
-##  5 Cantabria             4041
-##  6 Castilla y León      18188
-##  7 Castilla-La Mancha   12767
-##  8 Cataluña             46630
-##  9 Ceuta                  380
-## 10 Comunidad Valenciana 31928
-## 11 Extremadura           7032
-## 12 Galicia              20135
-## 13 Islas Baleares        6511
-## 14 La Rioja              2115
-## 15 Madrid               39203
-## 16 Melilla                363
-## 17 Murcia                8259
-## 18 Navarra               4175
-## 19 País Vasco           15170</code></pre>
-<pre class="r"><code>alcohol &lt;- dataalcohol %&gt;%
+dataalcohol
+dtcancer_largo
+alcohol &lt;- dataalcohol %&gt;%
   mutate(Comunidad.autónoma = str_remove(Comunidad.autónoma, &quot;^\\d+\\s+&quot;)) %&gt;%
   mutate(Comunidad.autónoma = str_replace(Comunidad.autónoma, &quot;,.*&quot;, &quot;&quot;)) %&gt;% 
   mutate(Comunidad.autónoma = str_trim(Comunidad.autónoma))
 alcohol_cancer&lt;-left_join(x=alcohol,y=dtcancer_largo,by=c(&quot;Comunidad.autónoma&quot;=&quot;Parametro&quot;))
-alcohol_cancer</code></pre>
-<pre><code>##      value   Comunidad.autónoma Valor
-## 1  26139.8       Total Nacional    NA
-## 2   3775.2            Andalucía 49387
-## 3    667.3               Aragón  8889
-## 4    654.1             Asturias  7762
-## 5    632.2              Balears    NA
-## 6   1079.1             Canarias 12739
-## 7    364.4            Cantabria  4041
-## 8   1473.9      Castilla y León 18188
-## 9   1048.5 Castilla - La Mancha    NA
-## 10  4458.7             Cataluña 46630
-## 11  3058.5 Comunitat Valenciana    NA
-## 12   574.1          Extremadura  7032
-## 13  1477.1              Galicia 20135
-## 14  3964.9               Madrid 39203
-## 15   796.0               Murcia  8259
-## 16   424.0              Navarra  4175
-## 17  1451.0           País Vasco 15170
-## 18   192.7                Rioja    NA
-## 19    27.0                Ceuta   380
-## 20    21.1              Melilla   363</code></pre>
-<pre class="r"><code>cancer_alcohol&lt;-dplyr::rename(alcohol_cancer,casos_cancer=Valor,casos_alcohol=value)
+alcohol_cancer
+cancer_alcohol&lt;-dplyr::rename(alcohol_cancer,casos_cancer=Valor,casos_alcohol=value)
 colnames(cancer_alcohol)  </code></pre>
-<pre><code>## [1] &quot;casos_alcohol&quot;      &quot;Comunidad.autónoma&quot;
-## [3] &quot;casos_cancer&quot;</code></pre>
-<pre class="r"><code>cancer_alcohol</code></pre>
-<pre><code>##    casos_alcohol   Comunidad.autónoma casos_cancer
-## 1        26139.8       Total Nacional           NA
-## 2         3775.2            Andalucía        49387
-## 3          667.3               Aragón         8889
-## 4          654.1             Asturias         7762
-## 5          632.2              Balears           NA
-## 6         1079.1             Canarias        12739
-## 7          364.4            Cantabria         4041
-## 8         1473.9      Castilla y León        18188
-## 9         1048.5 Castilla - La Mancha           NA
-## 10        4458.7             Cataluña        46630
-## 11        3058.5 Comunitat Valenciana           NA
-## 12         574.1          Extremadura         7032
-## 13        1477.1              Galicia        20135
-## 14        3964.9               Madrid        39203
-## 15         796.0               Murcia         8259
-## 16         424.0              Navarra         4175
-## 17        1451.0           País Vasco        15170
-## 18         192.7                Rioja           NA
-## 19          27.0                Ceuta          380
-## 20          21.1              Melilla          363</code></pre>
-<pre class="r"><code>#CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
-actividad</code></pre>
-<pre><code>##    Comunidades.y.Ciudades.Autónomas value
-## 1                    Total Nacional  37.7
-## 2                      01 Andalucía  35.3
-## 3                         02 Aragón  42.2
-## 4        03 Asturias, Principado de  43.7
-## 5                 04 Balears, Illes  36.2
-## 6                       05 Canarias  35.7
-## 7                      06 Cantabria  42.2
-## 8                07 Castilla y León  43.7
-## 9           08 Castilla - La Mancha  40.0
-## 10                      09 Cataluña  35.3
-## 11          10 Comunitat Valenciana  34.2
-## 12                   11 Extremadura  44.1
-## 13                       12 Galicia  35.0
-## 14          13 Madrid, Comunidad de  41.5
-## 15             14 Murcia, Región de  28.6
-## 16   15 Navarra, Comunidad Foral de  42.3
-## 17                    16 País Vasco  42.3
-## 18                     17 Rioja, La  41.2
-## 19                         18 Ceuta  41.9
-## 20                       19 Melilla  45.7</code></pre>
-<pre class="r"><code>dtcancer_largo</code></pre>
-<pre><code>## # A tibble: 19 × 2
-##    Parametro            Valor
-##    &lt;chr&gt;                &lt;dbl&gt;
-##  1 Andalucía            49387
-##  2 Aragón                8889
-##  3 Asturias              7762
-##  4 Canarias             12739
-##  5 Cantabria             4041
-##  6 Castilla y León      18188
-##  7 Castilla-La Mancha   12767
-##  8 Cataluña             46630
-##  9 Ceuta                  380
-## 10 Comunidad Valenciana 31928
-## 11 Extremadura           7032
-## 12 Galicia              20135
-## 13 Islas Baleares        6511
-## 14 La Rioja              2115
-## 15 Madrid               39203
-## 16 Melilla                363
-## 17 Murcia                8259
-## 18 Navarra               4175
-## 19 País Vasco           15170</code></pre>
-<pre class="r"><code>cancer_actividad&lt;-dplyr::rename(alcohol_cancer,casos_cancer=Valor,porcentaje_actividad=value)
+<pre><code>## [1] &quot;casos_alcohol&quot;      &quot;Comunidad.autónoma&quot; &quot;casos_cancer&quot;</code></pre>
+<pre class="r"><code>cancer_alcohol
+
+
+#CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
+actividad
+dtcancer_largo
+cancer_actividad&lt;-dplyr::rename(alcohol_cancer,casos_cancer=Valor,porcentaje_actividad=value)
 comunidad&lt;-c(
   &quot;01 Andalucía&quot;=&quot;Andalucía&quot;,
   &quot;02 Aragón&quot; =&quot;Aragón&quot;,
@@ -2468,179 +1999,20 @@ comunidad&lt;-c(
 
 actividad$Comunidades.y.Ciudades.Autónomas&lt;-recode(actividad$Comunidades.y.Ciudades.Autónomas,!!!comunidad)
 cancer_actividad&lt;-left_join(x=actividad,y=dtcancer_largo,by=c(&quot;Comunidades.y.Ciudades.Autónomas&quot;=&quot;Parametro&quot;))
-cancer_actividad</code></pre>
-<pre><code>##    Comunidades.y.Ciudades.Autónomas value Valor
-## 1                    Total Nacional  37.7    NA
-## 2                         Andalucía  35.3 49387
-## 3                            Aragón  42.2  8889
-## 4                          Asturias  43.7  7762
-## 5                    Islas Baleares  36.2  6511
-## 6                          Canarias  35.7 12739
-## 7                         Cantabria  42.2  4041
-## 8                   Castilla y León  43.7 18188
-## 9                Castilla_La Mancha  40.0    NA
-## 10                         Cataluña  35.3 46630
-## 11             Comunidad Valenciana  34.2 31928
-## 12                      Extremadura  44.1  7032
-## 13                          Galicia  35.0 20135
-## 14                           Madrid  41.5 39203
-## 15                           Murcia  28.6  8259
-## 16                          Navarra  42.3  4175
-## 17                       País Vasco  42.3 15170
-## 18                         La Rioja  41.2  2115
-## 19                            Ceuta  41.9   380
-## 20                          Melilla  45.7   363</code></pre>
-<pre class="r"><code>actividad_cancer&lt;-dplyr::rename(cancer_actividad,actividad_fisica=value,casos_cancer=Valor)
-zonasverdes_cancer</code></pre>
-<pre><code>##      Comunidad.autonoma areasverdes   arboles
-## 1             Andalucia   0.9999539 0.9998028
-## 2                Aragon   0.9999421 0.9996804
-## 3              Asturias   0.9999855 0.9998787
-## 4        Islas Baleares   0.9999831 0.9998385
-## 5              Canarias   0.9999455 0.9998262
-## 6             Cantabria   0.9999890 0.9998868
-## 7       Castilla y León   0.9999738 0.9372393
-## 8    Castilla-La Mancha   0.9999657 0.8886729
-## 9              Cataluña   0.9999537 0.8332107
-## 10          Extremadura   0.9999383 0.9998161
-## 11              Galicia   0.9999730 0.9997962
-## 12               Madrid   0.9999890 0.9999270
-## 13               Murcia   0.9999936 0.9998647
-## 14              Navarra   0.9999689 0.9997483
-## 15           País Vasco   0.9999926 0.9998350
-## 16             La Rioja   0.9999684 0.9996526
-## 17 Comunidad Valenciana   0.9999855 0.9998640
-## 18                Ceuta   0.9999817 0.9998547
-## 19              Melilla   0.9999817 0.9998547
-##    porcentajeverde casos_cancer
-## 1        0.8320185           NA
-## 2        0.7636759           NA
-## 3        0.8087230         7762
-## 4        0.8078401         6511
-## 5        0.8521385        12739
-## 6        0.8445879         4041
-## 7        0.7810239        18188
-## 8        0.7934108        12767
-## 9        0.8137199        46630
-## 10       0.8558643         7032
-## 11       0.7800792        20135
-## 12       0.8381101        39203
-## 13       0.8127904         8259
-## 14       0.7445773         4175
-## 15       0.7783241        15170
-## 16       0.7494397         2115
-## 17       0.8034498        31928
-## 18       0.9473913          380
-## 19       0.9473913          363</code></pre>
-<pre class="r"><code>#CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
-espana</code></pre>
-<pre><code>##                  Pueblo areasverdes   arboles
-## 1             Andalucia   0.9999539 0.9998028
-## 2                Aragon   0.9999421 0.9996804
-## 3              Asturias   0.9999855 0.9998787
-## 4        Islas_baleares   0.9999831 0.9998385
-## 5        Islas_canarias   0.9999455 0.9998262
-## 6             Cantabria   0.9999890 0.9998868
-## 7       Castilla_y_Leon   0.9999738 0.9372393
-## 8     Castilla_LaMancha   0.9999657 0.8886729
-## 9              Cataluna   0.9999537 0.8332107
-## 10          Extremadura   0.9999383 0.9998161
-## 11              Galicia   0.9999730 0.9997962
-## 12  Comunidad_de_Madrid   0.9999890 0.9999270
-## 13               Murcia   0.9999936 0.9998647
-## 14              Navarra   0.9999689 0.9997483
-## 15           Pais_Vasco   0.9999926 0.9998350
-## 16             La_Rioja   0.9999684 0.9996526
-## 17 Comunidad_valenciana   0.9999855 0.9998640
-## 18                Ceuta   0.9999817 0.9998547
-## 19              Melilla   0.9999817 0.9998547
-##    porcentajeverde
-## 1        0.8320185
-## 2        0.7636759
-## 3        0.8087230
-## 4        0.8078401
-## 5        0.8521385
-## 6        0.8445879
-## 7        0.7810239
-## 8        0.7934108
-## 9        0.8137199
-## 10       0.8558643
-## 11       0.7800792
-## 12       0.8381101
-## 13       0.8127904
-## 14       0.7445773
-## 15       0.7783241
-## 16       0.7494397
-## 17       0.8034498
-## 18       0.9473913
-## 19       0.9473913</code></pre>
-<pre class="r"><code>dtcancer_largo</code></pre>
-<pre><code>## # A tibble: 19 × 2
-##    Parametro            Valor
-##    &lt;chr&gt;                &lt;dbl&gt;
-##  1 Andalucía            49387
-##  2 Aragón                8889
-##  3 Asturias              7762
-##  4 Canarias             12739
-##  5 Cantabria             4041
-##  6 Castilla y León      18188
-##  7 Castilla-La Mancha   12767
-##  8 Cataluña             46630
-##  9 Ceuta                  380
-## 10 Comunidad Valenciana 31928
-## 11 Extremadura           7032
-## 12 Galicia              20135
-## 13 Islas Baleares        6511
-## 14 La Rioja              2115
-## 15 Madrid               39203
-## 16 Melilla                363
-## 17 Murcia                8259
-## 18 Navarra               4175
-## 19 País Vasco           15170</code></pre>
-<pre class="r"><code>zonasverdes &lt;-dplyr::rename(.data=espana,Comunidad.autonoma=Pueblo)
+cancer_actividad
+actividad_cancer&lt;-dplyr::rename(cancer_actividad,actividad_fisica=value,casos_cancer=Valor)
+zonasverdes_cancer
+
+#CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
+espana
+dtcancer_largo
+
+zonasverdes &lt;-dplyr::rename(.data=espana,Comunidad.autonoma=Pueblo)
  
-zonasverdes</code></pre>
-<pre><code>##      Comunidad.autonoma areasverdes   arboles
-## 1             Andalucia   0.9999539 0.9998028
-## 2                Aragon   0.9999421 0.9996804
-## 3              Asturias   0.9999855 0.9998787
-## 4        Islas_baleares   0.9999831 0.9998385
-## 5        Islas_canarias   0.9999455 0.9998262
-## 6             Cantabria   0.9999890 0.9998868
-## 7       Castilla_y_Leon   0.9999738 0.9372393
-## 8     Castilla_LaMancha   0.9999657 0.8886729
-## 9              Cataluna   0.9999537 0.8332107
-## 10          Extremadura   0.9999383 0.9998161
-## 11              Galicia   0.9999730 0.9997962
-## 12  Comunidad_de_Madrid   0.9999890 0.9999270
-## 13               Murcia   0.9999936 0.9998647
-## 14              Navarra   0.9999689 0.9997483
-## 15           Pais_Vasco   0.9999926 0.9998350
-## 16             La_Rioja   0.9999684 0.9996526
-## 17 Comunidad_valenciana   0.9999855 0.9998640
-## 18                Ceuta   0.9999817 0.9998547
-## 19              Melilla   0.9999817 0.9998547
-##    porcentajeverde
-## 1        0.8320185
-## 2        0.7636759
-## 3        0.8087230
-## 4        0.8078401
-## 5        0.8521385
-## 6        0.8445879
-## 7        0.7810239
-## 8        0.7934108
-## 9        0.8137199
-## 10       0.8558643
-## 11       0.7800792
-## 12       0.8381101
-## 13       0.8127904
-## 14       0.7445773
-## 15       0.7783241
-## 16       0.7494397
-## 17       0.8034498
-## 18       0.9473913
-## 19       0.9473913</code></pre>
-<pre class="r"><code>comunidades&lt;-c(
+zonasverdes
+
+
+comunidades&lt;-c(
   Islas_baleares=&quot;Islas Baleares&quot;,
   Islas_canarias=&quot;Canarias&quot;,
   Castilla_y_Leon=&quot;Castilla y León&quot;,
@@ -2654,90 +2026,12 @@ zonasverdes</code></pre>
 
 zonasverdes$Comunidad.autonoma&lt;-recode(zonasverdes$Comunidad.autonoma,!!!comunidades)
 cancer_zonasverdes&lt;-left_join(x=zonasverdes,y=dtcancer_largo,by=c(&quot;Comunidad.autonoma&quot;=&quot;Parametro&quot;))
-cancer_zonasverdes</code></pre>
-<pre><code>##      Comunidad.autonoma areasverdes   arboles
-## 1             Andalucia   0.9999539 0.9998028
-## 2                Aragon   0.9999421 0.9996804
-## 3              Asturias   0.9999855 0.9998787
-## 4        Islas Baleares   0.9999831 0.9998385
-## 5              Canarias   0.9999455 0.9998262
-## 6             Cantabria   0.9999890 0.9998868
-## 7       Castilla y León   0.9999738 0.9372393
-## 8    Castilla-La Mancha   0.9999657 0.8886729
-## 9              Cataluña   0.9999537 0.8332107
-## 10          Extremadura   0.9999383 0.9998161
-## 11              Galicia   0.9999730 0.9997962
-## 12               Madrid   0.9999890 0.9999270
-## 13               Murcia   0.9999936 0.9998647
-## 14              Navarra   0.9999689 0.9997483
-## 15           País Vasco   0.9999926 0.9998350
-## 16             La Rioja   0.9999684 0.9996526
-## 17 Comunidad Valenciana   0.9999855 0.9998640
-## 18                Ceuta   0.9999817 0.9998547
-## 19              Melilla   0.9999817 0.9998547
-##    porcentajeverde Valor
-## 1        0.8320185    NA
-## 2        0.7636759    NA
-## 3        0.8087230  7762
-## 4        0.8078401  6511
-## 5        0.8521385 12739
-## 6        0.8445879  4041
-## 7        0.7810239 18188
-## 8        0.7934108 12767
-## 9        0.8137199 46630
-## 10       0.8558643  7032
-## 11       0.7800792 20135
-## 12       0.8381101 39203
-## 13       0.8127904  8259
-## 14       0.7445773  4175
-## 15       0.7783241 15170
-## 16       0.7494397  2115
-## 17       0.8034498 31928
-## 18       0.9473913   380
-## 19       0.9473913   363</code></pre>
-<pre class="r"><code>zonasverdes_cancer&lt;-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
-zonasverdes_cancer</code></pre>
-<pre><code>##      Comunidad.autonoma areasverdes   arboles
-## 1             Andalucia   0.9999539 0.9998028
-## 2                Aragon   0.9999421 0.9996804
-## 3              Asturias   0.9999855 0.9998787
-## 4        Islas Baleares   0.9999831 0.9998385
-## 5              Canarias   0.9999455 0.9998262
-## 6             Cantabria   0.9999890 0.9998868
-## 7       Castilla y León   0.9999738 0.9372393
-## 8    Castilla-La Mancha   0.9999657 0.8886729
-## 9              Cataluña   0.9999537 0.8332107
-## 10          Extremadura   0.9999383 0.9998161
-## 11              Galicia   0.9999730 0.9997962
-## 12               Madrid   0.9999890 0.9999270
-## 13               Murcia   0.9999936 0.9998647
-## 14              Navarra   0.9999689 0.9997483
-## 15           País Vasco   0.9999926 0.9998350
-## 16             La Rioja   0.9999684 0.9996526
-## 17 Comunidad Valenciana   0.9999855 0.9998640
-## 18                Ceuta   0.9999817 0.9998547
-## 19              Melilla   0.9999817 0.9998547
-##    porcentajeverde casos_cancer
-## 1        0.8320185           NA
-## 2        0.7636759           NA
-## 3        0.8087230         7762
-## 4        0.8078401         6511
-## 5        0.8521385        12739
-## 6        0.8445879         4041
-## 7        0.7810239        18188
-## 8        0.7934108        12767
-## 9        0.8137199        46630
-## 10       0.8558643         7032
-## 11       0.7800792        20135
-## 12       0.8381101        39203
-## 13       0.8127904         8259
-## 14       0.7445773         4175
-## 15       0.7783241        15170
-## 16       0.7494397         2115
-## 17       0.8034498        31928
-## 18       0.9473913          380
-## 19       0.9473913          363</code></pre>
-<pre class="r"><code>save.image(&quot;Objetos.RData&quot;)</code></pre>
+cancer_zonasverdes
+zonasverdes_cancer&lt;-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
+zonasverdes_cancer
+
+
+save.image(&quot;Objetos.RData&quot;)</code></pre>
 
 
 
