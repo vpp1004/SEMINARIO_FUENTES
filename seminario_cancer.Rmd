@@ -7,8 +7,9 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
 ```
 
