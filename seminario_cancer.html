@@ -359,6 +359,7 @@ display: none;
 </div>
 
 
+<<<<<<< HEAD
 <pre class="r"><code>###  CARGA DE PAQUETES:
 #install.packages(&quot;pxR&quot;)
 #install.packages(&quot;tidyverse&quot;)
@@ -400,6 +401,30 @@ str(dtalcohol)</code></pre>
 ##  $ value                         : num  39974.1 26139.8 13774.4 59.9 7096.4 ...</code></pre>
 <pre class="r"><code>view(dtalcohol)
 
+=======
+<div id="introducción" class="section level3">
+<h3>Introducción</h3>
+<p>En este seminario vamos a estudiar la enfermedad del cancer y su
+relación con distintas variables que pueden influir en ella positiva o
+negativamente en las distintas comunidades de España. En específico, las
+variables que estudiaremos son los casos de personas que realizan
+actividad física habitualmente, los casos de consumidores habituales de
+alcohol y el número de zonas verdes de cada lugar.</p>
+<p>#CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE
+POR COMUNIDADES:</p>
+<p>```{r
+casos_alcohol&lt;-read.px(“INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px”)
+View(casos_alcohol) dtalcohol&lt;-as.data.frame(casos_alcohol) dtalcohol
+alcohol&lt;-select(.data =
+dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma) if
+(“Sí ha consumido” %in% dtalcohol$Consumo.de.bebidas.alcohólicas) {
+dataalcohol &lt;- dtalcohol %&gt;% filter(Consumo.de.bebidas.alcohólicas
+== “Sí ha consumido”) %&gt;% select(value, Comunidad.autónoma) }</p>
+<p>dataalcohol</p>
+<p>str(dtalcohol) view(dtalcohol)</p>
+<pre><code>
+```{r
+>>>>>>> 2205b55f7f6cf117642459da6e94b05fcd6ad177
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
 library(tidyverse)
 library(jsonlite)
@@ -2028,10 +2053,17 @@ zonasverdes$Comunidad.autonoma&lt;-recode(zonasverdes$Comunidad.autonoma,!!!comu
 cancer_zonasverdes&lt;-left_join(x=zonasverdes,y=dtcancer_largo,by=c(&quot;Comunidad.autonoma&quot;=&quot;Parametro&quot;))
 cancer_zonasverdes
 zonasverdes_cancer&lt;-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
+<<<<<<< HEAD
 zonasverdes_cancer
 
 
 save.image(&quot;Objetos.RData&quot;)</code></pre>
+=======
+zonasverdes_cancer</code></pre>
+<p>```{r save.image(“Objetos.RData”)</p>
+<p>```</p>
+</div>
+>>>>>>> 2205b55f7f6cf117642459da6e94b05fcd6ad177
 
 
 

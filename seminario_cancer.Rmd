@@ -6,6 +6,9 @@ author:
 date: "`r Sys.Date()`"
 output: html_document
 ---
+### Introducción
+En este seminario vamos a estudiar la enfermedad del cancer y su relación con distintas variables que pueden influir en ella positiva o negativamente en las distintas comunidades de España.
+En específico, las variables que estudiaremos son los casos de personas que realizan actividad física habitualmente, los casos de consumidores habituales de alcohol y el número de zonas verdes de cada lugar.
 
 ```{r setup, include=FALSE}
 
@@ -27,8 +30,14 @@ library(jsonlite)
 library(dplyr)
 library(RJSONIO)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2205b55f7f6cf117642459da6e94b05fcd6ad177
 
 #CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
+
+```{r
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
 View(casos_alcohol)
 dtalcohol<-as.data.frame(casos_alcohol)
