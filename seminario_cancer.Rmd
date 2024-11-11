@@ -8,27 +8,19 @@ output: html_document
 ---
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-options(repos = c(CRAN = "https://cloud.r-project.org/"))
-```
+
 
 ```{r}
-
-
 ###  CARGA DE PAQUETES:
 install.packages("pxR")
 install.packages("tidyverse")
 install.packages("rjson")
 install.packages("tidyjson")
-install.packages("jsonlite")
 library(pxR)
 library(tidyverse)
 library(rjson)
 library(tidyjson)
-library(jsonlite)
-library(dplyr)
-library(RJSONIO)
+
 
 #CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
@@ -49,22 +41,45 @@ str(dtalcohol)
 view(dtalcohol)
 
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
+library(tidyverse)
+library(jsonlite)
+library(json)
+library(dplyr)
+library(RJSONIO)
 casos_cancer <- fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
 casos_cancer
 head(casos_cancer)
+#str(casos_cancer)
+#listacancer<-as_tibble(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)%>%
+  #spread_all()
+#cancer<-listacancer[,c("Parametro","Valor")]
 
+#colnames(listacancer)
+#resultadoscancer<-list()
+#for (i in 1:length(listacancer)){
+  #resultados[[i]]<-listacancer[[i]][,c("Parametro","Valor")]
+#}
+#dtcancer
+#listacancer
+#view(dtcancer)
+#cancer<-as.data.frame(listacancer)
+#cancer
+#str(cancer)
+#colnames(cancer)<-c("Año","Periodo","Comunidad","Nº casos","Estado","Notas")
+#cancer
+#cancer<-as.data.frame(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
+#colnames(casos_cancer)<-c("Año","Periodo","Comunidad","Nº casos","Estado","Notas")
+#cancer
+#view(cancer)
 
-archivo_cancer <- "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json"
+#casos_cancer
+#str(casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
+#view(cancer)
 
-if (file.exists(archivo_cancer)) {
-  casos_cancer <- jsonlite::fromJSON(archivo_cancer)
-  print(casos_cancer)
-} else {
-  stop("El archivo JSON no se encuentra en la ruta   especificada:", archivo_cancer)
-}
-
-typeof(archivo_cancer)
-dtcancer<-as.data.frame(archivo_cancer$Respuesta$Datos$Metricas[[1]]$Datos)
+archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
+archivo
+typeof(archivo)
+dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas[[1]]$Datos)
 dtcancer
 str(dtcancer)
 dtcancer_largo<-dtcancer%>%
@@ -76,7 +91,6 @@ dtcancer_largo<-dtcancer%>%
   select(Parametro,Valor)
 dtcancer_largo
 
-    
 
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
@@ -102,6 +116,7 @@ load("Objetos.RData")
 #Inserccion de datos cancer 
 library(tidyverse)
 library(jsonlite)
+library(json)
 library(dplyr)
 library(RJSONIO)
 casos_cancer<-fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer_por_comunidad.json")
@@ -165,6 +180,7 @@ zonasverdes <-dplyr::rename(.data=espana,Comunidad.autonoma=Pueblo)
  
 zonasverdes
 
+
 comunidades<-c(
   Islas_baleares="Islas Baleares",
   Islas_canarias="Canarias",
@@ -182,5 +198,9 @@ cancer_zonasverdes<-left_join(x=zonasverdes,y=dtcancer_largo,by=c("Comunidad.aut
 cancer_zonasverdes
 zonasverdes_cancer<-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
 zonasverdes_cancer
+
+
+save.image("Objetos.RData")
+
 
 ```

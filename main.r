@@ -80,15 +80,7 @@ dtcancer_largo<-dtcancer%>%
   select(Parametro,Valor)
 dtcancer_largo
 
-    
-if (file.exists(archivo)) {
-  contenido <- readLines(archivo)
-  print(contenido)
-  casos_cancer <- fromJSON(paste(contenido, collapse = ""))
-  print(casos_cancer)
-} else {
-  cat("El archivo no se encuentra en la ruta especificada:", archivo)
-}
+
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
 load("Objetos.RData")
