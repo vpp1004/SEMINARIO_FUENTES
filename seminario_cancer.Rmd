@@ -10,18 +10,39 @@ output: html_document
 En este seminario vamos a estudiar la enfermedad del cancer y su relación con distintas variables que pueden influir en ella positiva o negativamente en las distintas comunidades de España.
 En específico, las variables que estudiaremos son los casos de personas que realizan actividad física habitualmente, los casos de consumidores habituales de alcohol y el número de zonas verdes de cada lugar.
 
+
+
+
+###Objetivos 
+
+* ¿Se producen más casos de cáncer en las ciudades donde se realiza más ejercicio o no?
+
+* El porcentaje de áreas verdes de cada comunidad está directamente relacionado con la producción de cancer?
+* ¿Están directamente relacionados el consumo de alcohol con la enfermedad del cancer?
+
+
 ```{r setup, include=FALSE}
 
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
 ```
+####Instalación de paquetes necesarios para el desarrollo del proyecto 
+Aquí se encuentran los paquetes que hay que instalar para poder ejecutar este proyecto, en caso de tener estos paquetes ya instalados no ha de ejecutarse esta celda. 
+Estos paquetes contienen funciones básicas necesarias para el tratamiento de archivos json y pcaxis que nos permiten desarrollar investigación sobre ellos 
 
 ```{r}
 ###  CARGA DE PAQUETES:
-#install.packages("pxR")
-#install.packages("tidyverse")
-#install.packages("rjson")
-#install.packages("tidyjson")
-#install.packages("json")
+install.packages("pxR")
+install.packages("tidyverse")
+install.packages("rjson")
+install.packages("tidyjson")
+install.packages("json")
+```
+
+
+#### Carga de librerías necesarias para realizar el proyecto 
+
+Una vez que se ha producido la instalación de los paquetes para poder realizar cualquier función necesitamos cargar las librerías instaladas para poder utilizarlas. La siguiente celda contiene las librerías necesarias para poder realizar el proyecto 
+```{r}
 library(pxR)
 library(tidyverse)
 library(rjson)
@@ -29,15 +50,14 @@ library(tidyjson)
 library(jsonlite)
 library(dplyr)
 library(RJSONIO)
+```
 
-<<<<<<< HEAD
-=======
+#### Subida de archivos necesarios 
+En este proyecto vamos a trabajar con diferentes archivos tanto json como pcaxis,además de trabajar con datos directamente de un repostitorio por tanton necesitamos incluir los archivos para trabajar con ellos 
 
->>>>>>> 2205b55f7f6cf117642459da6e94b05fcd6ad177
-
-#CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
-
-```{r
+#####Carga de datos de consumo de alcohol (pcaxis)
+Encontramos los datos de personas que habitualmente consumen alcohol por las diferentes comunidades de España 
+```{r}
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
 View(casos_alcohol)
 dtalcohol<-as.data.frame(casos_alcohol)
@@ -54,6 +74,27 @@ dataalcohol
 
 str(dtalcohol)
 view(dtalcohol)
+```
+#####Carga de datos de casos de cancer (json)
+Este archivo contiene el numero de casos de cancer de España ordenados por las diferentes comunidades autónomas 
+
+
+```{r}
+archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
+archivo
+typeof(archivo)
+dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas[[1]]$Datos)
+dtcancer
+str(dtcancer)
+dtcancer_largo<-dtcancer%>%
+  pivot_longer(
+    cols=everything(),
+    names_to= c(".value","id"),
+    names_pattern = "(.*?)(\\.\\d+)?$"
+  )%>%
+  select(Parametro,Valor)
+dtcancer_largo
+```
 
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
 library(tidyverse)
@@ -81,9 +122,28 @@ dtcancer_largo<-dtcancer%>%
   select(Parametro,Valor)
 dtcancer_largo
 
+#####Carga de datos ejercicios físico
+Este archivo contiene el número de personas qeu realizan ejercicio físico en España ordenados por comunidades 
+```{r}
+actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
+datosactividad<-read.px(actividadfisica)
+datosactividad
+dtactividad<-as.data.frame(datosactividad)
+view(dtactividad)
+dtactividad
+actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
+actividad
+```
 
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
+Dataframe conforme a los datos de todas las comunidades Españolas. Este dataframe se ha conseguido a través de la unión y posterior media de datos de distintos pueblos de cada comunidad autónoma.
+```{r}
+
+```
+
+Aquí encontrarás los enlaces para acceder a los diferentes archivos con los que se han obtenido los datos de cada comunidad autónoma 
+
 load("Objetos.RData")
 espana
 
@@ -180,5 +240,7 @@ zonasverdes_cancer
 
 
 save.image("Objetos.RData")
+
+
 
 ```
