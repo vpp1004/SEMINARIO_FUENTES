@@ -6,6 +6,11 @@ author:
 date: "`r Sys.Date()`"
 output: html_document
 ---
+
+Enlace a repositorio de [Github](https://github.com/vpp1004/SEMINARIO_FUENTES)
+
+
+
 ### Introducción
 En este seminario vamos a estudiar la enfermedad del cancer y su relación con distintas variables que pueden influir en ella positiva o negativamente en las distintas comunidades de España.
 En específico, las variables que estudiaremos son los casos de personas que realizan actividad física habitualmente, los casos de consumidores habituales de alcohol y el número de zonas verdes de cada lugar.
