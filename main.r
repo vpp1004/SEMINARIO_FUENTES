@@ -1,34 +1,28 @@
-
-
-###  CARGA DE PAQUETES:
+###Instalación de paquetes 
 install.packages("pxR")
 install.packages("tidyverse")
 install.packages("rjson")
 install.packages("tidyjson")
+
+###  CARGA DE PAQUETES:
 library(pxR)
 library(tidyverse)
 library(rjson)
 library(tidyjson)
 
-
-#CARGA DE DATOS DE CASOS DE PERSONAS QUE TOMAN ALCOHOL HABITUALMENTE POR COMUNIDADES:
+### Datos de personas que toman alcohol por comunidades 
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
 View(casos_alcohol)
+str(casos_alcohol)
 dtalcohol<-as.data.frame(casos_alcohol)
-dtalcohol
+
 alcohol<-select(.data = dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma)
-if ("Sí ha consumido" %in% dtalcohol$Consumo.de.bebidas.alcohólicas) {
-    dataalcohol <- dtalcohol %>%
-    filter(Consumo.de.bebidas.alcohólicas == "Sí ha consumido") %>%
-    select(value, Comunidad.autónoma)
-}
+dataalcohol<-alcohol %>%
+  filter(Consumo.de.bebidas.alcohólicas=="Sí ha consumido")
+dataalcohol<-select(.data = dataalcohol,value,Comunidad.autónoma)
 
-
-dataalcohol
-
-str(dtalcohol)
-view(dtalcohol)
-
+save(object=dataalcohol,file="Objetos.RData")
+load("Objetos.RData")
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
 library(tidyverse)
 library(jsonlite)
@@ -40,27 +34,24 @@ casos_cancer
 head(casos_cancer)
 
 
-archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
-archivo
+archivo <-fromJSON("INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
+print(archivo)
 typeof(archivo)
-dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas[[1]]$Datos)
-dtcancer
+View(archivo)
+casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos
+cancer<-as.data.frame(archivo$Respuesta$Datos$Metricas$Datos)
+cancer
 str(dtcancer)
-dtcancer_largo<-dtcancer%>%
-  pivot_longer(
-    cols=everything(),
-    names_to= c(".value","id"),
-    names_pattern = "(.*?)(\\.\\d+)?$"
-  )%>%
-  select(Parametro,Valor)
-dtcancer_largo
+
+cancer<-select(.data=cancer,Parametro,Valor)
+cancer
 
 
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
 load("Objetos.RData")
 espana
-
+save(object=espana,file="Objetos.RData")
 
 #CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
 actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
@@ -164,4 +155,5 @@ zonasverdes_cancer<-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
 zonasverdes_cancer
 
 
-save.image("Objetos.RData")
+save(object=espana,dataalcohol,actividad,cancer,file = "Objetos.RData")
+load("Objetos.RData")

@@ -33,4 +33,5 @@ dtespana
 save.image(file="Objetos.RData")
 load("Objetos.RData")
 espana
- 
+
+saveRDS(object =espana, file = "Objetos.RData") 
