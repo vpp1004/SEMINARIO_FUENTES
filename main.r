@@ -9,44 +9,26 @@ library(pxR)
 library(tidyverse)
 library(rjson)
 library(tidyjson)
+library(jsonlite)
+library(dplyr)
+View(espana)
+
+####Carga de todos los datos necesarios para desarrollar el proyecto 
+load("Objetos.RData")
 
 ### Datos de personas que toman alcohol por comunidades 
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
-View(casos_alcohol)
-str(casos_alcohol)
 dtalcohol<-as.data.frame(casos_alcohol)
-
-alcohol<-select(.data = dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma)
-dataalcohol<-alcohol %>%
+datalcohol<-select(.data = dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma) %>%
   filter(Consumo.de.bebidas.alcohólicas=="Sí ha consumido")
-dataalcohol<-select(.data = dataalcohol,value,Comunidad.autónoma)
+alcohol<-select(.data =datalcohol,value,Comunidad.autónoma)
+alcohol
 
-save(object=dataalcohol,file="Objetos.RData")
-load("Objetos.RData")
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
-library(tidyverse)
-library(jsonlite)
-library(json)
-library(dplyr)
-library(RJSONIO)
-casos_cancer <- fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
-casos_cancer
-head(casos_cancer)
-
-
 archivo <-fromJSON("INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
-print(archivo)
-typeof(archivo)
-View(archivo)
-casos_cancer$Respuesta$Datos$Metricas[[1]]$Datos
-cancer<-as.data.frame(archivo$Respuesta$Datos$Metricas$Datos)
+dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas$Datos)
+cancer<-select(.data=dtcancer,Parametro,Valor)
 cancer
-str(dtcancer)
-
-cancer<-select(.data=cancer,Parametro,Valor)
-cancer
-
-
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
 load("Objetos.RData")
@@ -66,20 +48,7 @@ actividad
 save.image("Objetos.RData")
 load("Objetos.RData")
 
-
-
-#Inserccion de datos cancer 
-library(tidyverse)
-library(jsonlite)
-library(json)
-library(dplyr)
-library(RJSONIO)
-casos_cancer<-fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer_por_comunidad.json")
-
-
-
-
-#CASOS DE CANCER INFLUIDOS POR ALCOHHOL
+#CASOS DE CANCER INFLUIDOS POR ALCOHOL
 dataalcohol
 dtcancer_largo
 alcohol <- dataalcohol %>%
@@ -94,9 +63,14 @@ cancer_alcohol
 
 
 #CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
-actividad
-dtcancer_largo
-cancer_actividad<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,porcentaje_actividad=value)
+actividad<-rename(.data=actividad,Comunidades_autonomas="Comunidades.y.Ciudades.Autónomas")
+cancer<-cancer%>%
+        mutate(Comunidades_autonomas = case_when(
+          Comunidades_autonomas == "Castilla_La Mancha" ~ "Castilla_LaMancha",
+          TRUE ~ Comunidades_autonomas
+        ))
+cancer
+
 comunidad<-c(
   "01 Andalucía"="Andalucía",
   "02 Aragón" ="Aragón",
