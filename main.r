@@ -32,8 +32,12 @@ cancer<-select(.data=dtcancer,Parametro,Valor)
 cancer
 
 #CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
+####El código aquí presentado se obtiene directamente de un respositorio de github realizando diferentes operaciones
+###Proceso para la creación de diferentes comunidades autónoma 
+
+
 load("Objetos.RData")
-espana
+
 
 #CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
 actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
@@ -42,19 +46,6 @@ dtactividad<-as.data.frame(datosactividad)
 actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
 actividad
 
-#CASOS DE CANCER INFLUIDOS POR ALCOHOL
-
-dataalcohol
-dtcancer_largo
-alcohol <- dataalcohol %>%
-  mutate(Comunidad.autónoma = str_remove(Comunidad.autónoma, "^\\d+\\s+")) %>%
-  mutate(Comunidad.autónoma = str_replace(Comunidad.autónoma, ",.*", "")) %>% 
-  mutate(Comunidad.autónoma = str_trim(Comunidad.autónoma))
-alcohol_cancer<-left_join(x=alcohol,y=dtcancer_largo,by=c("Comunidad.autónoma"="Parametro"))
-alcohol_cancer
-cancer_alcohol<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,casos_alcohol=value)
-colnames(cancer_alcohol)  
-cancer_alcohol
 
 load("Objetos.RData")
 ####Case_when comunidades 
@@ -185,5 +176,10 @@ cancer_completo<-full_join(variables_buenas,alcohol,by=c("Comunidad_autonoma"))%
 
 
 ###Guardado y carga de todos los objetos que queremos (se esta al final pues necesitamos tener creado el objeto para guardarlo)
-save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,file = "Objetos.RData")
+save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,variables_buenas,cancer_completo,file = "Objetos.RData")
 load("Objetos.RData")
+
+
+
+#CREACIÓN DE GRÁFICAS 
+
