@@ -25,7 +25,7 @@ alcohol<-select(.data =dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad
   filter(Consumo.de.bebidas.alcohólicas=="Sí ha consumido")
 alcohol<-as.data.frame(alcohol)
 alcohol<-select(.data=alcohol,Comunidad.autónoma,value)
-alcohol <- alcohol[-1, ]
+alcohol <- alcohol[alcohol$Comunidad.autónoma != "Total Nacional", ]
 alcohol
 
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
@@ -182,12 +182,12 @@ cancer_completo<-full_join(variables_buenas,alcohol,by=c("Comunidad_autonoma"))%
 save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,variables_buenas,cancer_completo,file = "Objetos.RData")
 load("Objetos.RData")
 
-<<<<<<< HEAD
+
 
 
 #CREACIÓN DE GRÁFICAS 
 
-=======
+
 #GRÁFICOS
 
 #Gráfico casos cancer
@@ -203,7 +203,7 @@ grafico_cancer <- ggplot(cancer, aes(x = Comunidad_autonoma, y = Valor, fill = V
 grafico_cancer
 
 #Gráfico casos alcohol
-grafico_alcohol <- ggplot(alcohol, aes(x = Comunidad_autonoma, y = value, fill = value)) +
+grafico_alcohol <- ggplot(alcohol, aes(x = Comunidad.autónoma, y = value, fill = value)) +
   geom_bar(stat = "identity", color = "black") +
   scale_fill_gradient(low = "pink", high = "purple") +
   labs(
@@ -215,13 +215,26 @@ grafico_alcohol <- ggplot(alcohol, aes(x = Comunidad_autonoma, y = value, fill =
 grafico_alcohol
 
 #Gráfico zonas verdes
-grafico_zonas_verdes <- ggplot(espana, aes(x = Comunidad_autonoma, y = value, fill = value)) +
+grafico_zonas_verdes <- ggplot(zonas_verdes, aes(x = Comunidad_autonoma, y = porcentajeverde, fill = porcentajeverde)) +
   geom_bar(stat = "identity", color = "black") +
-  scale_fill_gradient(low = "pink", high = "purple") +
+  scale_fill_gradient(low = "lightgreen", high = "darkgreen") +
   labs(
-    title = "Personas que toman alcohol por Comunidad en España",
+    title = "Porcentaje de Zonas Verdes por Comunidad en España",
     x = "Comunidades Autónomas",
-    y = "Casos alcohol"
+    y = "% Zonas verdes"
   ) +
   theme_minimal()
->>>>>>> 11bd888477ef04538fe3c3e003f520e8464ef120
+grafico_zonas_verdes
+
+#Gráfico actividad física
+grafico_actividad_fisica <- ggplot(actividad, aes(x = Comunidad_autonoma, y = value, fill = value)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "yellow", high = "red") +
+  labs(
+    title = "Porcentaje de Actividad Física por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "% Actividad Física"
+  ) +
+  theme_minimal()
+grafico_actividad_fisica
+
