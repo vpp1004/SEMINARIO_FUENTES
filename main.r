@@ -3,6 +3,7 @@ install.packages("pxR")
 install.packages("tidyverse")
 install.packages("rjson")
 install.packages("tidyjson")
+install.packages("ggplot2")
 
 ###  CARGA DE PAQUETES:
 library(pxR)
@@ -11,6 +12,7 @@ library(rjson)
 library(tidyjson)
 library(jsonlite)
 library(dplyr)
+library(ggplot2)
 
 ####Carga de todos los datos necesarios para desarrollar el proyecto 
 load("Objetos.RData")
@@ -23,6 +25,7 @@ alcohol<-select(.data =dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad
   filter(Consumo.de.bebidas.alcohólicas=="Sí ha consumido")
 alcohol<-as.data.frame(alcohol)
 alcohol<-select(.data=alcohol,Comunidad.autónoma,value)
+alcohol <- alcohol[-1, ]
 alcohol
 
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
@@ -187,3 +190,40 @@ cancer_completo<-full_join(variables_buenas,alcohol,by=c("Comunidad_autonoma"))%
 ###Guardado y carga de todos los objetos que queremos (se esta al final pues necesitamos tener creado el objeto para guardarlo)
 save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,file = "Objetos.RData")
 load("Objetos.RData")
+
+#GRÁFICOS
+
+#Gráfico casos cancer
+grafico_cancer <- ggplot(cancer, aes(x = Comunidad_autonoma, y = Valor, fill = Valor)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "lightblue", high = "darkblue") +
+  labs(
+    title = "Casos de Cáncer por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "Número de Casos"
+  ) +
+  theme_minimal()
+grafico_cancer
+
+#Gráfico casos alcohol
+grafico_alcohol <- ggplot(alcohol, aes(x = Comunidad_autonoma, y = value, fill = value)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "pink", high = "purple") +
+  labs(
+    title = "Personas que toman alcohol por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "Casos alcohol"
+  ) +
+  theme_minimal()
+grafico_alcohol
+
+#Gráfico zonas verdes
+grafico_zonas_verdes <- ggplot(espana, aes(x = Comunidad_autonoma, y = value, fill = value)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "pink", high = "purple") +
+  labs(
+    title = "Personas que toman alcohol por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "Casos alcohol"
+  ) +
+  theme_minimal()
