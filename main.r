@@ -126,9 +126,8 @@ actividad<-actividad%>%
   ))%>%
   select(Comunidad_autonoma,value)
 ###Case_when zonas verdes
-espana
-zonas_verdes<-espana%>%
-  mutate(.data = espana,Comunidad_autonoma = case_when(Pueblo=="Castilla_LaMancha" ~ 'Castilla_LaMancha',
+zonas_verdes<-zonas_verdes%>%
+  mutate(.data = zonas_verdes,Comunidad_autonoma = case_when(Pueblo=="Castilla_LaMancha" ~ 'Castilla_LaMancha',
                                                        Pueblo=="Comunidad_de_Madrid" ~ 'Madrid',
                                                        Pueblo=="Extremadura"~"Extremadura",
                                                        Pueblo=="Ceuta"~"Ceuta",
@@ -147,9 +146,9 @@ zonas_verdes<-espana%>%
                                                        Pueblo=="Asturias"~"Asturias",
                                                        Pueblo=="La_Rioja"~"Rioja",
                                                        Pueblo=="Pais_Vasco"~"Pais_Vasco"
-  ))%>%
-  select(Comunidad_autonoma,areasverdes,arboles,porcentajeverde)
-
+  ))
+zonas_verdes<-select(.data=zonas_verdes,Comunidad_autonoma,porcentajeverde)
+zonas_verdes
 
 #CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
 actividad_cancer<- full_join(x=actividad,y=cancer,by=c("Comunidad_autonoma"))%>%
@@ -182,12 +181,12 @@ cancer_completo<-full_join(variables_buenas,alcohol,by=c("Comunidad_autonoma"))%
 save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,variables_buenas,cancer_completo,file = "Objetos.RData")
 load("Objetos.RData")
 
-<<<<<<< HEAD
+
 
 
 #CREACIÓN DE GRÁFICAS 
 
-=======
+#===========================================================================================================
 #GRÁFICOS
 
 #Gráfico casos cancer
@@ -224,4 +223,3 @@ grafico_zonas_verdes <- ggplot(espana, aes(x = Comunidad_autonoma, y = value, fi
     y = "Casos alcohol"
   ) +
   theme_minimal()
->>>>>>> 11bd888477ef04538fe3c3e003f520e8464ef120
