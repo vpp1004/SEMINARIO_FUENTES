@@ -182,7 +182,7 @@ variables_buenas
 cancer_completo<-full_join(variables_buenas,alcohol,by=c("Comunidad_autonoma"))%>%
   rename(casos_alcohol=value)
 
-
+View(cancer_completo)
 ###Guardado y carga de todos los objetos que queremos (se esta al final pues necesitamos tener creado el objeto para guardarlo)
 save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,variables_buenas,cancer_completo,file = "Objetos.RData")
 load("Objetos.RData")
@@ -192,13 +192,13 @@ load("Objetos.RData")
 
 #CREACIÓN DE GRÁFICAS 
 
-<<<<<<< HEAD
+
 #===========================================================================================================
 #GRÁFICOS
-=======
+
 
 #GRÁFICOS DE BARRAS DE CADA VARIABLE A ESTUDIAR
->>>>>>> 1636249236659bc8ddabfb5f18a044f93b8d5153
+
 
 #Gráfico casos cancer
 grafico_cancer <- ggplot(cancer, aes(x = Comunidad_autonoma, y = Valor, fill = Valor)) +
@@ -234,8 +234,7 @@ grafico_zonas_verdes <- ggplot(zonas_verdes, aes(x = Comunidad_autonoma, y = por
     y = "% Zonas verdes"
   ) +
   theme_minimal()
-<<<<<<< HEAD
-=======
+
 grafico_zonas_verdes
 
 #Gráfico actividad física
@@ -255,15 +254,16 @@ grafico_actividad_fisica
 #GRÁFICOS DE PUNTOS DE VARIABLES RELACIONADAS
 
 #Gráfico Cáncer - Actividad Física
-gráfico_ejercicio_cancer <- ggplot(actividad_cancer, aes(x = Comunidad_autonoma, y = actividad, color = casos_cancer)) +
+gráfico_ejercicio_cancer <- ggplot(actividad_cancer, aes(x = actividad, y = casos_cancer)) +
   geom_point() +
-  scale_color_gradient(low = "yellow", high = "red") +
+  #scale_color_gradient(low = "yellow", high = "red") +
   labs(
     title = "Relación entre Ejercicio y Casos de Cáncer por Comunidades",
     x = "Comunidad Autónoma",
     y = "% Ejercicio Físico",
     color = "Casos de Cáncer"
   ) +
+  geom_smooth()+
   theme_minimal()
 gráfico_ejercicio_cancer
 
@@ -309,4 +309,4 @@ grafico_variables_buenas <- ggplot(variables_buenas, aes(x = Comunidad_autonoma,
 grafico_variables_buenas
 
 #Gráfico Cáncer - Todas las Variables
->>>>>>> 1636249236659bc8ddabfb5f18a044f93b8d5153
+
