@@ -23,10 +23,10 @@ dtalcohol<-as.data.frame(casos_alcohol)
 dtalcohol
 alcohol<-select(.data =dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma) %>%
   filter(Consumo.de.bebidas.alcohólicas=="Sí ha consumido")
-alcohol<-as.data.frame(alcohol)
-alcohol<-select(.data=alcohol,Comunidad.autónoma,value)
+alcohol<-as.data.frame(alcohol)%>%
+  select(Comunidad.autónoma,value)
 alcohol <- alcohol[alcohol$Comunidad.autónoma != "Total Nacional", ]
-alcohol <- alcohol[is.na(alcohol$Comunidad_autonoma) == FALSE, ]
+alcohol[is.na(alcohol$Comunidad_autonoma) == FALSE, ]
 alcohol
 
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
@@ -564,9 +564,9 @@ cancer<-cancer%>%
   select(Comunidad_autonoma,Valor)
 cancer
  #Case_when alcohol 
-dataalcohol
-alcohol<-dataalcohol%>%
-  mutate(.data = dataalcohol,Comunidad_autonoma = case_when(Comunidad.autónoma=="08 Castilla - La Mancha" ~ 'Castilla_LaMancha',
+alcohol
+alcohol<-alcohol%>%
+  mutate(.data = alcohol,Comunidad_autonoma = case_when(Comunidad.autónoma=="08 Castilla - La Mancha" ~ 'Castilla_LaMancha',
                                                        Comunidad.autónoma=="13 Madrid, Comunidad de" ~ 'Madrid',
                                                        Comunidad.autónoma=="11 Extremadura"~"Extremadura",
                                                        Comunidad.autónoma=="18 Ceuta"~"Ceuta",
@@ -692,7 +692,7 @@ load("Objetos.RData")
 #Gráfico casos cancer
 grafico_cancer <- ggplot(cancer, aes(x =reorder(Comunidad_autonoma,-Valor), y = Valor, fill = Valor)) +
   geom_bar(stat = "identity", color = "black") +
-  scale_fill_gradient(low = "lightblue", high = "darkblue") +
+  scale_fill_gradient(low = "paleturquoise", high = "royalblue") +
   labs(
     title = "Casos de Cáncer por Comunidad en España",
     x = "Comunidades Autónomas",
@@ -719,9 +719,10 @@ grafico_alcohol
 
 #Gráfico zonas verdes
 zonas_verdes
+
 grafico_zonas_verdes <- ggplot(zonas_verdes, aes(reorder(Comunidad_autonoma,-porcentajeverde), y = porcentajeverde, fill = porcentajeverde)) +
   geom_bar(stat = "identity", color = "black") +
-  scale_fill_gradient(low = "lightgreen", high = "darkgreen") +
+  scale_fill_gradient(low = "lightgreen", high = "turquoise") +
   labs(
     title = "Porcentaje de Zonas Verdes por Comunidad en España",
     x = "Comunidades Autónomas",
@@ -734,9 +735,10 @@ grafico_zonas_verdes <- ggplot(zonas_verdes, aes(reorder(Comunidad_autonoma,-por
 grafico_zonas_verdes
 
 #Gráfico actividad física
-grafico_actividad_fisica <- ggplot(actividad, aes(x =reorder(Comunidades.y.Ciudades.Autónomas,-value), y = value, fill = value)) +
+actividad<-na.omit(actividad)
+grafico_actividad_fisica <- ggplot(actividad, aes(x =reorder(Comunidad_autonoma,-value), y = value, fill = value)) +
   geom_bar(stat = "identity", color = "black") +
-  scale_fill_gradient(low = "yellow", high = "red") +
+  scale_fill_gradient(low = "aquamarine", high = "pink") +
   labs(
     title = "Porcentaje de Actividad Física por Comunidad en España",
     x = "Comunidades Autónomas",
@@ -760,11 +762,12 @@ gráfico_ejercicio_cancer <- ggplot(actividad_cancer, aes(x = actividad, y = cas
     x = "% Ejercicio físico",
     y = "Casos de Cáncer"
   ) +
-  geom_smooth(method = "loess", formula = y ~ x, color = "red", fill = "yellow", alpha = 0.3)+
+  geom_smooth(method = "loess", formula = y ~ x, color = "purple", fill = "aquamarine", alpha = 0.3)+
   theme_minimal()
 gráfico_ejercicio_cancer
 
 #Gráfico Cáncer - Zonas Verdes
+zonasverdes_cancer
 grafico_zonas_verdes_cancer <- ggplot(zonasverdes_cancer, aes(x = porcentajeverde, y = casos_cancer)) +
   geom_point() +
   labs(
