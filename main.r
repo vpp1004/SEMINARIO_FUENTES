@@ -26,6 +26,7 @@ alcohol<-select(.data =dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad
 alcohol<-as.data.frame(alcohol)
 alcohol<-select(.data=alcohol,Comunidad.autónoma,value)
 alcohol <- alcohol[alcohol$Comunidad.autónoma != "Total Nacional", ]
+alcohol <- alcohol[is.na(alcohol$Comunidad_autonoma) == FALSE, ]
 alcohol
 
 #CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
@@ -532,6 +533,7 @@ actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por c
 datosactividad<-read.px(actividadfisica)
 dtactividad<-as.data.frame(datosactividad)
 actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
+actividad <- actividad[actividad$Comunidades.y.Ciudades.Autónomas != "Total Nacional", ]
 actividad
 
 
@@ -669,7 +671,7 @@ variables_buenas
 cancer_completo<-full_join(variables_buenas,alcohol,by=c("Comunidad_autonoma"))%>%
   rename(casos_alcohol=value)
 
-View(cancer_completo)
+#View(cancer_completo)
 ###Guardado y carga de todos los objetos que queremos (se esta al final pues necesitamos tener creado el objeto para guardarlo)
 save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,variables_buenas,cancer_completo,file = "Objetos.RData")
 load("Objetos.RData")
@@ -690,13 +692,15 @@ load("Objetos.RData")
 #Gráfico casos cancer
 grafico_cancer <- ggplot(cancer, aes(x =reorder(Comunidad_autonoma,-Valor), y = Valor, fill = Valor)) +
   geom_bar(stat = "identity", color = "black") +
-  scale_fill_gradient(low = "lightblue", high = "orchid") +
+  scale_fill_gradient(low = "lightblue", high = "darkblue") +
   labs(
     title = "Casos de Cáncer por Comunidad en España",
     x = "Comunidades Autónomas",
-    y = "Número de Casos"
+    y = "Casos cáncer",
+    fill = "Casos"
   ) +
-  theme_minimal()
+  theme_minimal()+
+  theme(axis.text.x =element_text(angle = 90, hjust = 1))
 grafico_cancer
 
 #Gráfico casos alcohol
@@ -706,7 +710,8 @@ grafico_alcohol <- ggplot(alcohol, aes(x = reorder(Comunidad_autonoma,-value), y
   labs(
     title = "Personas que toman alcohol por Comunidad en España",
     x = "Comunidades Autónomas",
-    y = "Casos alcohol"
+    y = "Casos alcohol",
+    fill = "Casos"
   ) +
   theme_minimal()+
   theme(axis.text.x =element_text(angle = 90, hjust = 1))
@@ -716,11 +721,12 @@ grafico_alcohol
 zonas_verdes
 grafico_zonas_verdes <- ggplot(zonas_verdes, aes(reorder(Comunidad_autonoma,-porcentajeverde), y = porcentajeverde, fill = porcentajeverde)) +
   geom_bar(stat = "identity", color = "black") +
-  scale_fill_gradient(low = "lightgreen", high = "turquoise") +
+  scale_fill_gradient(low = "lightgreen", high = "darkgreen") +
   labs(
     title = "Porcentaje de Zonas Verdes por Comunidad en España",
     x = "Comunidades Autónomas",
-    y = "% Zonas verdes"
+    y = "% Zonas verdes",
+    fill = "%"
   ) +
   theme_minimal()+
   theme(axis.text.x =element_text(angle = 90, hjust = 1))
@@ -728,16 +734,17 @@ grafico_zonas_verdes <- ggplot(zonas_verdes, aes(reorder(Comunidad_autonoma,-por
 grafico_zonas_verdes
 
 #Gráfico actividad física
-# aes(x = reorder(name, -price_dollars), y = price_dollars))
-grafico_actividad_fisica <- ggplot(actividad, aes(x =reorder(Comunidad_autonoma,-value), y = value, fill = value)) +
+grafico_actividad_fisica <- ggplot(actividad, aes(x =reorder(Comunidades.y.Ciudades.Autónomas,-value), y = value, fill = value)) +
   geom_bar(stat = "identity", color = "black") +
-  scale_fill_gradient(low = "aquamarine", high = "pink") +
+  scale_fill_gradient(low = "yellow", high = "red") +
   labs(
     title = "Porcentaje de Actividad Física por Comunidad en España",
     x = "Comunidades Autónomas",
-    y = "% Actividad Física"
+    y = "% Actividad Física",
+    fill = "%"
   ) +
-  theme_minimal()
+  theme_minimal()+
+  theme(axis.text.x =element_text(angle = 90, hjust = 1))
 grafico_actividad_fisica
 
 
@@ -750,37 +757,36 @@ gráfico_ejercicio_cancer <- ggplot(actividad_cancer, aes(x = actividad, y = cas
   geom_point() +
   labs(
     title = "Relación entre Ejercicio y Casos de Cáncer por Comunidades",
-    x = "Comunidad Autónoma",
-    y = "% Ejercicio Físico",
-    color = "Casos de Cáncer"
+    x = "% Ejercicio físico",
+    y = "Casos de Cáncer"
   ) +
-  geom_smooth(method = "loess", formula = y ~ x, color = "aquamarine", fill = "lightblue", alpha = 0.3)+
+  geom_smooth(method = "loess", formula = y ~ x, color = "red", fill = "yellow", alpha = 0.3)+
   theme_minimal()
 gráfico_ejercicio_cancer
 
 #Gráfico Cáncer - Zonas Verdes
-grafico_zonas_verdes_cancer <- ggplot(zonasverdes_cancer, aes(x = Comunidad_autonoma, y = porcentajeverde, color = casos_cancer)) +
+grafico_zonas_verdes_cancer <- ggplot(zonasverdes_cancer, aes(x = porcentajeverde, y = casos_cancer)) +
   geom_point() +
-  scale_color_gradient(low = "lightgreen", high = "darkgreen") +
   labs(
     title = "Relación entre Zonas Verdes y Casos de Cáncer por Comunidades",
-    x = "Comunidad Autónoma",
-    y = "% Zonas Verdes",
-    color = "Casos de Cáncer"
+    x = "% Zonas Verdes",
+    y = "Casos de Cáncer"
   ) +
+  geom_smooth(method = "loess", formula = y ~ x, color = "darkgreen", fill = "lightgreen", alpha = 0.3)+
   theme_minimal()
 grafico_zonas_verdes_cancer
 
 #Gráfico Cáncer - Alcohol
-grafico_alcohol_cancer <- ggplot(alcohol_cancer, aes(x = Comunidad_autonoma, y = casos_alcohol, color = casos_cancer)) +
+grafico_alcohol_cancer <- ggplot(alcohol_cancer, aes(x = casos_alcohol, y = casos_cancer)) +
   geom_point() +
-  scale_color_gradient(low = "pink", high = "purple") +
   labs(
     title = "Relación entre Alcohol y Casos de Cáncer por Comunidades",
-    x = "Comunidad Autónoma",
-    y = "Casos Alcohol",
-    color = "Casos de Cáncer"
+    x = "Casos Alcohol",
+    y = "Casos de Cáncer"
   ) +
+  geom_smooth(method = "loess", formula = y ~ x, color = "purple", fill = "pink", alpha = 0.3)+
+  xlim(0, 1000) +
+  ylim(0, 10000) +
   theme_minimal()
 grafico_alcohol_cancer
 
