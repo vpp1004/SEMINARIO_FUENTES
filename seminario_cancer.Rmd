@@ -20,10 +20,10 @@ En específico, las variables que estudiaremos son los casos de personas que rea
 
 ###Objetivos 
 
-* ¿Se producen más casos de cáncer en las ciudades donde se realiza más ejercicio o no?
+* ¿Cómo influyen individualmente el indice verde, el alcohol y el ejercicio sobre el cáncer?
 
-* El porcentaje de áreas verdes de cada comunidad está directamente relacionado con la producción de cancer?
-* ¿Están directamente relacionados el consumo de alcohol con la enfermedad del cancer?
+* Tiene más influencia lo considerado bueno para la salud (ejercicio y porcentaje verde) que lo malo (alcohol) sobre el cancer 
+* ¿Están todas estas variables directamente relacionadas con el cancer ?
 
 
 ```{r setup, include=FALSE}
@@ -36,11 +36,12 @@ Estos paquetes contienen funciones básicas necesarias para el tratamiento de ar
 
 ```{r}
 ###  CARGA DE PAQUETES:
-install.packages("pxR")
-install.packages("tidyverse")
-install.packages("rjson")
-install.packages("tidyjson")
-install.packages("json")
+#install.packages("pxR")
+#install.packages("tidyverse")
+#install.packages("rjson")
+#install.packages("tidyjson")
+#install.packages("json")
+#install.packages("ggplot2")
 ```
 
 
@@ -55,6 +56,7 @@ library(tidyjson)
 library(jsonlite)
 library(dplyr)
 library(RJSONIO)
+library(ggplot2)
 ```
 
 #### Subida de archivos necesarios 
@@ -64,68 +66,42 @@ En este proyecto vamos a trabajar con diferentes archivos tanto json como pcaxis
 Encontramos los datos de personas que habitualmente consumen alcohol por las diferentes comunidades de España 
 ```{r}
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
-View(casos_alcohol)
 dtalcohol<-as.data.frame(casos_alcohol)
-dtalcohol
-alcohol<-select(.data = dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma)
-if ("Sí ha consumido" %in% dtalcohol$Consumo.de.bebidas.alcohólicas) {
-    dataalcohol <- dtalcohol %>%
-    filter(Consumo.de.bebidas.alcohólicas == "Sí ha consumido") %>%
-    select(value, Comunidad.autónoma)
-}
-
-
-dataalcohol
-
-str(dtalcohol)
-view(dtalcohol)
+alcohol<-select(.data =dtalcohol,value,Consumo.de.bebidas.alcohólicas,Comunidad.autónoma) %>%
+  filter(Consumo.de.bebidas.alcohólicas=="Sí ha consumido")
+alcohol<-as.data.frame(alcohol)%>%
+  select(Comunidad.autónoma,value)
+alcohol <- alcohol[alcohol$Comunidad.autónoma != "Total Nacional", ]
+alcohol[is.na(alcohol$Comunidad_autonoma) == FALSE, ]
+alcohol
 ```
 #####Carga de datos de casos de cancer (json)
 Este archivo contiene el numero de casos de cancer de España ordenados por las diferentes comunidades autónomas 
 
-
 ```{r}
-archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
-archivo
-typeof(archivo)
-dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas[[1]]$Datos)
-dtcancer
-str(dtcancer)
-dtcancer_largo<-dtcancer%>%
-  pivot_longer(
-    cols=everything(),
-    names_to= c(".value","id"),
-    names_pattern = "(.*?)(\\.\\d+)?$"
-  )%>%
-  select(Parametro,Valor)
-dtcancer_largo
+archivo <-fromJSON("INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
+dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas$Datos)
+cancer<-select(.data=dtcancer,Parametro,Valor)
+cancer
 ```
 
-#CARGA DE DATOS DE CASOS DE CANCER EN ESPAÑA POR COMUNIDADES:
-library(tidyverse)
-library(jsonlite)
-library(rjson)
-library(dplyr)
-library(RJSONIO)
-casos_cancer <- fromJSON(file = "INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
-casos_cancer
-head(casos_cancer)
+#####Carga de datos de porcentaje verde  por comunidades
+Se han obtenido los datos a partir de un repositorio de Github.Para ello hemos obtenido datos a partir de diferentes municipios de la comunidad 
+Insercción de un ejemplo de como se han obtenido los datos de un municipio
+
+```{r}
+datostorrelavega<-get_osm_data("Torrelavega,Cantabria,España")
+indice_verde_torrelavega<-calculate_green_index(datostorrelavega,4326,100)
+dttorrelavega<-as.data.frame(indice_verde_torrelavega)
+torrelavega<-summarise(.data=dttorrelavega,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+```
+Aquí se encuentra la tabla completa tras haber realizado todo esto por comunidades autónomas 
+```{r}
+zonas_verdes
+```
 
 
-archivo <-fromJSON(file="INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
-archivo
-typeof(archivo)
-dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas[[1]]$Datos)
-dtcancer
-str(dtcancer)
-dtcancer_largo<-dtcancer%>%
-  pivot_longer(
-    cols=everything(),
-    names_to= c(".value","id"),
-    names_pattern = "(.*?)(\\.\\d+)?$"
-  )%>%
-  select(Parametro,Valor)
-dtcancer_largo
 
 #####Carga de datos ejercicios físico
 Este archivo contiene el número de personas qeu realizan ejercicio físico en España ordenados por comunidades 
@@ -146,26 +122,6 @@ Dataframe conforme a los datos de todas las comunidades Españolas. Este datafra
 ```{r}
 
 ```
-
-Aquí encontrarás los enlaces para acceder a los diferentes archivos con los que se han obtenido los datos de cada comunidad autónoma 
-
-load("Objetos.RData")
-espana
-
-
-#CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
-actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
-datosactividad<-read.px(actividadfisica)
-datosactividad
-dtactividad<-as.data.frame(datosactividad)
-view(dtactividad)
-dtactividad
-actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
-actividad
-
-save.image("Objetos.RData")
-load("Objetos.RData")
-
 
 
 #CASOS DE CANCER INFLUIDOS POR ALCOHHOL
