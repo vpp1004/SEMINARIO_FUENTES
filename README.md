@@ -40,10 +40,10 @@ Antes del desarrollo del estudio, hemos desarrollado algunas suposiciones incial
 ## Artículos iniciales 
 Se incluyen en esta parte del repositorio enlaces a una serie de artículos que desarrollan estudios como el nuestro sobre la correlación del cancer con distintos factores 
 
-*[Consumo de alcohol y los riesgos de padecer cancer con su consumo ](https://www.cdc.gov/cancer/es/risk-factors/alcohol.html)
+* [Consumo de alcohol y los riesgos de padecer cancer con su consumo ](https://www.cdc.gov/cancer/es/risk-factors/alcohol.html)
 * [Relación del alcohol y el cáncer](https://vivolabs.es/alcohol-y-cancer-estan-relacionados/?srsltid=AfmBOorGOKg2gUKlV0dCdhzXnTxZ9muVUYa5toDpx_DhYaLFUr4tA0uO)
-*[Relación directa del cáncer con la actividad física antes y durante el tratamiento](https://www.cancer.org/es/cancer/supervivencia/bienestar-tras-el-tratamiento/actividad-fisica-y-el-paciente-de-cancer.html)
-*[Relación entre zonas verdes y riesgo de cáncer de mama](https://www.ciberesp.es/noticias/vivir-cerca-de-espacios-verdes-urbanos-se-asocia-con-menos-riesgo-de-cancer-de-mama)
+* [Relación directa del cáncer con la actividad física antes y durante el tratamiento](https://www.cancer.org/es/cancer/supervivencia/bienestar-tras-el-tratamiento/actividad-fisica-y-el-paciente-de-cancer.html)
+* [Relación entre zonas verdes y riesgo de cáncer de mama](https://www.ciberesp.es/noticias/vivir-cerca-de-espacios-verdes-urbanos-se-asocia-con-menos-riesgo-de-cancer-de-mama)
 
 
 
