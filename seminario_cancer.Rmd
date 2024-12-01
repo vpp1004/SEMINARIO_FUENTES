@@ -104,74 +104,83 @@ zonas_verdes
 
 
 #####Carga de datos ejercicios físico
-Este archivo contiene el número de personas qeu realizan ejercicio físico en España ordenados por comunidades 
+Este archivo contiene el número de personas que realizan ejercicio físico en España ordenados por comunidades 
 ```{r}
 actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
 datosactividad<-read.px(actividadfisica)
-datosactividad
 dtactividad<-as.data.frame(datosactividad)
-view(dtactividad)
-dtactividad
 actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
+actividad <- actividad[actividad$Comunidades.y.Ciudades.Autónomas != "Total Nacional", ]
 actividad
 ```
+####Case_when actividad
+Para poder realizar la unión de la actividad con el resto necesitamos realizar un case_when que nos permita obtener los parámetros de actividad igual que los del resto.Como estamos realizando una unión por comunidades en este caso vamos a cambiar estos nombres para poder realizar una unión posteriormente 
 
 
-#CARGA DE DATOS DE ZONAS VERDES EN ESPAÑA POR COMUNIDADES:
-Dataframe conforme a los datos de todas las comunidades Españolas. Este dataframe se ha conseguido a través de la unión y posterior media de datos de distintos pueblos de cada comunidad autónoma.
 ```{r}
+ctividad<-actividad%>%
+  mutate(.data = actividad,Comunidad_autonoma = case_when(
+Comunidades.y.Ciudades.Autónomas=="08 Castilla - La Mancha" ~ 'Castilla_LaMancha',
+Comunidades.y.Ciudades.Autónomas=="13 Madrid, Comunidad de" ~ 'Madrid', 
+Comunidades.y.Ciudades.Autónomas=="11 Extremadura"~"Extremadura", 
+Comunidades.y.Ciudades.Autónomas=="18 Ceuta"~"Ceuta", 
+Comunidades.y.Ciudades.Autónomas=="19 Melilla"~"Melilla",
+Comunidades.y.Ciudades.Autónomas=="04 Balears, Illes"~"Islas_Baleares",
+Comunidades.y.Ciudades.Autónomas=="14 Murcia, Región de "~"Murcia",
+Comunidades.y.Ciudades.Autónomas=="15 Navarra,Comunidad Foral de"~"Navarra",
+Comunidades.y.Ciudades.Autónomas=="10 Comunitat Valenciana"~"Comunidad_Valenciana",
+Comunidades.y.Ciudades.Autónomas=="12 Galicia"~"Galicia",
+Comunidades.y.Ciudades.Autónomas=="07 Castilla y León"~"Castilla_y_Leon",
+Comunidades.y.Ciudades.Autónomas=="09 Cataluña"~"Cataluna",
+Comunidades.y.Ciudades.Autónomas=="06 Cantabria"~"Cantabria",
+Comunidades.y.Ciudades.Autónomas=="05 Canarias"~"Islas_Canarias",
+Comunidades.y.Ciudades.Autónomas=="01 Andalucía"~"Andalucia",
+Comunidades.y.Ciudades.Autónomas=="02 Aragón"~"Aragon",
+Comunidades.y.Ciudades.Autónomas=="03 Asturias, Principado de"~"Asturias",
+Comunidades.y.Ciudades.Autónomas=="17 Rioja, La"~"Rioja",
+Comunidades.y.Ciudades.Autónomas=="16 País Vasco"~"Pais_Vasco"
+  ))%>%
+  select(Comunidad_autonoma,value)
+actividad<-ctividad
+actividad
 
 ```
 
 
+
+###Como influyen individualmente las variables 
+
 #CASOS DE CANCER INFLUIDOS POR ALCOHHOL
-dataalcohol
-dtcancer_largo
-alcohol <- dataalcohol %>%
-  mutate(Comunidad.autónoma = str_remove(Comunidad.autónoma, "^\\d+\\s+")) %>%
-  mutate(Comunidad.autónoma = str_replace(Comunidad.autónoma, ",.*", "")) %>% 
-  mutate(Comunidad.autónoma = str_trim(Comunidad.autónoma))
-alcohol_cancer<-left_join(x=alcohol,y=dtcancer_largo,by=c("Comunidad.autónoma"="Parametro"))
+Vamos a ver la correlación que tiene el cancer con la cantidad de alcohol, para ello vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la correlación de como realmente se relacionan
+
+```{r}
+alcohol_cancer<-full_join(x=alcohol,y=cancer,by=c("Comunidad_autonoma"))%>%
+  rename(casos_alcohol=value,casos_cancer=Valor)
+alcohol_cancer <- alcohol_cancer[is.na(alcohol_cancer$Comunidad_autonoma) == FALSE, ]
 alcohol_cancer
-cancer_alcohol<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,casos_alcohol=value)
-colnames(cancer_alcohol)  
-cancer_alcohol
+```
+Como podemos observar las comunidades que presentan más casos de cancer son aquellas en las que más alcohol toman siendo principalmente destacables comunidades con gran número de gente alcohólica, como es el caso de Madrid,Cataluña o Andalucía donde tanto el número de casos de alcohol y de cancer son elevados,sin embargo, otras comunidades como es el caso de Cantabria o Navarra presentan mucho menos cantidad de casos de alcoholismo y vemos como considerablemente se presentan muchos menos casos de cáncer.Para ver si realmente esto esta correlacionado observamos un gráfico de correlación de estas dos variables 
+
+```{r}
+grafico_alcohol_cancer <- ggplot(alcohol_cancer, aes(x = casos_alcohol, y = casos_cancer)) +
+  geom_point() +
+  labs(
+    title = "Relación entre Alcohol y Casos de Cáncer por Comunidades",
+    x = "Casos Alcohol",
+    y = "Casos de Cáncer"
+  ) +
+  geom_smooth(method = "loess", formula = y ~ x, color = "purple", fill = "pink", alpha = 0.3)+
+  xlim(0, 1000) +
+  ylim(0, 10000) +
+  theme_minimal()
+grafico_alcohol_cancer
+```
+
+Como podemos comprobar a mayor casos de alcohol tenemos que el número de casos de cáncer es mayor, por tanto podemos definir que estas dos variable están directamente relacionadas.
 
 
 #CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
-actividad
-dtcancer_largo
-cancer_actividad<-dplyr::rename(alcohol_cancer,casos_cancer=Valor,porcentaje_actividad=value)
-comunidad<-c(
-  "01 Andalucía"="Andalucía",
-  "02 Aragón" ="Aragón",
-  "03 Asturias, Principado de"="Asturias",
-  "04 Balears, Illes"="Islas Baleares",
-  "05 Canarias"="Canarias",
-  "06 Cantabria"="Cantabria",
-  "07 Castilla y León"="Castilla y León",
-  "08 Castilla - La Mancha"="Castilla_La Mancha",
-  "09 Cataluña"="Cataluña",
-  "10 Comunitat Valenciana"="Comunidad Valenciana",
-  "11 Extremadura"="Extremadura",
-  "12 Galicia"="Galicia",
-  "13 Madrid, Comunidad de"="Madrid",
-  "14 Murcia, Región de"="Murcia",
-  "15 Navarra, Comunidad Foral de"="Navarra",
-  "16 País Vasco"="País Vasco",
-  "17 Rioja, La"="La Rioja",
-  "18 Ceuta"="Ceuta",
-  "19 Melilla"="Melilla"
-  
-  
-)
-
-actividad$Comunidades.y.Ciudades.Autónomas<-recode(actividad$Comunidades.y.Ciudades.Autónomas,!!!comunidad)
-cancer_actividad<-left_join(x=actividad,y=dtcancer_largo,by=c("Comunidades.y.Ciudades.Autónomas"="Parametro"))
-cancer_actividad
-actividad_cancer<-dplyr::rename(cancer_actividad,actividad_fisica=value,casos_cancer=Valor)
-zonasverdes_cancer
-
+Vamos a ver la correlación que tiene el cancer con la cantidad de alcohol, para ello vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la correlación de como realmente se relacionan
 #CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
 espana
 dtcancer_largo
