@@ -666,12 +666,20 @@ variables_buenas<-full_join(actividad,cancer,by=c("Comunidad_autonoma"))%>%
                   rename(actividad=value,casos_cancer=Valor)
 variables_buenas
 
+#CASOS DE CANCER RELACIONADOS CON LAS VARIABLES INFLUYENTES 
+variables_influyentes <- left_join(
+  alcohol_cancer %>% select(Comunidad_autonoma, casos_alcohol, casos_cancer),
+  actividad_cancer %>% select(Comunidad_autonoma, actividad),
+  by = "Comunidad_autonoma"
+)
+variables_influyentes
+
 
 #CASOS DE CANCER RELACIONADOS CON TODAS LAS VARIABLES
 cancer_completo<-full_join(variables_buenas,alcohol,by=c("Comunidad_autonoma"))%>%
   rename(casos_alcohol=value)
+cancer_completo
 
-#View(cancer_completo)
 ###Guardado y carga de todos los objetos que queremos (se esta al final pues necesitamos tener creado el objeto para guardarlo)
 save(object=zonas_verdes,alcohol,actividad,cancer,alcohol_cancer,actividad_cancer,zonasverdes_cancer,variables_buenas,cancer_completo,file = "Objetos.RData")
 load("Objetos.RData")
@@ -794,8 +802,10 @@ grafico_alcohol_cancer <- ggplot(alcohol_cancer, aes(x = casos_alcohol, y = caso
 grafico_alcohol_cancer
 
 #Gráfico Cáncer - Variables buenas (Zonas verdes y ejercicio)
+variables_buenas<- na.omit(variables_buenas)
 grafico_variables_buenas <- ggplot(variables_buenas, aes(x = porcentajeverde, y = actividad, color = casos_cancer)) +
   geom_point(size = 3, alpha = 0.7) +
+  geom_smooth(method = "loess", formula = y ~ x, color = "purple", fill = "pink", alpha = 0.3) +
   scale_color_gradient(low = "yellow", high = "red", name = "Casos de Cáncer") +
   labs(
     title = "Relación entre Porcentaje Verde, Actividad Física y Casos de Cáncer",
@@ -804,7 +814,21 @@ grafico_variables_buenas <- ggplot(variables_buenas, aes(x = porcentajeverde, y 
   ) +
   theme_minimal()
 grafico_variables_buenas
-variables_buenas
+
+#Gráfico Cáncer - Variables influyentes (Actividad y alcohol)
+variables_influyentes<- na.omit(variables_influyentes)
+grafico_variables_influyentes <- ggplot(variables_influyentes, aes(x = casos_alcohol, y = actividad, color = casos_cancer)) +
+  geom_point(size = 3, alpha = 0.8) +
+  geom_smooth(method = "loess", formula = y ~ x, color = "purple", fill = "pink", alpha = 0.3) +
+  scale_color_gradient(low = "yellow", high = "red", name = "Casos de Cáncer") +
+  labs(
+    title = "Relación entre Casos de Alcohol, Actividad Física y Casos de Cáncer",
+    x = "Casos de Alcohol",
+    y = "Actividad Física"
+  ) +
+  theme_minimal()
+
+grafico_variables_influyentes
 
 #Gráfico Cáncer - Todas las Variables
 
