@@ -9,3 +9,5 @@ aviles<-summarise(.data=dtaviles,areasverdes=mean(green_index_green_area,na.rm=T
 str(aviles)
 
 
+
+

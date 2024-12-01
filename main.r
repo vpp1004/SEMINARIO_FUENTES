@@ -135,6 +135,25 @@ dtandalucia=as.data.frame(listaandalucia)
 andalucia=summarise(.data=dtandalucia,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
 
 ####Asturias 
+datosaviles<-get_osm_data(("Avilés,Asturias,España"))
+indice_verde_aviles<-calculate_green_index(datosaviles,4326,100)
+dtaviles<-as.data.frame(indice_verde_aviles)
+aviles<-summarise(.data=dtaviles,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datosgijon<-get_osm_data("Gijón,Asturias,España")
+indice_verde_gijon<-calculate_green_index(datosgijon,4326,100)
+dtgijon<-as.data.frame(indice_verde_gijon)
+gijon<-summarise(.data=dtgijon,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+listasturias<-list(
+  Aviles=aviles,
+  Gijon=gijon
+)
+
+listaasturias<-bind_rows(listasturias, .id="Pueblo")
+dtasturias=as.data.frame(listaasturias)
+asturias=summarise(.data=dtasturias,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
+
 #####Aragón 
 datosutebo<-get_osm_data("Utebo,Zaragoza,Aragón,España")
 indice_verde_utebo<-calculate_green_index(datosutebo,4326,100)
@@ -526,6 +545,166 @@ extremadura=summarise(.data=dtextremadura,areasverdes=mean(areasverdes,na.rm=TRU
 
 ##### Galicia 
 
+##### Comunidad Valenciana 
+datosgandia<-get_osm_data("Gandía,La Safor,Valencia,Comunidad Valenciana,España")
+indice_verde_gandia<-calculate_green_index(datosgandia,4326,100)
+dtgandia<-as.data.frame(indice_verde_gandia)
+gandia<-summarise(.data=dtgandia,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datosburriana<-get_osm_data("Burriana,Plana Baja,Castellón,Comunidad Valenciana,12530,España")
+indice_verde_burriana<-calculate_green_index(datosburriana,4326,100)
+dtburriana<-as.data.frame(indice_verde_burriana)
+burriana<-summarise(.data=dtburriana,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datosvillareal<-get_osm_data("Villareal,Plana Baja,Castellón,Comunidad Valenciana,12450,España")
+indice_verde_villareal<-calculate_green_index(datosvillareal,4326,100)
+dtvillareal<-as.data.frame(indice_verde_villareal)
+villareal<-summarise(.data=dtvillareal,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datosbenidorm<-get_osm_data("Benidorm,La Marina Baja,Alicante,Comunidad Valenciana,España")
+indice_verde_benidorm<-calculate_green_index(datosbenidorm,4326,100)
+dtbenidorm<-as.data.frame(indice_verde_benidorm)
+benidorm<-summarise(.data=dtbenidorm,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+listvalencia<-list(
+  Benidorm=benidorm,
+  Villareal=villareal,
+  Burriana=burriana,
+  Gandia=gandia
+  
+)
+
+listavalencia<-bind_rows(listvalencia, .id="Pueblo")
+dtvalencia=as.data.frame(listavalencia)
+valencia=summarise(.data=dtvalencia,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
+
+#### Navarra 
+
+datosestella<-get_osm_data("Estella,Tierra Estella,Navarra,31200,España")
+indice_verde_estella<-calculate_green_index(datosestella,4326,100)
+dtestella<-as.data.frame(indice_verde_estella)
+estella<-summarise(.data=dtestella,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datostudela<-get_osm_data("Tudela,Ribera,Navarra,31500,España")
+indice_verde_tudela<-calculate_green_index(datostudela,4326,100)
+dttudela<-as.data.frame(indice_verde_tudela)
+tudela<-summarise(.data=dttudela,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+listanavarra<-list(
+  Estella=estella,
+  Tudela=tudela
+)
+
+listnavarra<-bind_rows(listanavarra, .id="Pueblo")
+dtnavarra=as.data.frame(listnavarra)
+navarra=summarise(.data=dtnavarra,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
+
+##### Madrid
+datospinto<-get_osm_data("Pinto,Comunidad de Madrid,28320,España")
+indice_verde_pinto<-calculate_green_index(datospinto,4326,100)
+dtpinto<-as.data.frame(indice_verde_pinto)
+pinto<-summarise(.data=dtpinto,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+
+datosboadilla<-get_osm_data("Boadilla del Monte,Comunidad de Madrid,España")
+indice_verde_boadilla<-calculate_green_index(datosboadilla,4326,100)
+dtboadilla<-as.data.frame(indice_verde_boadilla)
+boadilla<-summarise(.data=dtboadilla,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+
+listmadrid<-list(
+  Pinto=pinto,
+  Boadilla_del_monte=boadilla
+)
+
+listamadrid<-bind_rows(listmadrid, .id="Pueblo")
+dtmadrid=as.data.frame(listamadrid)
+madrid=summarise(.data=dtmadrid,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
+
+##### Murcia 
+datossanjavier<-get_osm_data("San Javier,Campo de Cartagena y Mar Menor, Región de Murcia, España")
+indice_verde_sanjavier<-calculate_green_index(datossanjavier,4326,100)
+dtsanjavier<-as.data.frame(indice_verde_sanjavier)
+sanjavier<-summarise(.data=dtsanjavier,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+
+listmurcia<-list(
+  San_javier=sanjavier
+)
+lis
+tamurcia<-bind_rows(listmurcia, .id="Pueblo")
+dtmurcia=as.data.frame(listamurcia)
+murcia=summarise(.data=dtmurcia,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
+
+##### La Rioja 
+
+datosalfaro<-get_osm_data("Alfaro,La Rioja,26540,España")
+indice_verde_alfaro<-calculate_green_index(datosalfaro,4326,100)
+dtalfaro<-as.data.frame(indice_verde_alfaro)
+alfaro<-summarise(.data=dtalfaro,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datosnajera<-get_osm_data("Nájera,La Rioja,26300,España")
+indice_verde_najera<-calculate_green_index(datosnajera,4326,100)
+dtnajera<-as.data.frame(indice_verde_najera)
+najera<-summarise(.data=dtnajera,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+listrioja<-list(
+  Alfaro=alfaro,
+  Najera=najera
+)
+
+listarioja<-bind_rows(listrioja, .id="Pueblo")
+dtrioja=as.data.frame(listarioja)
+rioja=summarise(.data=dtrioja,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
+
+##### País Vasco 
+datosalegria<-get_osm_data("Alegría,Llanada Alavesa,Álava,País Vasco,España")
+indice_verde_alegria<-calculate_green_index(datosalegria,4326,100)
+dtalegria<-as.data.frame(indice_verde_alegria)
+alegria<-summarise(.data=dtalegria,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datosiruna<-get_osm_data("Iruña de Oca,Cuadrilla de Añaña,Álava,País Vasco,01230,España")
+indice_verde_iruna<-calculate_green_index(datosiruna,4326,100)
+dtiruna<-as.data.frame(indice_verde_iruna)
+iruna<-summarise(.data=dtiruna,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+
+datoguetaria<-get_osm_data("Guetaria,Urola Costa,Guipúzcoa,País Vasco,España")
+indice_verde_guetaria<-calculate_green_index(datoguetaria,4326,100)
+dtguetaria<-as.data.frame(indice_verde_guetaria)
+guetaria<-summarise(.data=dtguetaria,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+
+datosirun<-get_osm_data("Irún,Bajo Bidasoa,Guipúzcoa,País Vasco,España")
+indice_verde_irun<-calculate_green_index(datosirun,4326,100)
+dtirun<-as.data.frame(indice_verde_irun)
+irun<-summarise(.data=dtirun,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+
+
+datosbaracaldo<-get_osm_data("Baracaldo,Vizcaya,País Vasco,España")
+indice_verde_baracaldo<-calculate_green_index(datosbaracaldo,4326,100)
+dtbaracaldo<-as.data.frame(indice_verde_baracaldo)
+baracaldo<-summarise(.data=dtbaracaldo,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+datosgetxo<-get_osm_data("Guecho,Vizcaya,País Vasco,España")
+indice_verde_getxo<-calculate_green_index(datosgetxo,4326,100)
+dtgetxo<-as.data.frame(indice_verde_getxo)
+getxo<-summarise(.data=dtgetxo,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
+listpaisvasco<-list(
+  Alegria=alegria,
+  Iruna_de_oca=iruna,
+  Guetaria=guetaria,
+  Irun=irun,
+  Baracaldo=baracaldo,
+  Getxo=getxo
+  
+)
+
+listapaisvasco<-bind_rows(listpaisvasco, .id="Pueblo")
+dtpaisvasco=as.data.frame(listapaisvasco)
+paisvasco=summarise(.data=dtpaisvasco,areasverdes=mean(areasverdes,na.rm=TRUE),arboles=mean(arboles,na.rm=TRUE),porcentajeverde=mean(porcentajeverde,na.rm=TRUE))
 
 
 #CARGA DE DATOS DE PERSONAS QUE REALIZAN EJERCICIO FISICO HABITUALMENTE POR COMUNIDADES:
@@ -535,7 +714,6 @@ dtactividad<-as.data.frame(datosactividad)
 actividad<-select(.data=dtactividad,Comunidades.y.Ciudades.Autónomas,value)
 actividad <- actividad[actividad$Comunidades.y.Ciudades.Autónomas != "Total Nacional", ]
 actividad
-
 
 load("Objetos.RData")
 ####Case_when comunidades 
