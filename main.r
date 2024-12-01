@@ -794,19 +794,17 @@ grafico_alcohol_cancer <- ggplot(alcohol_cancer, aes(x = casos_alcohol, y = caso
 grafico_alcohol_cancer
 
 #Gráfico Cáncer - Variables buenas (Zonas verdes y ejercicio)
-grafico_variables_buenas <- ggplot(variables_buenas, aes(x = Comunidad_autonoma, y = casos_cancer)) +
-  geom_point(aes(shape = actividad, color = porcentajeverde), size = 4) +
-  scale_shape_manual(values = c(16, 17)) +
-  scale_color_gradient(low = "green", high = "red") +
+grafico_variables_buenas <- ggplot(variables_buenas, aes(x = porcentajeverde, y = actividad, color = casos_cancer)) +
+  geom_point(size = 3, alpha = 0.7) +
+  scale_color_gradient(low = "yellow", high = "red", name = "Casos de Cáncer") +
   labs(
-    title = "Casos de Cáncer por Comunidad Autónoma",
-    x = "Comunidad Autónoma",
-    y = "Casos de Cáncer",
-    shape = "Actividad",
-    color = "Porcentaje Verde"
+    title = "Relación entre Porcentaje Verde, Actividad Física y Casos de Cáncer",
+    x = "Porcentaje Verde",
+    y = "Actividad Física"
   ) +
   theme_minimal()
 grafico_variables_buenas
+variables_buenas
 
 #Gráfico Cáncer - Todas las Variables
 
