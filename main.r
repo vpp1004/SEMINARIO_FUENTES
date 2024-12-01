@@ -830,6 +830,31 @@ grafico_variables_influyentes <- ggplot(variables_influyentes, aes(x = casos_alc
 
 grafico_variables_influyentes
 
+
+
+
+
 #Gráfico Cáncer - Todas las Variables
+cancer_completo$casos_cancer <- as.numeric(as.character(cancer_completo$casos_cancer))
+cancer_completo$shape_porcentajeverde <- ifelse(cancer_completo$porcentajeverde > 0.85, "Alta", "Baja")
 
+grafico_final <- ggplot(cancer_completo, aes(x = casos_alcohol, y = actividad)) + 
+  geom_point(aes(colour = casos_cancer), shape = 16, size = 2, position = position_jitter(width = 1.3, height = 1.3)) +
+  geom_point(aes(x = casos_alcohol, y = actividad, shape = shape_porcentajeverde, color = porcentajeverde), size = 2, position = position_jitter(width = 0.2, height = 0.2)) +
+  scale_shape_manual(values = c("Alta" = 15, "Baja" = 17)) +
+  scale_color_gradient(low = "pink", high = "blue", name = "Casos de Cáncer") +
+  labs(
+    title = "Relación entre Casos de Alcohol, Actividad Física y Casos de Cáncer",
+    x = "Casos de Alcohol",
+    y = "Actividad Física",
+    shape = "Cantidad de áreas verdes"
+  ) + 
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    panel.border = element_rect(color = "black", fill = NA, size = 0.8),
+    panel.grid.major = element_line(color = "gray", size = 0.5),
+    panel.grid.minor = element_line(color = "lightgray", size = 0.25)
+  )
 
+grafico_final
