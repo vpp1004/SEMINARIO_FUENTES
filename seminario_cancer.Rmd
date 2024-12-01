@@ -42,6 +42,7 @@ Estos paquetes contienen funciones básicas necesarias para el tratamiento de ar
 #install.packages("tidyjson")
 #install.packages("json")
 #install.packages("ggplot2")
+#install.packages("greenR")
 ```
 
 
@@ -57,6 +58,7 @@ library(jsonlite)
 library(dplyr)
 library(RJSONIO)
 library(ggplot2)
+library(greenR)
 ```
 
 #### Subida de archivos necesarios 
@@ -75,6 +77,51 @@ alcohol <- alcohol[alcohol$Comunidad.autónoma != "Total Nacional", ]
 alcohol[is.na(alcohol$Comunidad_autonoma) == FALSE, ]
 alcohol
 ```
+#####Case_when alcohol
+```{r}
+alcohol
+alcohol<-alcohol%>%
+  mutate(.data = alcohol,Comunidad_autonoma = case_when(Comunidad.autónoma=="08 Castilla - La Mancha" ~ 'Castilla_LaMancha',
+Comunidad.autónoma=="13 Madrid, Comunidad de" ~ 'Madrid',
+Comunidad.autónoma=="11 Extremadura"~"Extremadura",
+Comunidad.autónoma=="18 Ceuta"~"Ceuta",
+Comunidad.autónoma=="19 Melilla"~"Melilla",
+Comunidad.autónoma=="04 Balears, Illes"~"Islas_Baleares",
+Comunidad.autónoma=="14 Murcia, Región de"~"Murcia",
+Comunidad.autónoma=="15 Navarra, Comunidad Foral de"~"Navarra",
+Comunidad.autónoma=="10 Comunitat Valenciana"~"Comunidad_Valenciana",
+Comunidad.autónoma=="12 Galicia"~"Galicia",
+Comunidad.autónoma=="07 Castilla y León"~"Castilla_y_Leon",
+Comunidad.autónoma=="09 Cataluña"~"Cataluna",
+Comunidad.autónoma=="06 Cantabria"~"Cantabria",
+Comunidad.autónoma=="05 Canarias"~"Islas_Canarias",
+Comunidad.autónoma=="01 Andalucía"~"Andalucia",
+Comunidad.autónoma=="02 Aragón"~"Aragon",
+Comunidad.autónoma=="03 Asturias, Principado de"~"Asturias",
+Comunidad.autónoma=="17 Rioja, La"~"Rioja",
+Comunidad.autónoma=="16 País Vasco"~"Pais_Vasco"
+  ))%>%
+  select(Comunidad_autonoma,value)
+alcohol  
+```
+Determinamos ahora cuales van a ser las comunidades autónomas con mayores casos de alcolemia y las que menos 
+```{r}
+grafico_alcohol <- ggplot(alcohol, aes(x = reorder(Comunidad_autonoma,-value), y = value, fill = value)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "pink", high = "purple") +
+  labs(
+    title = "Personas que toman alcohol por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "Casos alcohol",
+    fill = "Casos"
+  ) +
+  theme_minimal()+
+  theme(axis.text.x =element_text(angle = 90, hjust = 1))
+grafico_alcohol
+
+```
+Podemos observar que cataluña, Madrir y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de alcoholemia, mientras que Ceuta y Melilla se encuentran en la cola del ranking.Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ránking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes,comunidades se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente
+
 #####Carga de datos de casos de cancer (json)
 Este archivo contiene el numero de casos de cancer de España ordenados por las diferentes comunidades autónomas 
 
@@ -83,6 +130,11 @@ archivo <-fromJSON("INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
 dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas$Datos)
 cancer<-select(.data=dtcancer,Parametro,Valor)
 cancer
+```
+Observamos cuales son las comunidades que tienen mayores casos de cáncer y cuales son las que menos 
+
+```{r}
+
 ```
 
 #####Carga de datos de porcentaje verde  por comunidades
