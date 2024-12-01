@@ -12,19 +12,20 @@ Enlace a repositorio de [Github](https://github.com/vpp1004/SEMINARIO_FUENTES)
 
 
 ### Introducción
-En este seminario vamos a estudiar la enfermedad del cancer y su relación con distintas variables que pueden influir en ella positiva o negativamente en las distintas comunidades de España.
+En este seminario vamos a estudiar la enfermedad del cáncer y su relación con distintas variables que pueden influir en ella positiva o negativamente en las distintas comunidades de España.
 En específico, las variables que estudiaremos son los casos de personas que realizan actividad física habitualmente, los casos de consumidores habituales de alcohol y el número de zonas verdes de cada lugar.
 
 
 
 
 ###Objetivos 
+Responder a estas preguntas:
 
-* ¿Cómo influyen individualmente el indice verde, el alcohol y el ejercicio sobre el cáncer?
+* ¿Cómo influyen individualmente el índice verde, el alcohol y el ejercicio sobre el cáncer?
 
-* Tiene más influencia lo considerado bueno para la salud (ejercicio y porcentaje verde) que lo malo (alcohol) sobre el cancer 
+* ¿Tiene más influencia lo considerado bueno para la salud (ejercicio y porcentaje verde) que lo malo (alcohol) sobre el cáncer? 
 
-* ¿Están todas estas variables directamente relacionadas con el cancer ?
+* ¿Están todas estas variables directamente relacionadas con el cáncer ?
 
 
 ```{r setup, include=FALSE}
@@ -49,7 +50,7 @@ Estos paquetes contienen funciones básicas necesarias para el tratamiento de ar
 
 #### Carga de librerías necesarias para realizar el proyecto 
 
-Una vez que se ha producido la instalación de los paquetes para poder realizar cualquier función necesitamos cargar las librerías instaladas para poder utilizarlas. La siguiente celda contiene las librerías necesarias para poder realizar el proyecto 
+Una vez que se ha producido la instalación de los paquetes para poder realizar cualquier función necesitamos cargar las librerías instaladas para poder utilizarlas. La siguiente celda contiene las librerías necesarias para poder realizar el proyecto. 
 ```{r}
 library(pxR)
 library(tidyverse)
@@ -63,10 +64,14 @@ library(greenR)
 ```
 
 #### Subida de archivos necesarios 
-En este proyecto vamos a trabajar con diferentes archivos tanto json como pcaxis,además de trabajar con datos directamente de un repostitorio por tanton necesitamos incluir los archivos para trabajar con ellos 
+En este proyecto vamos a trabajar con diferentes archivos tanto json como pcaxis,además de trabajar con datos directamente de un repostitorio por tanto necesitamos incluir los archivos para trabajar con ellos.Aqúi se realiza la subida de los objetos y archivos necesarios para desarrollar el proyecto 
+```{r}
+load("Objetos.RData")
+```
+
 
 #####Carga de datos de consumo de alcohol (pcaxis)
-Encontramos los datos de personas que habitualmente consumen alcohol por las diferentes comunidades de España 
+Encontramos los datos de personas que habitualmente consumen alcohol por las diferentes comunidades de España. 
 ```{r}
 casos_alcohol<-read.px("INPUT/DATA/CASOS_ALCOHOL/CasosAlcoholComunidades.px")
 dtalcohol<-as.data.frame(casos_alcohol)
@@ -105,7 +110,7 @@ Comunidad.autónoma=="16 País Vasco"~"Pais_Vasco"
   select(Comunidad_autonoma,value)
 alcohol  
 ```
-Determinamos ahora cuales van a ser las comunidades autónomas con mayores casos de alcolemia y las que menos 
+Determinamos ahora cuáles van a ser las comunidades autónomas con mayores casos de alcoholemia y las que menos. 
 ```{r}
 grafico_alcohol <- ggplot(alcohol, aes(x = reorder(Comunidad_autonoma,-value), y = value, fill = value)) +
   geom_bar(stat = "identity", color = "black") +
@@ -121,10 +126,10 @@ grafico_alcohol <- ggplot(alcohol, aes(x = reorder(Comunidad_autonoma,-value), y
 grafico_alcohol
 
 ```
-Podemos observar que cataluña, Madrid y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de alcoholemia, mientras que Ceuta y Melilla se encuentran en la cola del ranking.Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ránking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes,comunidades se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente
+Podemos observar que Cataluña, Madrid y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de alcoholemia, mientras que Ceuta y Melilla se encuentran en la cola del ranking. Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ranking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes, comunidades que se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente
 
 #####Carga de datos de casos de cancer (json)
-Este archivo contiene el numero de casos de cancer de España ordenados por las diferentes comunidades autónomas 
+Este archivo contiene el número de casos de cáncer de España ordenados por las diferentes comunidades autónomas.
 
 ```{r}
 archivo <-fromJSON("INPUT/DATA/CASOS_CANCER/casos_nuevos_de_cancer.json")
@@ -132,35 +137,36 @@ dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas$Datos)
 cancer<-select(.data=dtcancer,Parametro,Valor)
 cancer
 ```
-#####Case_when cancer 
+####Case_when cancer 
 ```{r}
 cancer<-cancer%>%
-        mutate(.data = cancer,Comunidad_autonoma = case_when(Parametro=="Castilla-La Mancha" ~ 'Castilla_LaMancha',
-                                                             Parametro=="Madrid" ~ 'Madrid',
-                                                             Parametro=="Extremadura"~"Extremadura",
-                                                             Parametro=="Ceuta"~"Ceuta",
-                                                             Parametro=="Melilla"~"Melilla",
-                                                             Parametro=="Islas Baleares"~"Islas_Baleares",
-                                                             Parametro=="Murcia"~"Murcia",
-                                                             Parametro=="Navarra"~"Navarra",
-                                                             Parametro=="Comunidad Valenciana"~"Comunidad_Valenciana",
-                                                             Parametro=="Galicia"~"Galicia",
-                                                             Parametro=="Castilla y León"~"Castilla_y_Leon",
-                                                             Parametro=="Cataluña"~"Cataluna",
-                                                             Parametro=="Cantabria"~"Cantabria",
-                                                             Parametro=="Canarias"~"Islas_Canarias",
-                                                             Parametro=="Andalucía"~"Andalucia",
-                                                             Parametro=="Aragón"~"Aragon",
-                                                             Parametro=="Asturias"~"Asturias",
-                                                             Parametro=="La Rioja"~"Rioja",
-                                                             Parametro=="País Vasco"~"Pais_Vasco"
-                                                             ))%>%
+        mutate(.data = cancer,Comunidad_autonoma = case_when(
+Parametro=="Castilla-La Mancha" ~ 'Castilla_LaMancha',
+Parametro=="Madrid" ~ 'Madrid',
+Parametro=="Extremadura"~"Extremadura",
+Parametro=="Ceuta"~"Ceuta",
+Parametro=="Melilla"~"Melilla",
+Parametro=="Islas Baleares"~"Islas_Baleares",
+Parametro=="Murcia"~"Murcia",
+Parametro=="Navarra"~"Navarra",
+Parametro=="Comunidad Valenciana"~"Comunidad_Valenciana",
+Parametro=="Galicia"~"Galicia",
+Parametro=="Castilla y León"~"Castilla_y_Leon",
+Parametro=="Cataluña"~"Cataluna",
+Parametro=="Cantabria"~"Cantabria",
+Parametro=="Canarias"~"Islas_Canarias",
+Parametro=="Andalucía"~"Andalucia",
+Parametro=="Aragón"~"Aragon",
+Parametro=="Asturias"~"Asturias",
+Parametro=="La Rioja"~"Rioja",
+Parametro=="País Vasco"~"Pais_Vasco"
+ ))%>%
   select(Comunidad_autonoma,Valor)
 cancer
 ```
 
 
-Observamos cuales son las comunidades que tienen mayores casos de cáncer y cuales son las que menos 
+Observamos cuáles son las comunidades que tienen mayores casos de cáncer y cuáles son las que menos. 
 
 ```{r}
 grafico_cancer <- ggplot(cancer, aes(x =reorder(Comunidad_autonoma,-Valor), y = Valor, fill = Valor)) +
@@ -177,24 +183,24 @@ grafico_cancer <- ggplot(cancer, aes(x =reorder(Comunidad_autonoma,-Valor), y = 
 grafico_cancer
 
 ```
-Podemos observar que cataluña, Madrid y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de cancer, mientras que Ceuta y Melilla se encuentran en la cola del ranking.Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ránking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes,comunidades se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente
+Podemos observar que Cataluña, Madrid y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de cáncer, mientras que Ceuta y Melilla se encuentran en la cola del ranking.Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ranking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes, comunidades que se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente.
 
-#####Carga de datos de porcentaje verde  por comunidades
-Se han obtenido los datos a partir de un repositorio de Github.Para ello hemos obtenido datos a partir de diferentes municipios de la comunidad 
-Insercción de un ejemplo de como se han obtenido los datos de un municipio
+#####Carga de datos de porcentaje verde por comunidades
+Se han obtenido los datos a partir de un repositorio de Github.Para ello, hemos obtenido datos a partir de diferentes municipios de la comunidad. 
+Insercción de un ejemplo de cómo se han obtenido los datos de un municipio.
 
 ```{r}
-datostorrelavega<-get_osm_data("Torrelavega,Cantabria,España")
-indice_verde_torrelavega<-calculate_green_index(datostorrelavega,4326,100)
-dttorrelavega<-as.data.frame(indice_verde_torrelavega)
-torrelavega<-summarise(.data=dttorrelavega,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
-torrelavega
+#datostorrelavega<-get_osm_data("Torrelavega,Cantabria,España")
+#indice_verde_torrelavega<-calculate_green_index(datostorrelavega,4326,100)
+#dttorrelavega<-as.data.frame(indice_verde_torrelavega)
+#torrelavega<-summarise(.data=dttorrelavega,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
+
 ```
 Aquí se encuentra la tabla completa tras haber realizado todo esto por comunidades autónomas 
 ```{r}
 zonas_verdes
 ```
-Determinamos ahora que a pesar de rondar entre los mismos valores, cuales son las comunidades españolas que tienen mayor porcentaje de índice verde y cuales son las que menos 
+Determinamos ahora que a pesar de rondar entre los mismos valores, cuáles son las comunidades españolas que tienen mayor porcentaje de índice verde y cuáles son las que menos. 
 ```{r}
 zonas_verdes
 
@@ -212,11 +218,11 @@ grafico_zonas_verdes <- ggplot(zonas_verdes, aes(reorder(Comunidad_autonoma,-por
 
 grafico_zonas_verdes
 ```
-Vemos que Ceuta y Melilla a pesar de ser las dos ciudades autónomas son las que mayor porcentaje verde tienen seguidae de Extremadura,sin embargo Navarra se encuenta a la cola del ranking. Cabe destacar que los datos se parecen mucho y que los grandes núcleos industriales como Madrid, cataluña y País Vasco se encuentran en la zona media el ránking situándose en el caso de Madrid y Cataluña más cerca de la parte alta del ranking
+Vemos que Ceuta y Melilla a pesar de ser las dos ciudades autónomas son las que mayor porcentaje verde tienen seguida de Extremadura. Sin embargo, Navarra se encuenta a la cola del ranking. Cabe destacar que los datos se parecen mucho y que los grandes núcleos industriales como Madrid, Cataluña y País Vasco se encuentran en la zona media el ranking, situándose, en el caso de Madrid y Cataluña, más cerca de la parte alta del ranking.
 
 
 #####Carga de datos ejercicios físico
-Este archivo contiene el número de personas que realizan ejercicio físico en España ordenados por comunidades 
+Este archivo contiene el número de personas que realizan ejercicio físico en España ordenados por comunidades. 
 ```{r}
 actividadfisica<-"INPUT/DATA/EJERCICIO FISICo/Porcentaje actividad física por comunidad.px"
 datosactividad<-read.px(actividadfisica)
@@ -226,7 +232,7 @@ actividad <- actividad[actividad$Comunidades.y.Ciudades.Autónomas != "Total Nac
 actividad
 ```
 ####Case_when actividad
-Para poder realizar la unión de la actividad con el resto necesitamos realizar un case_when que nos permita obtener los parámetros de actividad igual que los del resto.Como estamos realizando una unión por comunidades en este caso vamos a cambiar estos nombres para poder realizar una unión posteriormente 
+Para poder realizar la unión de la actividad con el resto necesitamos realizar un case_when que nos permita obtener los parámetros de actividad igual que los del resto. Como estamos realizando una unión por comunidades en este caso vamos a cambiar estos nombres para poder realizar una unión posteriormente. 
 
 
 ```{r}
@@ -257,7 +263,7 @@ actividad<-ctividad
 actividad
 
 ```
-Determinamos ahora las comunidades en las que tenemos mayor porcentaje de ejercicio físico ordenadas de mayor a menor 
+Determinamos ahora las comunidades en las que tenemos mayor porcentaje de ejercicio físico ordenadas de mayor a menor. 
 ```{r}
 actividad<-na.omit(actividad)
 grafico_actividad_fisica <- ggplot(actividad, aes(x =reorder(Comunidad_autonoma,-value), y = value, fill = value)) +
@@ -274,11 +280,13 @@ grafico_actividad_fisica <- ggplot(actividad, aes(x =reorder(Comunidad_autonoma,
 grafico_actividad_fisica
 
 ```
-Observamos que a pesar de encontrarse rondando entre los mismos valores, Melilla, Extremadura y Asturias son las comunidades con mayor porcentaje de actividad física, superando el 40%, mientras que la Coumunidad Valenciana es la comunidad donde menos ejercicio físico se realiza, no superando el 35% 
+Observamos que a pesar de encontrarse rondando entre los mismos valores, Melilla, Extremadura y Asturias son las comunidades con mayor porcentaje de actividad física, superando el 40%, mientras que la Coumunidad Valenciana es la comunidad donde menos ejercicio físico se realiza, no superando el 35%.
+
 ###Como influyen individualmente las variables 
 
-#CASOS DE CANCER INFLUIDOS POR ALCOHOL
-Vamos a ver la correlación que tiene el cancer con la cantidad de alcohol, para ello vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la correlación de como realmente se relacionan
+#CASOS DE CÁNCER INFLUIDOS POR ALCOHOL
+Vamos a ver la correlación que tiene el cáncer con la cantidad de alcohol ingerido.
+Para ello, vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la correlación de cómo realmente se relacionan.
 
 ```{r}
 alcohol_cancer<-full_join(x=alcohol,y=cancer,by=c("Comunidad_autonoma"))%>%
@@ -286,7 +294,8 @@ alcohol_cancer<-full_join(x=alcohol,y=cancer,by=c("Comunidad_autonoma"))%>%
 alcohol_cancer <- alcohol_cancer[is.na(alcohol_cancer$Comunidad_autonoma) == FALSE, ]
 alcohol_cancer
 ```
-Como podemos observar las comunidades que presentan más casos de cancer son aquellas en las que más alcohol toman siendo principalmente destacables comunidades con gran número de gente alcohólica, como es el caso de Madrid,Cataluña o Andalucía donde tanto el número de casos de alcohol y de cancer son elevados,sin embargo, otras comunidades como es el caso de Cantabria o Navarra presentan mucho menos cantidad de casos de alcoholismo y vemos como considerablemente se presentan muchos menos casos de cáncer.Para ver si realmente esto esta correlacionado observamos un gráfico de correlación de estas dos variables 
+Como podemos observar, las comunidades que presentan más casos de cáncer son aquellas en las que más alcohol toman, siendo principalmente destacables comunidades con gran número de gente alcohólica, como es el caso de Madrid, Cataluña o Andalucía, donde tanto el número de casos de alcohol y de cáncer son elevados.
+Sin embargo, otras comunidades como es el caso de Cantabria o Navarra presentan mucha menos cantidad de casos de alcoholismo y vemos como considerablemente se presentan muchos menos casos de cáncer. Para ver si realmente esto está correlacionado observamos un gráfico de correlación de estas dos variables. 
 
 ```{r}
 grafico_alcohol_cancer <- ggplot(alcohol_cancer, aes(x = casos_alcohol, y = casos_cancer)) +
@@ -303,11 +312,12 @@ grafico_alcohol_cancer <- ggplot(alcohol_cancer, aes(x = casos_alcohol, y = caso
 grafico_alcohol_cancer
 ```
 
-Como podemos comprobar a mayor casos de alcohol tenemos que el número de casos de cáncer es mayor, por tanto podemos definir que estas dos variable están directamente relacionadas.
+Como podemos comprobar, a mayor casos de alcohol tenemos que el número de casos de cáncer es mayor. Por tanto, podemos definir que estas dos variable están directamente relacionadas.
 
 
-#CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
-Vamos a ver la correlación que tiene el cancer con la cantidad el porcentaje medio de ejercicio físico  que se realiz,zapara ello vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la observación de como realmente se relacionan
+#CASOS DE CÁNCER INFLUIDOS POR EJERCICIO FISICO 
+Vamos a ver la correlación que tiene el cáncer con el porcentaje medio de ejercicio físico  que se realiza.
+Para ello, vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la observación de cómo realmente se relacionan.
 
 
 ```{r}
@@ -317,7 +327,10 @@ actividad_cancer <- actividad_cancer[is.na(actividad_cancer$Comunidad_autonoma) 
 actividad_cancer
 
 ```
-Como podemos comprobar aquellas comunidades con un porcentaje de ejercicio físico más alto tienden a tener generalmente menos casos de cáncer, es el caso por ejemplo de Cantabria, siendo una de las comunidades donde más porcentaje de actividad física hay y de las que menos casos de cáncer registra, por el otro lado tenemos a Madrid, que siendo una de las comunidades con el porcentaje de ejercicio físico más bajo es una de las que más casos de cáncer registro. Dado que con una tabla organizada por comunidades tenemos que guiarnos obligatoriamente por la población y tener en cuenta que comunidades como por ejemplo Madrid y Cataluña no tienen la misma cantidad de gente que Cantabria o Extremadura, vamos a observar un gráfico que nos permita determinar si estas variables están correctamente relacionadas
+Como podemos comprobar, aquellas comunidades con un porcentaje de ejercicio físico más alto tienden a tener generalmente menos casos de cáncer. Es el caso por ejemplo de Cantabria, siendo una de las comunidades donde más porcentaje de actividad física hay y de las que menos casos de cáncer registra. 
+Por otro lado, tenemos a Madrid, que siendo una de las comunidades con el porcentaje de ejercicio físico más bajo es una de las que más casos de cáncer registra. 
+Dado que partimos de una tabla organizada por comunidades, tenemos que guiarnos obligatoriamente por la población y tener en cuenta que comunidades como Madrid y Cataluña no tienen la misma cantidad de gente que Cantabria o Extremadura. 
+Vamos a observar un gráfico que nos permita determinar si estas variables están correctamente relacionadas.
 
 ```{r}
 gráfico_ejercicio_cancer <- ggplot(actividad_cancer, aes(x = actividad, y = casos_cancer)) +
@@ -331,11 +344,12 @@ gráfico_ejercicio_cancer <- ggplot(actividad_cancer, aes(x = actividad, y = cas
   theme_minimal()
 gráfico_ejercicio_cancer
 ```
-Como podemos determinar estas variables estan relacionadas inversamente, es decir, tal y como vemos según incrementa el porcentaje de ejercicio físico, descienden los casos de cáncer
+Como podemos observar, estas variables están relacionadas inversamente, es decir, tal y como vemos según incrementa el porcentaje de ejercicio físico, descienden los casos de cáncer.
 
 
 ####Casos de cáncer relacionados con porcentaje verde 
-Vamos a ver la correlación que tiene el cancer con el porcentaje verde que hay en cada comunidad para  ello vamos ael tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la observación de como realmente se relacionan
+Vamos a ver la correlación que tiene el cáncer con el porcentaje verde que hay en cada comunidad. 
+Para  ello, vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la observación de como realmente se relacionan.
 
 ```{r}
 zonasverdes_cancer<- full_join(x=zonas_verdes,y=cancer,by=c("Comunidad_autonoma"))%>%
@@ -344,7 +358,7 @@ zonasverdes_cancer <- zonasverdes_cancer[is.na(zonasverdes_cancer$Comunidad_auto
 zonasverdes_cancer
 ```
 
-Como podemos observar el porcentaje verde de cada comunidad autónoma es muy alto, encontrándose por encima del 70% en todas las ocasiones, no pudiendo comprobar si verdaderamente se relacionan los casos de cáncer con el porcentaje verde, por tanto para ver la relación vamos a recurrir a un gráfico de correlacion 
+Como podemos observar, el porcentaje verde de cada comunidad autónoma es muy alto, encontrándose por encima del 70% en todas las ocasiones, no pudiendo comprobar si verdaderamente se relacionan los casos de cáncer con el porcentaje verde. Por tanto, para ver la relación vamos a recurrir a un gráfico de correlacion.
 
 ```{r}
 zonasverdes_cancer
@@ -360,11 +374,12 @@ grafico_zonas_verdes_cancer <- ggplot(zonasverdes_cancer, aes(x = porcentajeverd
 grafico_zonas_verdes_cancer
 
 ```
-Como podemos observar, este gráfico presenta muchas subidas y bajadas en los casos de cáncer según sube el porcentaje de índice verde,lo cual nos permite determinar que no tiene nada que ver el factor ambiental, es decir, el porcentaje verde de la zona en la que vivas con la posibilidad que tienes de desarrollar o no cáncer.
+Como podemos observar, este gráfico presenta muchas subidas y bajadas en los casos de cáncer según sube el porcentaje de índice verde,lo cual nos permite determinar que no tiene nada que ver el factor ambiental. Es decir, el porcentaje verde de la zona en la que vivas con la posibilidad que tienes de desarrollar o no cáncer.
 
 ##Tiene más influencia lo llamado bueno o lo malo sobre la influencia del cancer 
 
-Generalmente se tiende a decir que teniendo buenos hábitos de vida y viviendo en zonas no contaminadas disminuye el riesgo de padecer enfermedades, pero realmente, no se sabe si esto  tiene más peso que aquellos factores conocidos como factores malos como por ejemplo el alcohol.Hemos realizado un gráficos para comprobar si se produce mayor disminución del riesgo de padecer cáncer a máyor porcentaje de actividad física y porcentaje verde o si el alcohol tiene más peso sobre esto.
+Generalmente se tiende a decir que teniendo buenos hábitos de vida y viviendo en zonas no contaminadas disminuye el riesgo de padecer enfermedades, pero realmente, no se sabe si esto  tiene más peso que aquellos factores conocidos como factores malos, como por ejemplo el alcohol.
+Hemos realizado un gráfico para comprobar si se produce mayor disminución del riesgo de padecer cáncer a mayor porcentaje de actividad física y porcentaje verde, o si el alcohol tiene más peso sobre esto.
 
 ```{r}
 cancer_completo$casos_cancer <- as.numeric(as.character(cancer_completo$casos_cancer))
@@ -391,8 +406,11 @@ grafico_final <- ggplot(cancer_completo, aes(x = casos_alcohol, y = actividad)) 
 
 grafico_final
 ```
-Como podemos observar mientras sube el porcentaje de actividad producido y los casos de cáncer,los casos de alcohol se mantienen prácticamente en el mismo rango, mientras que las zonas verdes influyen verdaderamente muy poco puesto que altos porcentajes de actividad encontramos porcentajes verdes altos y bajos, esto quiere decir que el porcentaje verde de la zona en la que vivamos no influye directamente con el riesgo de producirse cáncer mientras que la actividad y el alcohol influyen de una manera directa.
-Para explicar que tiene más peso en la producción del cáncer vamos a realizar un gráfico que relacione las variables verdaderamente influyentes en el la producción de cáncer 
+En este único gráfico podemos observar los casos de cáncer en España y su relación con todas las variables que estamos estudiando a la vez.
+Como hemos afirmado observando los gráficos anteriores, la cantidad de población que realiza actividad física es inversamente proporcional a la cantidad de personas que padecen cáncer.
+En el caso de los datos sobre alcohol, concluimos que es la variable que más afecta, ya que vemos que las comuniades que más casos de alcoholismo tienen prácticamente son las más altas en casos de cáncer, sin casi excepciones.
+Por último, vemos que la variable de zonas verdes es la que menos influye, ya que las comunidades con la tasa de zonas verdes más alta tiene números de cáncer muy variados.  
+Después de sacar estas conclusiones, hemos decidido realizar un último gráfico en el que se muestren únicamente las dos variables que más afectan a nuestro estudio, para que sea más visual.
 
 ```{r}
 variables_influyentes <- left_join(
@@ -421,10 +439,13 @@ grafico_variables_influyentes
 
 ```
 
-Como podemos comprobar el cosumo de alcohol se relaciona más directamente con el número de casos de cáncer que la actividad con su relación, podemos podríaos determinar que tiene más peso lo llamado malo sobre el riesgo de padecer cáncer que las llamadas variables "buenas", en este caso el porcentaje de actividad física.
-
-
 ## Conclusiones finales 
+Como conclusión final diremos que el alcohol es la variable que más afecta al cáncer con bastante diferencia, incluso más que las dos variables que consideramos "buenas" juntas. 
+
+Consideramos que poder ver estos datos representados a modo de gráficos facilitan mucho su interpretación. Esto puede venir bien para concienciar a la población de esta enfermadad tan común en los últimos años y poder realmente replantearnos el estilo de vida que queremos llevar.
+
+
+
 
 
 
