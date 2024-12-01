@@ -590,7 +590,7 @@ alcohol<-alcohol%>%
 alcohol  
 
 ###Case_when actividad 
-
+actividad
 actividad<-actividad%>%
   mutate(.data = actividad,Comunidad_autonoma = case_when(Comunidades.y.Ciudades.Autónomas=="Castilla_La Mancha" ~ 'Castilla_LaMancha',
                                                        Comunidades.y.Ciudades.Autónomas=="Madrid" ~ 'Madrid',

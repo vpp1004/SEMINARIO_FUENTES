@@ -100,6 +100,7 @@ Aquí se encuentra la tabla completa tras haber realizado todo esto por comunida
 ```{r}
 zonas_verdes
 ```
+Determinamos ahora que a pesar de rondar entre los mismos valores, cuales son las comunidades españolas que tienen mayor porcentaje de índice verde y cuales son las que menos 
 
 
 
@@ -145,12 +146,27 @@ actividad<-ctividad
 actividad
 
 ```
+Determinamos ahora las comunidades en las que tenemos mayor porcentaje de ejercicio físico ordenadas de mayor a menor 
+```{r}
+actividad<-na.omit(actividad)
+grafico_actividad_fisica <- ggplot(actividad, aes(x =reorder(Comunidad_autonoma,-value), y = value, fill = value)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "aquamarine", high = "pink") +
+  labs(
+    title = "Porcentaje de Actividad Física por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "% Actividad Física",
+    fill = "%"
+  ) +
+  theme_minimal()+
+  theme(axis.text.x =element_text(angle = 90, hjust = 1))
+grafico_actividad_fisica
 
-
-
+```
+Observamos que a pesar de encontrarse rondando entre los mismos valores, Melilla, Extremadura y Asturias son las comunidades con mayor porcentaje de actividad física, superando el 40%, mientras que la Coumunidad Valenciana es la comunidad donde menos ejercicio físico se realiza, no superando el 35% 
 ###Como influyen individualmente las variables 
 
-#CASOS DE CANCER INFLUIDOS POR ALCOHHOL
+#CASOS DE CANCER INFLUIDOS POR ALCOHOL
 Vamos a ver la correlación que tiene el cancer con la cantidad de alcohol, para ello vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la correlación de como realmente se relacionan
 
 ```{r}
@@ -180,37 +196,60 @@ Como podemos comprobar a mayor casos de alcohol tenemos que el número de casos 
 
 
 #CASOS DE CANCER INFLUIDOS POR EJERCICIO FISICO 
-Vamos a ver la correlación que tiene el cancer con la cantidad de alcohol, para ello vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la correlación de como realmente se relacionan
-#CASOS DE CANCER RELACIONADOS CON ZONAS VERDES 
-espana
-dtcancer_largo
-
-zonasverdes <-dplyr::rename(.data=espana,Comunidad.autonoma=Pueblo)
- 
-zonasverdes
+Vamos a ver la correlación que tiene el cancer con la cantidad el porcentaje medio de ejercicio físico  que se realiz,zapara ello vamos a tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la observación de como realmente se relacionan
 
 
-comunidades<-c(
-  Islas_baleares="Islas Baleares",
-  Islas_canarias="Canarias",
-  Castilla_y_Leon="Castilla y León",
-  Castilla_LaMancha="Castilla-La Mancha",
-  Cataluna="Cataluña",
-  Comunidad_de_Madrid="Madrid",
-  Comunidad_valenciana="Comunidad Valenciana",
-  Pais_Vasco="País Vasco",
-  La_Rioja="La Rioja"
-)
+```{r}
+actividad_cancer<- full_join(x=actividad,y=cancer,by=c("Comunidad_autonoma"))%>%
+                  rename(actividad=value,casos_cancer=Valor)
+actividad_cancer <- actividad_cancer[is.na(actividad_cancer$Comunidad_autonoma) == FALSE, ]
+actividad_cancer
 
-zonasverdes$Comunidad.autonoma<-recode(zonasverdes$Comunidad.autonoma,!!!comunidades)
-cancer_zonasverdes<-left_join(x=zonasverdes,y=dtcancer_largo,by=c("Comunidad.autonoma"="Parametro"))
-cancer_zonasverdes
-zonasverdes_cancer<-dplyr::rename(cancer_zonasverdes,casos_cancer=Valor)
+```
+Como podemos comprobar aquellas comunidades con un porcentaje de ejercicio físico más alto tienden a tener generalmente menos casos de cáncer, es el caso por ejemplo de Cantabria, siendo una de las comunidades donde más porcentaje de actividad física hay y de las que menos casos de cáncer registra, por el otro lado tenemos a Madrid, que siendo una de las comunidades con el porcentaje de ejercicio físico más bajo es una de las que más casos de cáncer registro. Dado que con una tabla organizada por comunidades tenemos que guiarnos obligatoriamente por la población y tener en cuenta que comunidades como por ejemplo Madrid y Cataluña no tienen la misma cantidad de gente que Cantabria o Extremadura, vamos a observar un gráfico que nos permita determinar si estas variables están correctamente relacionadas
+
+```{r}
+gráfico_ejercicio_cancer <- ggplot(actividad_cancer, aes(x = actividad, y = casos_cancer)) +
+  geom_point() +
+  labs(
+    title = "Relación entre Ejercicio y Casos de Cáncer por Comunidades",
+    x = "% Ejercicio físico",
+    y = "Casos de Cáncer"
+  ) +
+  geom_smooth(method = "loess", formula = y ~ x, color = "purple", fill = "aquamarine", alpha = 0.3)+
+  theme_minimal()
+gráfico_ejercicio_cancer
+```
+Como podemos determinar estas variables estan relacionadas inversamente, es decir, tal y como vemos según incrementa el porcentaje de ejercicio físico, descienden los casos de cáncer
+
+
+####Casos de cáncer relacionados con porcentaje verde 
+Vamos a ver la correlación que tiene el cancer con el porcentaje verde que hay en cada comunidad para  ello vamos ael tomar de parámetro de unión las comunidades autónomas de España que nos permitan realizar la observación de como realmente se relacionan
+
+```{r}
+zonasverdes_cancer<- full_join(x=zonas_verdes,y=cancer,by=c("Comunidad_autonoma"))%>%
+  rename(casos_cancer=Valor)
+zonasverdes_cancer <- zonasverdes_cancer[is.na(zonasverdes_cancer$Comunidad_autonoma) == FALSE, ]
 zonasverdes_cancer
+```
 
+Como podemos observar el porcentaje verde de cada comunidad autónoma es muy alto, encontrándose por encima del 70% en todas las ocasiones, no pudiendo comprobar si verdaderamente se relacionan los casos de cáncer con el porcentaje verde, por tanto para ver la relación vamos a recurrir a un gráfico de correlacion 
 
-save.image("Objetos.RData")
+```{r}
+zonasverdes_cancer
+grafico_zonas_verdes_cancer <- ggplot(zonasverdes_cancer, aes(x = porcentajeverde, y = casos_cancer)) +
+  geom_point() +
+  labs(
+    title = "Relación entre Zonas Verdes y Casos de Cáncer por Comunidades",
+    x = "% Zonas Verdes",
+    y = "Casos de Cáncer"
+  ) +
+  geom_smooth(method = "loess", formula = y ~ x, color = "darkgreen", fill = "lightgreen", alpha = 0.3)+
+  theme_minimal()
+grafico_zonas_verdes_cancer
 
+```
+Como podemos observar, este gráfico presenta muchas subidas y bajadas en los casos de cáncer según sube el porcentaje de índice verde,lo cual nos permite determinar que no tiene nada que ver el factor ambiental, es decir, el porcentaje verde de la zona en la que vivas con la posibilidad que tienes de desarrollar o no cáncer.
 
 
 ```
