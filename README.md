@@ -19,7 +19,7 @@ Generalmente se alude al cáncer como enfermedad hereditaria, sin ser esto verda
 Hay gran variedad de tumores siendo los más peligrosos el cáncer de pulmón, el cáncer colorectal y el cáncer de estómago, teniendo cada uno de ellos una mortalidad superior al 8%
 A día de hoy no existe una cura para esta enfemedad pero existen numerosas soluciones para poder reducir los graves efectos que esta conlleva, así como la mortalidad
 
-##Objetivos principales:
+## Objetivos principales:
 
 Vamos centrarnos en estudiar como factores como el índice verde de la zona en la que vivamos y el ejercicio ifluyen sobre el riesgo de padecer o no cancer a través de las diferentes comuidades autónomas españolas
 
