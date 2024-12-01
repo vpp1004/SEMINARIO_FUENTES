@@ -120,7 +120,7 @@ grafico_alcohol <- ggplot(alcohol, aes(x = reorder(Comunidad_autonoma,-value), y
 grafico_alcohol
 
 ```
-Podemos observar que cataluña, Madrir y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de alcoholemia, mientras que Ceuta y Melilla se encuentran en la cola del ranking.Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ránking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes,comunidades se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente
+Podemos observar que cataluña, Madrid y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de alcoholemia, mientras que Ceuta y Melilla se encuentran en la cola del ranking.Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ránking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes,comunidades se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente
 
 #####Carga de datos de casos de cancer (json)
 Este archivo contiene el numero de casos de cancer de España ordenados por las diferentes comunidades autónomas 
@@ -134,8 +134,21 @@ cancer
 Observamos cuales son las comunidades que tienen mayores casos de cáncer y cuales son las que menos 
 
 ```{r}
+grafico_cancer <- ggplot(cancer, aes(x =reorder(Comunidad_autonoma,-Valor), y = Valor, fill = Valor)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "paleturquoise", high = "royalblue") +
+  labs(
+    title = "Casos de Cáncer por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "Casos cáncer",
+    fill = "Casos"
+  ) +
+  theme_minimal()+
+  theme(axis.text.x =element_text(angle = 90, hjust = 1))
+grafico_cancer
 
 ```
+Podemos observar que cataluña, Madrid y Andalucía van a liderar el ranking con las comunidades con mayor número de casos de cancer, mientras que Ceuta y Melilla se encuentran en la cola del ranking.Cabe destacar que al tratarse de número de casos y no de porcentaje, las comunides con mayor población van a ser siempre las que lideren el ránking, determinando que si lo que realmente se hiciera fuera una comparativa de porcentajes,comunidades se encuentran más a la derecha del ránking tendrían mayor porcentaje que las tres comunidades que lo lideran actualmente
 
 #####Carga de datos de porcentaje verde  por comunidades
 Se han obtenido los datos a partir de un repositorio de Github.Para ello hemos obtenido datos a partir de diferentes municipios de la comunidad 
@@ -146,14 +159,31 @@ datostorrelavega<-get_osm_data("Torrelavega,Cantabria,España")
 indice_verde_torrelavega<-calculate_green_index(datostorrelavega,4326,100)
 dttorrelavega<-as.data.frame(indice_verde_torrelavega)
 torrelavega<-summarise(.data=dttorrelavega,areasverdes=mean(green_index_green_area,na.rm=TRUE),arboles=mean(green_index_tree,na.rm=TRUE),porcentajeverde=mean(green_index,na.rm=TRUE))
-
+torrelavega
 ```
 Aquí se encuentra la tabla completa tras haber realizado todo esto por comunidades autónomas 
 ```{r}
 zonas_verdes
 ```
 Determinamos ahora que a pesar de rondar entre los mismos valores, cuales son las comunidades españolas que tienen mayor porcentaje de índice verde y cuales son las que menos 
+```{r}
+zonas_verdes
 
+grafico_zonas_verdes <- ggplot(zonas_verdes, aes(reorder(Comunidad_autonoma,-porcentajeverde), y = porcentajeverde, fill = porcentajeverde)) +
+  geom_bar(stat = "identity", color = "black") +
+  scale_fill_gradient(low = "lightgreen", high = "turquoise") +
+  labs(
+    title = "Porcentaje de Zonas Verdes por Comunidad en España",
+    x = "Comunidades Autónomas",
+    y = "% Zonas verdes",
+    fill = "%"
+  ) +
+  theme_minimal()+
+  theme(axis.text.x =element_text(angle = 90, hjust = 1))
+
+grafico_zonas_verdes
+```
+Vemos que Ceuta y Melilla a pesar de ser las dos ciudades autónomas son las que mayor porcentaje verde tienen seguidae de Extremadura,sin embargo Navarra se encuenta a la cola del ranking. Cabe destacar que los datos se parecen mucho y que los grandes núcleos industriales como Madrid, cataluña y País Vasco se encuentran en la zona media el ránking situándose en el caso de Madrid y Cataluña más cerca de la parte alta del ranking
 
 
 #####Carga de datos ejercicios físico
