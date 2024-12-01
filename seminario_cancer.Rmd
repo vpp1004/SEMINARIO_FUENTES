@@ -132,6 +132,34 @@ dtcancer<-as.data.frame(archivo$Respuesta$Datos$Metricas$Datos)
 cancer<-select(.data=dtcancer,Parametro,Valor)
 cancer
 ```
+#####Case_when cancer 
+```{r}
+cancer<-cancer%>%
+        mutate(.data = cancer,Comunidad_autonoma = case_when(Parametro=="Castilla-La Mancha" ~ 'Castilla_LaMancha',
+                                                             Parametro=="Madrid" ~ 'Madrid',
+                                                             Parametro=="Extremadura"~"Extremadura",
+                                                             Parametro=="Ceuta"~"Ceuta",
+                                                             Parametro=="Melilla"~"Melilla",
+                                                             Parametro=="Islas Baleares"~"Islas_Baleares",
+                                                             Parametro=="Murcia"~"Murcia",
+                                                             Parametro=="Navarra"~"Navarra",
+                                                             Parametro=="Comunidad Valenciana"~"Comunidad_Valenciana",
+                                                             Parametro=="Galicia"~"Galicia",
+                                                             Parametro=="Castilla y León"~"Castilla_y_Leon",
+                                                             Parametro=="Cataluña"~"Cataluna",
+                                                             Parametro=="Cantabria"~"Cantabria",
+                                                             Parametro=="Canarias"~"Islas_Canarias",
+                                                             Parametro=="Andalucía"~"Andalucia",
+                                                             Parametro=="Aragón"~"Aragon",
+                                                             Parametro=="Asturias"~"Asturias",
+                                                             Parametro=="La Rioja"~"Rioja",
+                                                             Parametro=="País Vasco"~"Pais_Vasco"
+                                                             ))%>%
+  select(Comunidad_autonoma,Valor)
+cancer
+```
+
+
 Observamos cuales son las comunidades que tienen mayores casos de cáncer y cuales son las que menos 
 
 ```{r}
