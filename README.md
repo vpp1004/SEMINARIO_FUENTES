@@ -1,7 +1,7 @@
 # SEMINARIO FUENTES
 Repositorio que estudia el riesssgo de cancer a partir de distintos factores, desarrollado en código R 
 
-###Autores
+### Autores
 
 - Carmen Gomez
 - Vanessa Pérez
@@ -29,7 +29,7 @@ Vamos centrarnos en estudiar como factores como el índice verde de la zona en l
 
 * ¿Están todas estas variables directamente relacionadas con el cancer ?
 
-##Suposiciones iniciales 
+## Suposiciones iniciales 
 Antes del desarrollo del estudio, hemos desarrollado algunas suposiciones inciales que vamos a constrastar
 
 *El alcohol influye negativamente en mayor medida sobre el riesgo de padecer cancer que el ejercicio físico
