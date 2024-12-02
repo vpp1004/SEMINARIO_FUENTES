@@ -1015,6 +1015,7 @@ grafico_variables_influyentes
 #Gráfico Cáncer - Todas las Variables
 cancer_completo$casos_cancer <- as.numeric(as.character(cancer_completo$casos_cancer))
 cancer_completo$shape_porcentajeverde <- ifelse(cancer_completo$porcentajeverde > 0.85, "Alta", "Baja")
+cancer_completo <- cancer_completo[!is.na(cancer_completo), ]
 
 grafico_final <- ggplot(cancer_completo, aes(x = casos_alcohol, y = actividad)) + 
   geom_point(aes(colour = casos_cancer), shape = 16, size = 2, position = position_jitter(width = 1.3, height = 1.3)) +
