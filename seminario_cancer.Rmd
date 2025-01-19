@@ -1,7 +1,7 @@
 ---
-title: "SeminarioCancer"
+title: "Riesgo de cáncer en relación con factores condicionantes de la salud en España"
 author: 
-- "Vanessa Pérez"
+- "Vanessa Pérez Paredes"
 - "Carmen Gómez Peña"
 date: "`r Sys.Date()`"
 output: html_document
