@@ -1037,3 +1037,86 @@ grafico_final <- ggplot(cancer_completo, aes(x = casos_alcohol, y = actividad)) 
   )
 
 grafico_final
+
+
+
+
+
+
+
+#PARA LA PREGUNTA EXTRA:
+
+# Tabla que relaciona alcohol con deporte por comunidades
+pregunta_extra <- left_join(
+  alcohol_cancer %>% select(Comunidad_autonoma, casos_alcohol),
+  actividad_cancer %>% select(Comunidad_autonoma, actividad),
+  by = "Comunidad_autonoma"
+)
+pregunta_extra<- na.omit(pregunta_extra)
+pregunta_extra
+
+#Gráfico que relaciona alcohol con deporte por comunidades
+grafico_pregunta_extra <- ggplot(pregunta_extra, aes(x = casos_alcohol, y = actividad)) + 
+  geom_point(aes(colour = Comunidad_autonoma), size = 3, position = position_jitter(width = 1, height = 1)) +
+  scale_color_discrete(name = "Comunidades Autónomas") +
+  labs(
+    title = "Relación entre Alcohol y Deporte por Comunidad de España",
+    x = "Casos de Alcohol",
+    y = "Actividad Física"
+  ) + 
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    panel.border = element_rect(color = "black", fill = NA, size = 0.8),
+    panel.grid.major = element_line(color = "gray", size = 0.5),
+    panel.grid.minor = element_line(color = "lightgray", size = 0.25),
+    legend.title = element_text(face = "bold"),
+    legend.position = "right"
+  )
+
+grafico_pregunta_extra
+
+#Tabla anterior clasificando las comunidades en regiones
+pregunta_extra_clasificada <- pregunta_extra %>%
+  dplyr::mutate(region = dplyr::case_when(
+    Comunidad_autonoma %in% c(
+      "Galicia", "Asturias", "Cantabria", "Pais_Vasco", "Navarra", 
+      "Cataluna", "Rioja", "Castilla_y_Leon", "Aragon"
+    ) ~ "Norte de España",
+    Comunidad_autonoma %in% c(
+      "Extremadura", "Castilla_LaMancha", "Comunidad_Valenciana", 
+      "Islas_Baleares", "Madrid"
+    ) ~ "España centro",
+    Comunidad_autonoma %in% c(
+      "Andalucia", "Murcia", "Ceuta", "Melilla", "Islas_Canarias"
+    ) ~ "Sur de España"
+  ))
+pregunta_extra_clasificada
+
+#Gráfico clasificado por regiones
+grafico_clasificado <- ggplot(pregunta_extra_clasificada, aes(x = casos_alcohol, y = actividad)) + 
+  geom_point(aes(colour = region), size = 3, position = position_jitter(width = 1, height = 1)) +
+  scale_color_manual(
+    values = c(
+      "Norte de España" = "lightblue", 
+      "España centro" = "green", 
+      "Sur de España" = "red"
+    ),
+    name = "Regiones"
+  ) +
+  labs(
+    title = "Relación entre Alcohol y Deporte por Región de España",
+    x = "Casos de Alcohol",
+    y = "Actividad Física"
+  ) + 
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    panel.border = element_rect(color = "black", fill = NA, size = 0.8),
+    panel.grid.major = element_line(color = "gray", size = 0.5),
+    panel.grid.minor = element_line(color = "lightgray", size = 0.25),
+    legend.title = element_text(face = "bold"),
+    legend.position = "right"
+  )
+
+grafico_clasificado
