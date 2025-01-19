@@ -468,7 +468,7 @@ Consideramos que poder ver estos datos representados a modo de gráficos facilit
 ### Pregunta extra
 Dejando a un lado los casos de cáncer, queremos realizar un pequeño estudio de los hábitos de la población.
 Para ello, relacionaremos las variables de ejercicio físico realizado con las personas que toman alcohol. Las dos variables serán estudiadas por comunidades, para poder tomar conclusiones y responder a esta pregunta:
-* ¿El alcohol te lleva indirectamente al sedentarismo o es compaginable con buenos hábitos como el deporte?
+- ¿El alcohol te lleva indirectamente al sedentarismo o es compaginable con buenos hábitos como el deporte?
 
 
 ```{r}
