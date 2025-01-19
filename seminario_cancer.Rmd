@@ -28,6 +28,7 @@ Responder a estas preguntas:
 * ¿Están todas estas variables directamente relacionadas con el cáncer ?
 
 
+
 ```{r setup, include=FALSE}
 
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
@@ -464,8 +465,111 @@ Como conclusión final diremos que el alcohol es la variable que más afecta al 
 
 Consideramos que poder ver estos datos representados a modo de gráficos facilitan mucho su interpretación. Esto puede venir bien para concienciar a la población de esta enfermadad tan común en los últimos años y poder realmente replantearnos el estilo de vida que queremos llevar.
 
+###Pregunta extra
+Dejando a un lado los casos de cáncer, queremos realizar un pequeño estudio de los hábitos de la población.
+Para ello, relacionaremos las variables de ejercicio físico realizado con las personas que toman alcohol. Las dos variables serán estudiadas por comunidades, para poder tomar conclusiones y responder a esta pregunta:
+* ¿El alcohol te lleva indirectamente al sedentarismo o es compaginable con buenos hábitos como el deporte?
 
 
+```{r}
+pregunta_extra <- left_join(
+  alcohol_cancer %>% select(Comunidad_autonoma, casos_alcohol),
+  actividad_cancer %>% select(Comunidad_autonoma, actividad),
+  by = "Comunidad_autonoma"
+)
+pregunta_extra<- na.omit(pregunta_extra)
+pregunta_extra
+
+```
+
+```{r}
+grafico_pregunta_extra <- ggplot(pregunta_extra, aes(x = casos_alcohol, y = actividad)) + 
+  geom_point(aes(colour = Comunidad_autonoma), size = 3, position = position_jitter(width = 1, height = 1)) +
+  scale_color_discrete(name = "Comunidades Autónomas") +
+  labs(
+    title = "Relación entre Alcohol y Deporte por Comunidad de España",
+    x = "Casos de Alcohol",
+    y = "Actividad Física"
+  ) + 
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    panel.border = element_rect(color = "black", fill = NA, size = 0.8),
+    panel.grid.major = element_line(color = "gray", size = 0.5),
+    panel.grid.minor = element_line(color = "lightgray", size = 0.25),
+    legend.title = element_text(face = "bold"),
+    legend.position = "right"
+  )
+
+grafico_pregunta_extra
+
+```
+
+En este gráfico podemos observar cada Comunidad Autónoma de España con un color diferente para que sea más rápido visualizar sus casos de alcohol y deporte.
+
+Por lo general, se cumple la regla de que las comunidades que menos alcohol consumen son las que más deporte hacen. Pero no hay a grandes rasgos ninguna comunidad que beba mucho y realice muy poca actividad física (números realistas ya que deporte lo puede realizar gente de cualquier edad, loq ue no ocurre con el consumo de alcohol).
+Esto me lleva a la conclusión de que, efectivamente, el alcohol influye directamente en el deporte, pero lógicamente siempre hay excepciones y otras variables aparte que afectan.
+
+Para observar si puede tener algo de relación con esto la temperatura media de las comunidades, voy a agruparlas por regiones diferenciando el norte del país, el centro y el sur, donde la temperatura es similar.
+
+```{r}
+pregunta_extra_clasificada <- pregunta_extra %>%
+  dplyr::mutate(region = dplyr::case_when(
+    Comunidad_autonoma %in% c(
+      "Galicia", "Asturias", "Cantabria", "Pais_Vasco", "Navarra", 
+      "Cataluna", "Rioja", "Castilla_y_Leon", "Aragon"
+    ) ~ "Norte de España",
+    Comunidad_autonoma %in% c(
+      "Extremadura", "Castilla_LaMancha", "Comunidad_Valenciana", 
+      "Islas_Baleares", "Madrid"
+    ) ~ "España centro",
+    Comunidad_autonoma %in% c(
+      "Andalucia", "Murcia", "Ceuta", "Melilla", "Islas_Canarias"
+    ) ~ "Sur de España"
+  ))
+pregunta_extra_clasificada
+
+```
+
+```{r}
+grafico_clasificado <- ggplot(pregunta_extra_clasificada, aes(x = casos_alcohol, y = actividad)) + 
+  geom_point(aes(colour = region), size = 3, position = position_jitter(width = 1, height = 1)) +
+  scale_color_manual(
+    values = c(
+      "Norte de España" = "lightblue", 
+      "España centro" = "green", 
+      "Sur de España" = "red"
+    ),
+    name = "Regiones"
+  ) +
+  labs(
+    title = "Relación entre Alcohol y Deporte por Región de España",
+    x = "Casos de Alcohol",
+    y = "Actividad Física"
+  ) + 
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    panel.border = element_rect(color = "black", fill = NA, size = 0.8),
+    panel.grid.major = element_line(color = "gray", size = 0.5),
+    panel.grid.minor = element_line(color = "lightgray", size = 0.25),
+    legend.title = element_text(face = "bold"),
+    legend.position = "right"
+  )
+
+grafico_clasificado
+
+```
+
+Para este análisis debemos despreciar un poco grandes comunidades como son Madrid, Cataluña, Andalucía y Valencia (los más alejados a la derecha del gráfico), ya que los datos de alcohol y deporte no están en porcentaje con el número de población, por lo que al ser comunidades muy grandes y pobladas siempre van a dar los mayores números y no podríamos hacer una buena comparación entre comunidades.
+Ocurre lo mismo con Ceuta y Melilla (los dos puntos rojos de la izquierda del todo), pero al contrario, debemos despreciarlas por ser muy pequeñas.
+
+Observando este gráfico podemos decir que por lo general (no sabemos si por la temperatura o por otro factor), en el norte de España la población realiza mucho deporte y en el sur bastante poco. A nivel de alcohol están bastante compensadas las tres regiones por lo que la temperatura concluimos que no afecta demasiado.
+Existirán otros múltiples factores que afecten. Para observarlos tendríamos que realizar un estudio más exahustivo con diferentes variables y muchos más datos.
+
+Con todo este análisis final refuerzo la conclusión que sacamos antes: El alcohol sí influye en la realización de ejercicio físico, es un mal hábito que suele privarte de tener otros hábitos buenos. Pero no lo es en una gran medida, ya que vemos que sí hay comunidades con alto consumo de alcohol y alto nivel de deporte.
+
+Finalizo con la opinión personal de que si mantienes el consumo de alcohol controlado para ocasiones puntuales y tienes una buena fuerza de voluntad podrás realizar deporte y otros buenos hábitos relacionados sin ningún problema.
 
 
 
