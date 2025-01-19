@@ -565,7 +565,7 @@ Para este análisis debemos despreciar un poco grandes comunidades como son Madr
 Ocurre lo mismo con Ceuta y Melilla (los dos puntos rojos de la izquierda del todo), pero al contrario, debemos despreciarlas por ser muy pequeñas.
 
 Observando este gráfico podemos decir que por lo general (no sabemos si por la temperatura o por otro factor), en el norte de España la población realiza mucho deporte y en el sur bastante poco. A nivel de alcohol están bastante compensadas las tres regiones por lo que la temperatura concluimos que no afecta demasiado.
-Existirán otros múltiples factores que afecten. Para observarlos tendríamos que realizar un estudio más exahustivo con diferentes variables y muchos más datos.
+Existirán otros múltiples factores que afecten. Para observarlos, tendríamos que realizar un estudio más exahustivo con diferentes variables y muchos más datos.
 
 Con todo este análisis final refuerzo la conclusión que sacamos antes: El alcohol sí influye en la realización de ejercicio físico, es un mal hábito que suele privarte de tener otros hábitos buenos. Pero no lo es en una gran medida, ya que vemos que sí hay comunidades con alto consumo de alcohol y alto nivel de deporte.
 
